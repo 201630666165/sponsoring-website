@@ -1,0 +1,1814 @@
+<!DOCTYPE html>
+<html class="sss" lang="en">
+<head>
+<title>活动查看页面</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="viewport" content="width=device-width,initial-scale=0.4,user-scalable=yes"/>
+		<meta name="distribution" content="global">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Set render engine for 360 browser -->
+  		<meta name="renderer" content="webkit">
+	    <link rel="SHORTCUT ICON" href="images/sss.ico">
+		<link href="fabuhuodong.css" rel="stylesheet" type="text/css">
+		
+</head>
+<body class="sss">
+<div class="hdx-header">
+    <div class="container-lg">
+        <a href="index.html"><img src="logo3.png" alt="" class="logo"></a>
+        <ul class="items">
+            <li class="dropdown2 dropdown2-white" style="width: auto;">
+            <a style="border-top-left-radius: 0;border-top-right-radius: 0;line-height: 60px;width: 56px;" data-toggle="dropdown2" class="current" target="_blank" href="event-list.html" aria-expanded="false">寻找活动<b class="caret hide"></b></a>
+            </li>
+        </ul>
+        <div id="searchEventArea" style="display:block;">
+          <form class="search">
+                <div class="dropdown">
+                    <a data-toggle="dropdown2" aria-expanded="false">
+                        <span>活动</span><div class="search-tab-icon"><i><em></em><span></span></i></div>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(1)" title="活动" str="活动">活动</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(2)" title="赞助" str="赞助">赞助</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(3)" title="主办方" str="主办方">主办方</a></li>
+                    </ul>
+                </div>
+                <input name="d" type="hidden" value="web">
+                <input name="c" type="hidden" value="search">
+                <input name="m" type="hidden" value="search_info">
+                <input name="type" type="hidden" value="2">
+                <input name="q" id="mainSearchTextbox1" placeholder="搜索活动" value="" type="text">
+                <button><span class="sr-only">搜索</span><span class="icon-search"></span></button>
+          </form>
+      </div>
+        <div id="searchSponsorArea" style="display:none;">
+            <form class="search">
+                <div class="dropdown">
+                    <a data-toggle="dropdown2" aria-expanded="false">
+                        <span>赞助</span><div class="search-tab-icon"><i><em></em><span></span></i></div>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(1)" title="活动" str="活动">活动</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(2)" title="赞助" str="赞助">赞助</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(3)" title="主办方" str="主办方">主办方</a></li>
+                    </ul>
+                </div>
+                <input name="d" type="hidden" value="web">
+                <input name="c" type="hidden" value="search">
+                <input name="m" type="hidden" value="search_info">
+                <input name="type" type="hidden" value="1">
+                <input name="q" id="mainSearchTextbox2" placeholder="搜索赞助" value="" type="text">
+                <button id="mainSearchButton"><span class="sr-only">搜索</span><span class="icon-search"></span></button>
+            </form>
+        </div>
+        <div id="searchOrgArea" style="display:none;">
+            <form action="https://www.yizanzhu.com/index.php?d=web&c=search&m=search_info" method="get" target="&quot;_blank&quot;" class="search">
+                <div class="dropdown">
+                    <a data-toggle="dropdown2" aria-expanded="false">
+                        <span>主办方</span><div class="search-tab-icon"><i><em></em><span></span></i></div>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(1)" title="活动" str="活动">活动</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(2)" title="赞助" str="赞助">赞助</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(3)" title="主办方" str="主办方">主办方</a></li>
+                    </ul>
+                </div>
+                <input name="d" type="hidden" value="web">
+                <input name="c" type="hidden" value="search">
+                <input name="m" type="hidden" value="search_info">
+                <input name="type" type="hidden" value="3">
+                <input name="q" id="mainSearchTextbox3" placeholder="搜索主办方" value="" type="text">
+                <button><span class="sr-only">搜索</span><span class="icon-search"></span></button>
+            </form>
+        </div>
+        <script type="text/javascript">
+            function searchSelect(item){
+                if(item == 1){
+                    $("#searchEventArea").show();
+                    $("#searchSponsorArea").hide();
+                    $("#searchOrgArea").hide();
+                }else if(item == 2){
+                    $("#searchEventArea").hide();
+                    $("#searchSponsorArea").show();
+                    $("#searchOrgArea").hide();
+                }else{
+                    $("#searchEventArea").hide();
+                    $("#searchSponsorArea").hide();
+                    $("#searchOrgArea").show();
+                }
+            }
+        </script>
+        <div class="sign" id="hello">
+            <a href="login.html">登录</a><b> | </b><a href="register.html">注册</a>
+        </div>
+        <input type="hidden" id="sessionid" name="sessionid">
+        <a href="publish.html" target="_blank" class="hdx-header-create"><span></span>发布活动</a>
+    </div>
+</div>
+<img style="position: absolute; right: 0px; margin-right: 15px; top: 12px;" src="new.gif" alt=""></a>	  
+    <link href="FBHD.css" rel="stylesheet" type="text/css">
+	<link href="event.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="jquery_003.js"></script>
+	<script type="text/javascript" src="libs.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript">
+	    //关闭广告
+	    $(function () {
+		    $("#bbx-close-btn").click(function () { $("#bbx-entry").hide(); return false; });
+		})
+	</script>
+<style>
+    .ticket-tips{width:145px;height:27px;background-image:url(images/details_bg.png);background-position:0 -169px}
+    .ticket-over-tips{width:217px;height:27px;background-image:url(images/details_bg.png);background-position:-449px -169px}
+    .login-list .douban{width:88px;height:30px;background-image:url(images/details_bg.png);background-position:-181px -131px}
+    .login-list .douban:hover{background-image:url(images/details_bg.png);background-position:-181px -162px}
+    .login-list .qq{width:88px;height:30px;background-image:url(images/details_bg.png);background-position:-270px -131px}
+    .login-list .qq:hover{background-image:url(images/details_bg.png);background-position:-270px -162px}
+    .login-list .weibo{width:89px;height:30px;background-image:url(images/details_bg.png);background-position:-359px -120px}
+    .login-list .weibo:hover{background-image:url(images/details_bg.png);background-position:-359px -151px}
+    .login-list .renren{width:100px;height:30px;background-image:url(images/details_bg.png);background-position:-449px -107px}
+    .login-list .renren:hover{background-image:url(images/details_bg.png);background-position:-449px -138px}
+    .login-list .baidu{width:113px;height:30px;background-image:url(images/details_bg.png);background-position:-550px -107px}
+    .login-list .baidu:hover{background-image:url(images/details_bg.png);background-position:-550px -138px}
+    .login-list .alipay{width:98px;height:30px;background-image:url(images/details_bg.png);background-position:-588px 0}
+    .login-list .alipay:hover{background-image:url(images/details_bg.png);background-position:-588px -31px}
+    .wx_qr .tips{width:126px;height:130px;background-image:url(images/details_bg.png);background-position:-181px 0}
+    .layer-success .wx_qr_body div{width:158px;height:106px;background-image:url(images/details_bg.png);background-position:-429px 0}
+    .layer-success .wx_qr .pull-left{width:120px;height:119px;background-image:url(images/details_bg.png);background-position:-308px 0}
+    .layer-success .app_promo{width:180px;height:168px;background-image:url(images/details_bg.png);background-position:0 0}
+    </style>
+    <link href="datepicker.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        .thumbnail {
+            display: block;
+            padding: 4px;
+            height:46px;
+            line-height: 20px;
+            border: 1px solid #ddd;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+            -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+        }
+        div.thumbnail {
+            border-color:#aaa;
+            -webkit-transition: none;
+            -moz-transition: none;
+            -o-transition: none;
+            transition: none;
+        }
+        div.thumbnail:hover{
+          border-color: #0088cc;
+          -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+             -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+                  box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+        }
+        div.thum_selected {
+            border:3px solid #468848;
+            padding:2px;
+            -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+             -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+                  box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+        }
+        div.et_selected {
+            border:2px solid #468848;
+            padding:3px;
+            background-position:right bottom;
+            background-repeat:no-repeat;
+            background-image: url(images/select_icon.png);
+        }
+        div.et_notallowed {
+            border:1px dashed #aaa;
+            padding: 4px;
+            color: #ccc;
+            cursor: not-allowed;
+        }
+        div.et_notallowed.et_selected {
+            border:1px dashed #468848;
+        }
+        div.et_selected:hover {
+            border-color:#468848;
+        }
+        a.tab-error{
+            color:red !important;
+            font-weight:bold;
+        }
+    </style>
+    
+    <script type="text/javascript" src="jquery_003.js"></script>
+    <script type="text/javascript" src="jquery_002.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="accupass.js"></script>
+    <script type="text/javascript" src="accupass_003.js"></script>
+    <script type="text/javascript" src="accupass_002.js"></script>
+    
+    <!-- 百度地图 -->
+    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=2GsI5SpfPaxvDcbCwoWSzvrn"></script>
+    
+    <script src="logger.js"></script>
+    <link href="bdsstyle.css" rel="stylesheet" type="text/css">
+    
+    
+    <div id="container-lg" class="container-lg event-details">
+    <style type="text/css">
+        #bdshare{padding-bottom: 0}
+        .share .share-btns a,.share .share-btns span{background-image:url(https://www.yizanzhu.com/file/web/images/share-logins.32.png);!important;padding: 0;width:20px;height:20px;}
+        .share .bds_douban{background-position:-42px 0!important}
+        .share .bds_douban:hover,.share .bds_douban:focus,.share .bds_douban:active{background-position:-63px 0!important}
+        .share .bds_qzone{background-position:-84px 0!important}
+        .share .bds_qzone:hover,.share .bds_qzone:focus,.share .bds_qzone:active{background-position:-105px 0!important}
+        .share .bds_renren{background-position:-126px 0!important}
+        .share .bds_renren:hover,.share .bds_renren:focus,.share .bds_renren:active{background-position:-147px 0!important}
+        .share .bds_tsina{background-position:-168px 0!important}
+        .share .bds_tsina:hover,.share .bds_tsina:focus,.share .bds_tsina:active{background-position:-189px 0!important}
+        
+        .wxshare { float:left; }
+    </style>
+    <link href="details_bg.css" rel="stylesheet" type="text/css">
+    <div class="jumbotron media">
+        <img class="pull-left media-object" id="event_logo" src="images/default_logo.png" alt="" style="width:440px;height:260px;">
+        <div class="media-body">
+            <h2 class="media-heading">2018FMB极限山地车世界巡回赛</h2>
+            <div>
+                <em class="icon-time" title="活动时间"></em> <span id="event_time">          </span></div>
+            <div class="address">
+                <em class="icon-place" title="活动地点"></em><span id="event_address"></span>          </div>
+            <div>
+                <em class="icon-statistics" title="活动类别"></em><span id="event_category"></span>              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-muted" title="活动预算">¥</span>&nbsp;&nbsp;<span id="event_money"></span>          </div>
+            <div>
+                <a id="user_a"><em class="icon-master" title="活动发起人"></em> <img id="user_img" class="face" src="images/default_org_logo.png" alt=""> <span id="event_username"></span></a>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+                <!--<button class="btn btn-danger hide" onclick="openSender()" data-toggle="modal">联系主办人</button>
+                
+                <button class="btn btn-primary  follow-event-creater-btn js-follow-event-creater-btn follow-event-creater-btn--follow" onclick="javascript:followThisUser(false);" style="display: inline-block;">
+                    <span>+</span>关注
+                    <div class="follow-event-creater-btn--follow__wrap hide">
+                        <img src="images/follow_event-create.png" alt="Alternate Text">
+                        <img src="images/follow_event-create-close.png" alt="Alternate Text" class="follow-event-creater-btn--follow__close">
+                    </div>
+                </button>-->
+                
+                <button class="btn cancle  follow-event-creater-btn js-follow-event-creater-btn" onclick="javascript:followThisUser(true);" style="display: none;">取消关注</button>
+            </div>
+            <div class="func">
+                <button id="btn_register_main" class="btn btn-sign-up1 hide">我要赞助</button>
+                                <div class="ticket-tips sr-only" id="event_ticket_select_tips">付费活动，请选择票种</div>
+                <button class="btn btn-like btn-lg" name="eventFollowBtn" onclick="javascript:followThisEvent(this);"><span class="icon-favorites-before"></span><span>收藏</span><span class="num"></span></button>                                
+                <span class="text-muted" id="click_quantity"> 人浏览</span>
+                <div id="zdclock_btn" style="width:113px;height:37px;display:none;"></div><!-- 正点闹钟-->
+                <div class="share">
+                    <span>分享</span>
+                    <div class="share-btns">
+                        <!-- Baidu Button BEGIN -->
+                        <div id="bdshare" class="bdsharebuttonbox bdshare_t bds_tools get-codes-bdshare" data-tag="share_1">
+                            <a class="bds_tsina" data-cmd="tsina"></a>
+                            <a class="bds_qzone" data-cmd="qzone" href="#"></a>
+                            <a class="bds_douban" data-cmd="douban"></a>
+                            <a class="bds_renren" data-cmd="renren"></a>
+                        </div>
+                        <script>
+                            //var bds_config = { 'snsKey': { 'tsina': '2234049236'} };
+                            //分享功能暂未实现
+                            /*window._bd_share_config = {
+                                common : {
+                                    bdText : '2018FMB极限山地车世界巡回赛',   
+                                    bdDesc : '一 .活动性质&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;性质为FMB世界巡回赛(白银赛)中国广东站以及单车嘉年华活动。二.时间&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;时间为2018年11月9日至11日，...', 
+                                    bdUrl : 'https://www.yizanzhu.com/web/event/details/7843.html',     
+                                    bdPic : 'https://www.yizanzhu.com//upload/event_logo/2018-08-21/1534821435.jpg',
+                                    bdSign : 'on',
+                                    onBeforeClick : function(cmd,config){beforeClick(cmd,config);},
+                                    onAfterClick : function(cmd){afterClick(cmd);}  //分享后记录分享人、活动分享次数、为分享人增加金豆等操作【本站的核心功能】
+                                },
+                                share : [{
+                                    "bdSize" : 16
+                                }]
+                            }
+                            with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='share.js?cdnversion='+~(-new Date()/36e5)];*/
+
+                            //分享前动作
+                            function beforeClick(cmd,config){
+                                                            }
+                            //分享后动作
+                            function afterClick(cmd){
+                                                                    //记录分享信息@todo扣除商户推广费并分配用户分享佣金
+                                    var res_id = '7843';
+                                    var res_uid = '39081';
+                                    var uid = '39016';
+                                    var media_id = cmd;
+                                    $.ajax({
+                                        type:"POST",
+                                        url:"/index.php?d=web&c=event&m=ajax_share",
+                                        data:{res_id:res_id,res_uid:res_uid,uid:uid,media_id:media_id,type:2},
+                                        dataType:"json",
+                                        success:function(data){
+                                            //创建成功
+                                            if (data.state == 200){
+                                                //刷新本页面
+                                                PopupMessage(0, "分享成功！", 2000);
+                                                setTimeout(function () {
+                                                    location.reload();
+                                                }, 2000);
+                                            }else{
+                                                //return false;
+                                            }
+                                        }
+                                    });
+                                                            }
+                        
+                        </script>
+                        
+                        <!-- Baidu Button END -->
+                    </div>
+                    <a style="margin-left:0px;margin-bottom:2px;" class="weixin" title="分享到微信" href="#" onclick="javascript:$('#wechat_modal').show();return false;"><sup>new</sup></a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    
+     <div id="sender_dialog" class="feedback-layer modal fade accuse-layer" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">联系主办方</h4>
+                </div>
+                
+                <a class="hdx-app-db hdx-app-db-modal" href="#" target="_blank" style="height:90px;">
+                    <img src="https://www.yizanzhu.com/file/web/images/hdx-app-db2.png" alt="" style="padding:10px">
+                        <div>
+                        <h3>易赞助微信公众号</h3>
+                        
+                        <span style="font-size: 13px;padding-top: 10px;">关注易赞助微信公众号即可接收到主办方的及时回复</span>
+                    </div>
+                    <img src="https://www.yizanzhu.com/file/web/images/weixin_small.png" alt="扫码关注易赞助微信公众号" style="width: 56px;border: 2px solid #fff;">
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="login-notify fade">
+        <button type="button" class="icon-close-lg" data-dismiss="alert" aria-hidden="true"></button>
+        <div class="backdrop"></div>
+        <div class="container">
+            <div class="pull-left">
+                <h3>发现你身边有营销价值的好活动！</h3>
+                <ul class="login-list">
+                    
+                    <a href="https://www.yizanzhu.com/web/index/weixin_login.html" class="weixin" title="微信登录"></a>
+                    <a href="https://www.yizanzhu.com/web/index/qq_login.html" class="qq" title="QQ登录"></a>
+                    <a href="#" class="linkedin" title="领英登录"></a>
+                    <a href="https://api.weibo.com/oauth2/authorize?client_id=1197823876&redirect_uri=https%3A%2F%2Fwww.yizanzhu.com%2Fweb%2Findex%2Fweibo_callback&response_type=code" class="weibo" title="新浪微博登录"></a>
+                    <a href="#" class="alipay" title="支付宝登录"></a>
+                    <a href="#" class="baidu" title="百度登录"></a>
+                </ul>
+                <a class="btn btn-xs btn-primary" href="https://www.yizanzhu.com/web/index/login.html?returnUrl=https://www.yizanzhu.com/web/event/details/7843.html">登录</a><a class="btn btn-xs btn-primary" href="https://www.yizanzhu.com/web/index/register.html?returnUrl=https://www.yizanzhu.com/web/event/details/7843.html">注册</a>
+            </div>
+            <div class="media">
+                <img src="https://www.yizanzhu.com/file/web/images/weixin_qrcode.jpg" class="pull-left" alt="">
+                <div class="media-body wxshare">
+                    <h4>微信“扫一扫”</h4>
+                    <strong>赞助营销 极速传播！</strong>
+                    <div>ID：<span class="text-primary">ezanzhu</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+        //联系主办人提示（提示主办人）
+        function guide(){
+                var offset = $('.jumbotron .func').prev().find('.btn').offset()
+                var $backdrop = $('<div class="backdrop affix">');
+                var $div = $('<div style="position: absolute;color:#E65959;font-size:20px;"><div style="width:95px;height: 42px;border: 3px dashed #fff;border-radius: 10px;  margin-bottom: 10px;"></div><div style="background-color:#E65959;border-radius:5px;padding:20px;color:#fff;border:3px solid #fff;">参加人会通过此按钮向您发送消息 <br>关注微信公众号才能收到并与其即时互动</div></div>');
+        
+                $div.css({
+                    top: offset.top - 10,
+                    left: offset.left - 10
+                })
+        
+                $backdrop.appendTo(document.body);
+                $div.appendTo(document.body);
+                setTimeout(function() {
+                    $div.remove();
+                    $backdrop.fadeOut()
+                }, 30000);
+        
+                $div.click(function(){ 
+                    $div.remove();
+                    $backdrop.fadeOut() });
+               $backdrop.click(function(){
+                 $($div[0]).attr("style","display:none");
+                 $(this).fadeOut();
+               })
+             }
+
+        $(function () {
+            //主办方自己登录则显示
+            
+            //用户未登录则提示登录
+                        
+            var $wxQr = $('.event-details .aside .wx_qr');
+            var $navHeight = $('.main_nav').outerHeight();
+            var $footerHeight = $('.page-footer').outerHeight();
+            $(document).height() - $(window).height() - $wxQr.offset().top - $footerHeight > 0 &&
+            $wxQr.affix({
+                offset:{
+                    top: function(){
+                        return (this.top = $wxQr.offset().top - $navHeight - 40)
+                    },
+                    bottom:$footerHeight + 10
+                }
+            });
+        });
+
+        //联系主办人
+        function openSender()
+        {
+            CheckLogin(
+              function(loginUser){  $('#sender_dialog').modal(); }, 
+              function(){ window.location="/web/index/login?returnUrl="+window.location;});
+        }
+    </script>
+    
+        
+    <div class="article">
+                <h2><em class="title_left_border"></em>活动方案...<a href="#" class="pull-right toggle-event-content" style="font-size:12px;" onclick="javascript:toggleEventContent();return false;"><span class="icon-collapse"></span>收起</a><a href="#" class="pull-right toggle-event-content" style="font-size:12px;display:none;" onclick="javascript:toggleEventContent();return false;"><span class="icon-expand"></span>展开</a></h2>
+                <div class="event-intro tab-content" id="eventContentAreaMain" style="margin-bottom:0px;">
+                    <div class="tab-pane fade in active" id="event_desc_page1">
+                    </div>
+                </div>
+                <br><br>
+                
+                <h2><em class="title_left_border"></em>方案附件...</h2>
+                <div class="event-intro tab-content" id="eventContentAreaMain" style="margin-bottom:0px;">
+                    <div class="tab-pane fade in active" id="event_desc_page">
+                        <span class="uploading">
+                            <i class="uploaded_ico word_ico"></i>
+                            <a href="">活动附件</a>
+                        </span>
+                    </div>
+                </div>
+                <br><br>
+                                
+                <h2><em class="title_left_border"></em>联系方式...</h2>
+                <div class="event-intro tab-content" id="eventContentAreaMain" style="margin-bottom:0px;">
+                
+                                            <div class="buy_looked_contact">
+                                                            <div class="func">
+                                    <button onclick="javascript:no_otayonii_box(20,1); return false;" class="btn btn-sign-up1 charge" style="background-color: #f3900d;border-color: #f3900d;color: #fff;">查看联系方式</button>
+                                </div>
+                                                    </div>
+                                    </div>
+                
+                                
+                <br>
+                <h2></h2>
+                <div class="event-intro tab-content" id="eventContentAreaMain" style="margin-bottom:0px;">
+                    <div class="clear"></div>
+                    <br>
+                    <div class="func">
+                        <button class="btn btn-primary" onclick="javascript:$('#wechat_modal').show();"><span class="icon-weixin"></span>分享到微信</button>
+                        <button class="btn btn-like" name="eventFollowBtn" onclick="javascript:followThisEvent(this);"><span class="icon-favorites-before"></span><span>收藏</span><span class="num"></span></button>
+                        <a class="btn btn-like" href="#accuse-layer" data-toggle="modal">举报活动</a>
+                    </div>
+                </div>
+                <br>
+                <h2 class="no-line">活动标签...</h2>
+                <div class="tags">
+                    <a id="event_tag">无</a>
+                </div>
+                <br>
+                                        
+                                        <!--<h2 class="no-line">最近分享...</h2>
+                    <ul class="user-list">
+                                                <li style="width:106px;margin-left:12px">
+                            <a href="https://www.yizanzhu.com/web/user/people/39016.html"><img src="http://thirdqq.qlogo.cn/qqapp/101366274/CA14AD0341E26829CC1EB1224F9D5578/100" alt=""></a>
+                            <div>伊万嘉·Y·杨</div>
+                            <strong>分享</strong>
+                            <i></i>
+                            48分钟前                       </li>
+                                            </ul>-->
+                         
+        
+    <h2 class="no-line hide">您有任何问题，在这里提问！</h2>
+    <div class="forum hide">
+        <div class="sendbox" style="margin-bottom:20px;margin-left:0px;">
+            <div class="textarea form-control">
+                <textarea id="comment_text_box" placeholder="有好多心里话，想对主办方说..."></textarea>
+            </div>
+            <div class="func">
+                <div class="tips pull-left" id="alert_comment_message"></div>
+                <button class="btn btn-primary" onclick="javascript:publishComment(-1);">提问</button>
+            </div>
+        </div>
+        <h2 style="color:#333;font-size:18px;">全部讨论...</h2>
+        <div id="eventCommentList">
+        <br>
+        <div class="text-center">
+            <span class="icon-warning"></span>还木有人评论，赶快抢个沙发！
+        </div>
+        </div>
+    </div>
+                
+    <div id="wechat_modal" style="background-clip: padding-box;background-color: #FFFFFF;border: 1px solid #ccc;border: 1px solid rgba(0, 0, 0, 0.3);  border-radius: 6px 6px 6px 6px;  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3); left: 50%; margin: -200px 0 0 -200px;overflow: hidden; position: fixed; top: 50%; width:360px;height:360px; overflow:hidden;font:14px/1.5 'Microsoft YaHei',arial,tahoma,\5b8b\4f53,sans-serif;display:none;z-index:999;">
+        <div id="wechat_modal_header" style="border-bottom: 1px solid #EEEEEE; padding: 9px 15px;">
+            <a style="text-decoration:none;  margin-top: 2px; color: #000000; float: right;  font-size: 20px;  font-weight: bold; cursor:pointer;line-height: 20px; opacity: 0.2; text-shadow: 0 1px 0 #FFFFFF;" onclick="javascript:document.getElementById('wechat_modal').style.display='none';" target="_self">×</a>
+            <h3 style=" line-height: 30px; margin: 0; font-weight:normal; font-size: 1.17em;font-family: 'Microsoft YaHei',arial,tahoma,\5b8b\4f53,sans-serif;">分享到微信朋友圈</h3>
+        </div>
+        <div style="text-align:center;height:251px;margin:0;padding:0;">
+            <p style="margin:0;padding:0;">
+                    </p><div style="padding:35px;"><img src="https://www.yizanzhu.com/qrcode/event/7843.png" alt="活动二维码" style="width:180px;height:180px;" height="180" width="180"></div>
+            <p></p>
+        </div>
+        <div style=" background-color: #F5F5F5;  border-radius: 0 0 6px 6px; border-top: 1px solid #DDDDDD; box-shadow: 0 1px 0 #FFFFFF inset; height:100%;padding:0 10px;padding-top:11px;text-align: right; font-size:12px;">
+            <div style="text-align:left;margin:0; padding:0;font-size:12px;">打开微信，点击底部的“发现”，使用 “扫一扫” 即可将网页分享到我的朋友圈。</div>  
+        </div>
+    </div>
+            </div>
+             <div class="aside">
+                <h2 class="no-line">活动地点<span class="subhead hide">（<a target="_blank" href="/event/map/4383100063700">查看大图</a>）</span></h2>
+                <div id="container" class="BaiDuMap" style="border: 1px solid rgb(224, 224, 224); height: 300px; margin-bottom: 20px; overflow: hidden; position: relative; z-index: 0; background-color: rgb(243, 241, 236); color: rgb(0, 0, 0); text-align: left;" title="惠州华润小径湾"></div>
+                 
+                <div class="wx_qr affix-top">
+                    <div class="txt">
+                     <div class="tips">微信扫一扫，分享才精彩</div>
+                     <div>分享此活动到→</div>
+                     <div class="text-primary">微信朋友圈!</div>
+                    </div>
+                    <img src="https://www.yizanzhu.com/qrcode/event/7843.png" alt="" >
+        
+                </div>
+            </div>
+    </div>
+    
+    
+    <div class="login-layer modal fade" id="dlg_login_modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">
+                    <div class="login-form">
+                        <h4>
+                            <a class="pull-right" href="https://www.yizanzhu.com/web/index/register.html?returnUrl=https://www.yizanzhu.com/web/event/details/7843.html">注册</a>
+                            SSS帐号登录
+                        </h4>
+                        <form id="login_form" action="/web/index/login.html" method="POST" novalidate="novalidate">
+                            <input name="returnUrl" value="https://www.yizanzhu.com/web/event/details/7843.html" type="hidden">
+                            <div class="form-group">
+                                <label for="txtName" class="icon-user"></label>
+                                <input class="form-control" placeholder="SSS帐号 手机" id="login_username" name="login_username" type="text">
+                            </div>
+    
+                            <div class="form-group">
+                                <label for="txtPwd" class="icon-password"></label>
+                                <input class="form-control" placeholder="请输入您的密码" id="login_pass" name="login_pass" onkeypress="javascript:if(event.keyCode==13) loginSubmit();" type="password">
+                            </div>
+                            <div id="login_alert_msg" style="font-size:12px;"></div>
+                            <a class="text-primary pull-right" href="https://www.yizanzhu.com/web/index/find_pass.html">忘记密码</a>
+                        
+                            <div class="checkbox-inline">
+                                <label>
+                                    <input name="remember_me" id="remember_me" checked="checked" type="checkbox">记住我
+                                </label>
+                            </div>
+                            <button type="button" onclick="javascript:loginSubmit();" class="btn btn-primary btn-block">登录</button>
+                        </form>
+                    </div>
+                    <div class="login-coagent">
+                        <h4>用合作网站帐号登录</h4>
+                        <a href="https://www.yizanzhu.com/web/index/weixin_login.html" class="weixin">微信</a>
+                        <a href="https://www.yizanzhu.com/web/index/qq_login.html" class="qq">腾讯QQ</a>
+<!--                        <a href="#" class="linkedin">领英</a> -->
+                        <a href="https://api.weibo.com/oauth2/authorize?client_id=1197823876&redirect_uri=https%3A%2F%2Fwww.yizanzhu.com%2Fweb%2Findex%2Fweibo_callback&response_type=code" class="weibo">新浪微博</a>
+<!--                        <a href="#" class="alipay">支付宝</a> -->
+<!--                        <a href="#" class="baidu">百度账号</a> -->
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                function CheckLogin(funcLogin, funcNotLogin) {
+                    $.ajax({
+                        url: '/index.php?d=web&c=index&m=is_login',
+                        type: "GET",
+                        cache: false,
+                        dataType:"json",
+                        success: function (data) {
+                            if (data.state == 200) {
+                                if (funcLogin != null && typeof (funcLogin) == 'function') {
+                                    funcLogin(data);
+                                }
+                            } else {
+                                if (funcNotLogin != null && typeof (funcNotLogin) == 'function') {
+                                    funcNotLogin();
+                                }
+                            }
+                        }
+                    });
+                }
+
+/*                //检查是否登录
+                var checkAndLoginFunc;
+                function CheckAndLogin(returnUrl, func) {
+                    checkAndLoginFunc = null;
+                    var rurl = returnUrl == null || $.trim(returnUrl) == "" ? "https://www.yizanzhu.com/web/event/details/7843.html" : returnUrl;
+                    $.ajax({
+                        url: '/index.php?d=web&c=index&m=is_login',
+                        type: "GET",
+                        cache: false,
+                        dataType:"json",
+                        success: function (data) {
+                            if (data.state == 200)
+                            {
+                                if (func != null && typeof (func) == 'function') {
+                                    func();
+                                }
+                            } else {
+                                try {
+                                    var btns = $("#dlg_login_modal a[id$='-login-btn'] ");
+                                    if (btns != null && btns.length > 0) {
+                                        btns.each(function () {
+                                            var urltmp = $(this).attr("href");
+                                            var rindex = urltmp.indexOf("returnUrl=");
+                                            if (rindex > 0) {
+                                                urltmp = urltmp.substring(0, rindex + 10) + rurl;
+                                                $(this).attr("href", urltmp);
+                                            }
+                                        });
+                                    }
+                                    var ctls = $("#dlg_login_modal input[name='returnUrl']");
+                                    if (btns != null && btns.length > 0) ctls.val(rurl);
+                                }
+                                catch (e) { }
+                                checkAndLoginFunc = func;
+                                $('#dlg_login_modal').modal({ show: true, keyboard: false, backdrop: 'static' });
+                            }
+                        }
+                    });
+                }
+    
+                //异步登录
+                function loginSubmit() {
+                    if($.trim($("#login_username").val())=='' || $.trim($("#login_pass").val())==''){
+                        $("#login_alert_msg").html('<div class="alert alert-error" style="margin-bottom:10px;">用户名（邮箱或手机号）或密码不可为空，请填写。</div>');
+                        return false;
+                    }
+                    
+                    //验证发送ajax
+                    var username = $.trim($("#login_username").val());
+                    var password = $.trim($('#login_pass').val());
+                    if($("#remember_me").is(':checked')){
+                        var remember_me = true;
+                    }else{
+                        var remember_me = false;
+                    }
+                    $.ajax({
+                        type:"POST",
+                        url:"/index.php?d=web&c=index&m=ajax_login",
+                        data:{username:username,password:password,remember_me:remember_me},
+                        dataType:"json",
+                        beforeSend: function() {
+                        },                  
+                        success:function(data){
+                            //创建成功
+                            if (data.state == 200){
+                                //刷新本页面
+                                location.reload();
+                            }else{
+                                $("#login_alert_msg").html('<div class="alert alert-error" style="margin-bottom:10px;">用户名（邮箱或手机号）或密码不正确。</div>');
+                                return false;
+                            }
+                                
+                        },
+                        complete: function(){
+                        },
+                        error: function(){
+                            $("#login_alert_msg").html('<div class="alert alert-error" style="margin-bottom:10px;">请求出错，请重试。</div>');
+                            return false;
+                        }
+                    });
+                    
+                }
+   */ 
+            </script>
+        </div>
+    </div>
+    
+    
+    
+     
+    <style type="text/css">
+        /*客服部分*/
+        .qqserver p img{display:inline;margin:-5px 5px 0 0;vertical-align:middle;}
+        .scrollsidebar{position:absolute;z-index:999;top:220px;}
+        .side_content{width:167px;height:auto;overflow:hidden;float:left;}
+        .side_content .side_list{width:167px;overflow:hidden;}
+        .show_btn{width:0;height:144px;overflow:hidden;margin-top:50px;float:left;cursor:pointer;}
+        .show_btn span{display:none;}
+        .close_btn{width:24px;height:24px;cursor:pointer;}
+        .side_title,.side_bottom,.close_btn,.show_btn{background:url(https://www.yizanzhu.com/file/web/images/qqcontact_sidebar_bg.png) no-repeat;}
+        .side_title{height:46px;}
+        .side_title{height:46px;}
+        .side_bottom{height:8px;}
+        .side_center{font-family:Verdana, Geneva, sans-serif;padding:10px 12px 5px 12px;font-size:12px;}
+        .close_btn{float:right;display:block;width:19px;height:19px;margin:16px 7px 0 0;_margin:16px 3px 0 0;}
+        .close_btn span{display:none;}
+        .side_center .qqserver p{text-align:left;padding:6px 0;margin:0;vertical-align:middle;}
+        .phoneserver {font-size:14px;text-align:center;}
+        .phoneserver p{padding:2px 0;_height:16px;margin:0;color:#666666;}
+        .msgserver{border-top:1px dotted #ccc;text-align:center;margin-top:6px;padding:10px 0 3px 0;}
+        .msgserver a{background:url(https://www.yizanzhu.com/file/web/images/qqcontact_sidebar_bg.png) no-repeat -119px -154px;padding:3px 0 3px 23px;}
+        .side_content hr{border-bottom:1px solid #E6E6E6;height:1px;margin:10px 0;clear:both;}
+    
+        /* green skin  */
+        .side_green .side_title{background-position:-505px 0;}
+        .side_green .side_center{background:url(https://www.yizanzhu.com/file/web/images/background_green_line.gif) repeat-y center;}
+        .side_green .side_bottom{background-position:-505px -60px;}
+        .side_green .close_btn{background-position:-44px -45px;}
+        .side_green .close_btn:hover{background-position:-65px -45px;}
+        .side_green .show_btn{background-position:-187px 0;}
+        .side_green .msgserver a{color:#68c40b;}
+        .side_green hr{border-bottom:1px solid #edf2e5;}
+    
+    </style>
+    
+    <div class="qqserver">
+        <div class="qqserver_fold"><div></div></div>
+        <div class="qqserver-body">
+            <div class="qqserver-header">
+                <div></div><span class="qqserver_arrow"></span>
+            </div>
+            <ul>
+            <li>
+               <a title="点击这里给我发消息" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1204103366&amp;site=qq&amp;menu=yes" target="_blank">
+                   <div>客服咨询</div><span>Coco</span>
+                </a>
+            </li>
+            </ul>
+        </div>
+    
+    </div>
+    
+    <script type="text/javascript">
+        +function($){
+            var $qqServer = $('.qqserver');
+            var $qqserverFold = $('.qqserver_fold');
+            var $qqserverUnfold = $('.qqserver_arrow');
+            var transition;
+            function resizeQQserver(){
+                $qqServer[document.documentElement.clientWidth < 1240 ? 'hide':'show']();
+            }
+    
+            $qqserverFold.click(function(){
+                $qqserverFold.hide();
+                $qqServer.addClass('unfold');
+            });
+            $qqserverUnfold.click(function(){
+                $qqServer.removeClass('unfold');
+                transition = $.support.transition
+                $qqserverFold.show();
+    
+            });
+    
+            resizeQQserver();
+            $(function(){
+                $(window).on('resize',throttle(resizeQQserver))
+            })
+        }(jQuery)
+    </script>
+    <div class="feedback-layer modal fade accuse-layer" id="accuse-layer" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">举报</h4>
+                </div>
+                <div class="modal-body" style="display:none">
+                    <input value="2018FMB极限山地车世界巡回赛" id="report_event_title" type="hidden">
+                    <input class="form-control" placeholder="请输入您的手机号/邮箱" id="report_event_contact" value="" type="text">
+                </div>
+                <div class="modal-body">
+                    <textarea placeholder="在这里写下举报的原因。" id="report_event_content"></textarea>
+                    <div class="text-right">
+                        <button type="button" class="btn btn-link" data-dismiss="modal">取消</button><button type="submit" class="btn btn-primary btn-lg" onclick=" javascript:submitReport(); ">发送</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function submitReport() {
+            var content = $.trim($("#report_event_content").val());
+            var contact = $.trim($("#report_event_contact").val());
+            if (content == null || content == '') {
+                PopupMessage(1, "请填写举报原因。", 2000);
+                $("#report_event_content").focus();
+                return;
+            }
+            if (!validateEmail(contact) && !validatePhone(contact)) {
+                PopupMessage(1, "请填写正确的联系方式。", 2000);
+                $("#report_event_contact").focus();
+                return;
+            }
+            $.ajax({
+                url: '/index.php?d=web&c=event&m=add_report_info_ajax',
+                type: "POST",
+                data: { "res_id": '7843', "content": content, "contact": contact, "title": $("#report_event_title").val(), "type": 2 },
+                dataType:"json",
+                success: function(data) {
+                    if (data.state == 200){
+                        window.alert("我们已收到您的举报，感谢对我们的支持。");
+                        $("#accuse-layer").modal("hide");
+                        $("#report_event_content").val("");
+                    }else if(data.state == 205){
+                        window.alert("我们已收到您的举报，请勿重复举报。");
+                    }else{
+                        window.alert("请求出错，请重试。");
+                    }
+                }
+            });
+        }
+    </script>
+    
+    <script type="text/javascript">
+        //收起活动内容
+        function toggleEventContent() {
+            $("#eventContentAreaMain").stop().slideToggle("normal");
+            $("a.toggle-event-content").toggle();
+        }
+
+    
+        //异步检测是否收藏
+        //      $(document).ready(function(){
+            //取值
+            var id;
+            var activity_id;
+            $.ajax({//取用户id
+            url:"session.php",
+            type:"GET",
+            data:{association_name:0,id:0},
+            async:false,
+            success:function(objsnd) {
+                if(objsnd.result==0) {
+                    id = objsnd._id;
+                }
+                else if (objsnd.result==1) {
+                    $(".btn-like").hide();
+                }
+                else{
+                    alert("请求出错");
+                }
+            },
+            error:function(xhr,msg,exc){
+                alert("请求超时-"+msg);
+            }
+        });
+            $.ajax({//取活动id
+            url:"event_session.php",
+            type:"GET",
+            data:{activity_id:0},
+            async:false,
+            success:function(objsnd) {
+                if (objsnd.result==0) {
+                    activity_id=objsnd.activity_id;
+                }
+                else if (objsnd.result==2) {
+                    alert(objsnd.errormsg);
+                }
+                else{
+                    alert(objsnd);
+                }
+            },
+            error:function(xhr,msg,exc){
+                alert(msg);
+                return false;
+            }
+        });
+            
+            $.ajax({
+                type:"POST",
+                url:"isfav.php",
+                data:{id:id,activity_id:activity_id},
+                dataType:"json",
+                beforeSend: function() {
+                    //
+                },                  
+                success:function(data){
+                    //是否已收藏
+                    if (data.state == 200)
+                    {
+                        if(data.codes == 'true'){
+                            var followBtns = $("button[name='eventFollowBtn']");
+                            followBtns.html('<span class="icon-favorites-active" id="event_like_icon"></span><span>已收藏</span><span class="num">' + (data.result) + '</span>');
+                            followBtns.addClass('active');
+                        }else{
+                            var followBtns = $("button[name='eventFollowBtn']");
+                            followBtns.html('<span class="icon-favorites-before"></span><span>收藏</span><span class="num">' + (data.result) + '</span>');
+                        }
+                    }
+                    else if (data.state == 204) {
+                        alert(data.errormsg)
+                    }
+                        
+                },
+                complete: function(){
+                    //alert('complete');
+                },
+                error: function(){
+                    //请求出错处理
+                    //alert('error');
+                }
+            }); 
+            //收藏
+        var ajaxProcessing = false;
+        function followThisEvent(ele) {
+            if ($(ele).is('.active')) return;
+            if (ajaxProcessing) return;
+            ajaxProcessing = true;
+            console.log(ajaxProcessing);
+            invokeFollowThisEvent(ele);
+        }
+
+        function invokeFollowThisEvent(ele) {
+            var followBtn = $(ele);
+            var followBtns = $("button[name='eventFollowBtn']");
+            //var cancel = followBtn.children('#event_like_icon').is('.icon-favorites-active');
+            $.ajax({
+                url: 'favorite.php',
+                type: "POST",
+                data: { 
+                    id:id,
+                    activity_id:activity_id
+                },
+                dataType:"json",
+                success: function(data) {
+                    if (data.state == 200){
+                        var num = parseInt(followBtn.children('.num').html());
+                        
+                            followBtns.html('<span class="icon-favorites-active" id="event_like_icon"></span><span>已收藏</span><span class="num">' + (num + 1) + '</span>');
+                            var followOne = $('<strong>+1</strong>').appendTo(followBtn);
+                            followAdd(followOne, '-.5em', function() {
+                                followBtns.addClass('active');
+                                ajaxProcessing = false; 
+                            });
+                    }
+                    else if (data.state == 204) {
+                        alert(data.errormsg);
+                    }
+                    else{
+                        alert(data);
+                    }
+                },
+                error: function(XMLHttpRequest, textStatus, errorThrown) {
+                    alert(textStatus);
+                    ajaxProcessing = false; 
+                }
+            });
+        }
+
+        function followAdd(followBtn, offsetTop, callback) {
+            followBtn.animate({ top: offsetTop, opacity: 1 }, 200, function() {
+                setTimeout($.proxy(function() {
+                    $(this).fadeOut(500, function() {
+                        callback && callback();
+                    });
+                }, this), 500);
+            })
+        }
+//      })
+        
+        //增加浏览量
+ /*       function addClick(){
+            var id = '7843';
+            var type = 1;
+            $.ajax({
+                type:"GET",
+                url:"/index.php?d=web&c=event&m=add_event_pv",
+                data:{id:id,type:type},
+                dataType:"json",
+                success:function(data){
+                    //创建成功
+                    if (data.state == 200)
+                    {
+                        // 浏览
+//                      alert('浏览成功！'+data.result);
+                    }else{
+//                      alert('浏览失败！');
+                        return false;
+                    }
+                        
+                }
+            }); 
+        }
+        addClick();*/
+
+    </script>
+    
+    
+    <script type="text/javascript">
+        //关注个人用户
+        function followThisUser(cancel) {
+            CheckAndLogin('https://www.yizanzhu.com/web/user/org_home.html', function() {
+                invokeFollowThisUser(cancel);
+            });
+        }
+
+        function invokeFollowThisUser(cancel) {
+            $.ajax({
+                global:false,
+                url: (cancel ? '/web/user/remove_follow_user' : '/web/user/add_follow_user'),
+                type: "GET",
+                data: { "be_follow_uid": "39081" },
+                dataType:"json",
+                success: function(data) {
+                    if (data.state == 200) {
+                        PopupMessage(0, "操作成功！", 1500);
+                        $("button.follow-event-creater-btn").toggle();
+                    } else {
+                        PopupMessage(1, "操作失败，请稍后重试。", 1500);
+                    }
+                },
+                error: function(XMLHttpRequest, textStatus, errorThrown) {
+
+                    PopupMessage(1, "操作失败，请稍后重试。", 1500);
+                }
+            });
+        }
+    
+    </script>
+    <script type="text/javascript">
+        //关注主办方
+        function followThisOrg(cancel) {
+            CheckAndLogin('https://www.yizanzhu.com/web/user/org_home.html', function() {
+                invokeFollowThisOrg(cancel);
+            });
+        }
+
+        function invokeFollowThisOrg(cancel) {
+            $.ajax({
+                global:false,
+                url: (cancel ? '/web/user/remove_follow_org' : '/web/user/add_follow_org'),
+                type: "GET",
+                data: { "org_id": "" },
+                dataType:"json",
+                success: function(data) {
+                    if (data.state == 200) {
+                        PopupMessage(0, "操作成功！", 1500);
+                        $("button.follow-event-creater-btn").toggle();
+                    } else {
+                        PopupMessage(1, "操作失败，请稍后重试。", 1500);
+                    }
+                },
+                error: function(XMLHttpRequest, textStatus, errorThrown) {
+
+                    PopupMessage(1, "操作失败，请稍后重试。", 1500);
+                }
+            });
+        }
+
+    </script>
+    
+        <script type="text/javascript">
+        // 百度地图API功能
+        // 已转移至ajax函数体内
+    </script>
+        
+    <script type="text/javascript">
+        //手机端访问pc自动跳转wap
+        function browserRedirect() {
+                
+                var sUserAgent = navigator.userAgent.toLowerCase();
+                var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+                var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+                var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+                var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+                var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+                var bIsAndroid = sUserAgent.match(/android/i) == "android";
+                var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+                var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+        
+                if (bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+                    var str = window.location.href;
+                    str=str.replace('yizanzhu.com/web','yizanzhu.com/wap');
+                    window.location.href = str;
+                    
+                }
+            }
+        
+            browserRedirect();
+    </script>
+    
+    <script type="text/javascript">
+        //异步抢单
+        function ajaxApplyAgentEvent(agent_id, res_id, res_uid){
+//          var r = confirm("抢单将消耗10个经纪币，确定抢单吗？");
+//          if (r == true){
+                $.ajax({
+                    type:"GET",
+                    url:"/index.php?d=web&c=broker&m=apply_agent_event",
+                    data:{agent_id:agent_id,res_id:res_id,res_uid:res_uid},
+                    dataType:"json",
+                    beforeSend: function() {
+                        //
+                    },                  
+                    success:function(data){
+                        //修改成功
+                        if (data.state == 200)
+                        {
+                            PopupMessage(0, "抢单成功，请耐心等待主办方选标。", 2000);
+                            window.location.reload();
+                        }else if(data.state == 204){
+                            PopupMessage(1, "权限错误\n", 3000);
+                        }else if(data.state == 205){
+                            PopupMessage(1, "该需求抢单数已满8个\n", 3000);
+                        }else if(data.state == 206){
+                            PopupMessage(1, "您今天的抢单数已满8个\n", 3000);
+                        }else if(data.state == 207){
+                            PopupMessage(1, "您今天的抢单数已满80个\n", 3000);
+                        }else if(data.state == 208){
+                            PopupMessage(1, "您已经抢过改单，不能重复抢单\n", 3000);
+                        }else{
+                            PopupMessage(1, "抢单失败\n", 3000);
+                        }
+                    },
+                    complete: function(){
+                        //
+                    },
+                    error: function(){
+                        //请求出错处理
+                    }
+                }); 
+//          }
+        }
+
+        // 跳转
+        function go_to_url(to_url){
+//          location.href = to_url;
+            window.open(to_url); 
+        }
+    </script>
+    
+    <!-- 公共支付弹出框 -->
+    <!-- 公共支付弹出层 -->
+<!-- 弹出层样式 -->
+<link href="https://www.yizanzhu.com/file/web/css/common_payment_box.css" rel="stylesheet">
+
+    <!--半透明锁定层 start-->
+    <div class="otayonii_shade_tier" id="otayonii_shade_tier"></div>
+    <!--半透明锁定层 end-->
+    <div class="otayonii_tier_box" id="otayonii_tier_box">
+        <div class="otayonii_tier_top_bor">
+            <i class="otayonii_tier_colse" id="otayonii_tier_colse">×</i>
+            <div class="otayonii_content_box">
+                <div class="otayonii_content_title">已扣除金豆用于查看联系方式</div>
+                <div class="otayonii_content_bor"></div>
+                <div class="sponsor_otayonii_box">
+                    <div class="otayonii_number_box">
+                        <span class="current_otayonii_word">当前金豆余额：</span>
+                        <span class="otayonii_number">3</span>
+                    </div>
+                    <div class="otayonii_number_box">
+                        <span class="otayonii_number_word">扣除金豆：</span>
+                        <span class="otayonii_number" id="no_need_nums">20</span>
+                    </div>
+                </div>
+                <div class="insufficient_prompt">
+                    <p>联系方式如下：</p>
+                </div>
+                <div class="otayonii_content_box">
+                    <ul class="otayonii_ntroduce">
+                        <li><a>联系人姓名：<span id="event_linkman"></span></a></li>
+                        <li><a>联系人电话：<span id="event_tel"></span></a></li>
+                    </ul>
+                </div>
+                <div id="otayonii_content_vip_see">
+                    <div class="insufficient_prompt">
+                        <p>开通会员免费查看：</p>
+                    </div>
+                    <div class="otayonii_content_box">
+                        <ul class="otayonii_ntroduce">
+                            <li><a target="_blank" href="">开通会员</a></li>
+                            <br>
+                        </ul>
+                    </div>
+                </div>
+                <div class="otayonii_content_bor"></div>
+                <div class="end_annotation" id="end_annotation_one">您只需要一次购买便可拥有此信息的永久查看权</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="otayonii_tier_box" id="prom_otayonii_tier_box">
+        <div class="otayonii_tier_top_bor">
+            <i class="otayonii_tier_colse" id="prom_otayonii_tier_colse">×</i>
+            <div class="otayonii_content_box">
+                <div class="otayonii_content_title" id="otayonii_content_title_two">查看“2018FMB极限山地车世界巡回赛”联系方式</div>
+                <div class="otayonii_content_bor"></div>
+                <div class="sponsor_otayonii_box">
+                    <div class="otayonii_enough_box">
+                        <span class="otayonii_number_word">所需金豆：</span>
+                        <span class="otayonii_number" id="have_need_nums">5</span>
+                    </div>
+                    <div class="otayonii_enough_box">
+                        <span class="current_otayonii_word">当前金豆余额：</span>
+                        <span class="otayonii_number">3</span>
+                    </div>
+                    <div class="promptly_look_box">
+                        <a id="promptly_look_box" href="javascript:void(0);" onclick="buy_link_info()">立刻查看</a>
+                    </div>
+                    <div class="otayonii_content_bor"></div>
+                    <div class="end_annotation enough_end_annotation" id="end_annotation_two">您只需要一次购买便可拥有此信息的永久查看权</div>
+                    <div class="how_to_get_gold"><a target="_blank" href="https://www.yizanzhu.com/web/payment/gold_recharge.html">如何获取金豆？</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://www.yizanzhu.com/web/payment/open_vip.html">会员免费看</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="otayonii_tier_box" id="vip_otayonii_tier_box">
+        <div class="otayonii_tier_top_bor">
+            <i class="otayonii_tier_colse" id="vip_otayonii_tier_colse">×</i>
+            <div class="otayonii_content_box">
+                <div class="otayonii_content_title" id="otayonii_content_title_three">查看“2018FMB极限山地车世界巡回赛”联系方式</div>
+                <div class="otayonii_content_bor"></div>
+                <div class="sponsor_otayonii_box">
+                    <div class="otayonii_enough_box">
+                        <span class="otayonii_number_word">您是VIP会员此次查看</span>
+                        <span class="otayonii_number" id="have_need_nums">免费</span>
+                    </div>
+                    <div class="promptly_look_box">
+                        <a id="promptly_look_box" href="javascript:void(0);" onclick="vip_link_info()">免费查看</a>
+                    </div>
+                    <div class="otayonii_content_bor"></div>
+                    <div class="end_annotation enough_end_annotation" id="end_annotation_three">您只需要一次查看便可拥有此信息的永久查看权</div>
+                    <div class="how_to_get_gold"><a target="_blank" href="https://www.yizanzhu.com/web/payment/gold_recharge.html">如何获取金豆？</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--金豆弹窗 js-->
+    <script type="text/javascript">
+        //显示弹窗
+        var TierShow = {
+            //确认层方法
+            AffirmBox : function (shade,box,speed) {
+                if( typeof speed == 'undefined' ){
+                    speed = '200';
+                }
+                var BoxHeight= ($(window).height()-$(box).height())/2;
+                var BoxWidth = ($(window).width()-$(box).width())/2;
+                //显示遮罩层
+                $(shade).css({
+                    'width':'100%',
+                    'height':'100%',
+                    'position':'fixed',
+                    'top':'0',
+                    'left':'0',
+                    'z-index':'9998'
+                }).fadeTo(speed,0.5);
+                //确认弹层
+                $(box).css({
+                    'position':'fixed',
+                    'top':BoxHeight,
+                    'left':BoxWidth,
+                    'z-index':'9999'
+                }).fadeIn(speed);
+                
+                //单击遮罩关闭事件
+                if($(shade).is(':visible')){
+                    $(shade).click( function () {
+                        $(shade +','+box).fadeOut(speed);
+                    })
+                }
+            }
+        }
+        
+        $( function () {
+            //金币不足关闭按钮
+            $('#otayonii_tier_colse').click( function () {
+                $('#otayonii_shade_tier,#otayonii_tier_box').fadeOut(200);
+            })
+            
+            //金豆充足关闭按钮
+            $('#prom_otayonii_tier_colse').click( function () {
+                $('#otayonii_shade_tier,#prom_otayonii_tier_box').fadeOut(200);
+            })
+            
+            //vip关闭按钮
+            $('#vip_otayonii_tier_colse').click( function () {
+                $('#otayonii_shade_tier,#vip_otayonii_tier_box').fadeOut(200);
+            })
+            
+        })
+        
+        //金币不足弹窗函数
+        function no_otayonii_box(use_nums, operate_type)
+        {
+            if(operate_type == 2){
+                $("#otayonii_content_vip_see").hide();
+                $("#end_annotation_one").text('购买公开联系方式后尽量不要编辑信息(需要重新审核)');
+            }
+            
+            $("#no_need_nums").text(use_nums);
+            TierShow.AffirmBox('#otayonii_shade_tier','#otayonii_tier_box','200');
+        }
+        
+        //金币充足弹窗函数
+        function have_otayonii_box(use_nums, operate_type)
+        {
+            if(operate_type == 2){
+                $("#otayonii_content_vip_see").hide();
+                $("#otayonii_content_title_two").text('公开“2018FMB极限山地车世界巡回赛”联系方式');
+                $("#promptly_look_box").text('立刻公开');
+                $("#promptly_look_box").attr('onclick','buy_link_open()');
+                $("#end_annotation_two").text('购买公开联系方式后尽量不要编辑信息(需要重新审核)');
+            }
+            
+            $("#have_need_nums").text(use_nums);
+            TierShow.AffirmBox('#otayonii_shade_tier','#prom_otayonii_tier_box','200');
+        }
+        
+        //vip会员直接查看联系方式
+        function vip_confirm_box(use_nums, operate_type)
+        {
+            TierShow.AffirmBox('#otayonii_shade_tier','#vip_otayonii_tier_box','200');
+        }
+    </script>
+    
+    <script type="text/javascript">
+        //异步购买联系方式
+        function buy_link_info(){
+            var use_nums = $("#have_need_nums").text();
+            var use_way = 2;
+            var res_id = 7843;
+            $.ajax({
+                type:"POST",
+                url:"/index.php?d=web&c=payment&m=buy_link_info",
+                data:{use_nums:use_nums,use_way:use_way,res_id:res_id},
+                dataType:"json",
+                beforeSend: function() {
+    //              alert('beforeSend');
+                },                  
+                success:function(data){
+                    //创建成功
+                    if (data.state == 200)
+                    {
+                        //刷新本页面
+                        location.reload();
+                    }else if (data.state == 205){
+                        //记录log失败
+                        return false;
+                    }else if (data.state == 500){
+                        //扣减金豆失败
+                        alert('购买联系方式失败！');
+                        return false;
+                    }else{
+                        alert("请求出错，请重试！");
+                        return false;
+                    }
+                        
+                },
+                complete: function(){
+    //              alert('complete');
+                },
+                error: function(){
+                    //请求出错处理
+                    alert("请求出错，请重试！");
+                    return false;
+                }
+            }); 
+            
+            return false;
+        }
+
+        //vip查看联系方式
+        function vip_link_info(){
+            var use_way = 2;
+            var res_id = 7843;
+            $.ajax({
+                type:"POST",
+                url:"/index.php?d=web&c=payment&m=vip_link_info",
+                data:{use_way:use_way,res_id:res_id},
+                dataType:"json",
+                beforeSend: function() {
+    //              alert('beforeSend');
+                },                  
+                success:function(data){
+                    //创建成功
+                    if (data.state == 200)
+                    {
+                        //刷新本页面
+                        location.reload();
+                    }else if (data.state == 500){
+                        //扣减金豆失败
+                        alert('查看联系方式失败！');
+                        return false;
+                    }else{
+                        alert("请求出错，请重试！");
+                        return false;
+                    }
+                        
+                },
+                complete: function(){
+    //              alert('complete');
+                },
+                error: function(){
+                    //请求出错处理
+                    alert("请求出错，请重试！");
+                    return false;
+                }
+            }); 
+            
+            return false;
+        }
+        
+        //异步公开联系方式
+        function buy_link_open(){
+            var use_nums = $("#have_need_nums").text();
+            var use_way = 6;
+            var res_id = 7843;
+            $.ajax({
+                type:"POST",
+                url:"/index.php?d=web&c=payment&m=buy_link_open",
+                data:{use_nums:use_nums,use_way:use_way,res_id:res_id},
+                dataType:"json",
+                beforeSend: function() {
+    //              alert('beforeSend');
+                },                  
+                success:function(data){
+                    //创建成功
+                    if (data.state == 200)
+                    {
+                        //刷新本页面
+                        alert('公开联系方式成功！');
+                        setTimeout(function(){
+                            location.reload();
+                        },1000)
+                    }else if (data.state == 205){
+                        //记录log失败
+                        return false;
+                    }else if (data.state == 500){
+                        //扣减金豆失败
+                        alert('公开联系方式失败！');
+                        return false;
+                    }else{
+                        alert("请求出错，请重试！");
+                        return false;
+                    }
+                        
+                },
+                complete: function(){
+    //              alert('complete');
+                },
+                error: function(){
+                    //请求出错处理
+                    alert("请求出错，请重试！");
+                    return false;
+                }
+            }); 
+            
+            return false;
+        }
+    </script>
+
+
+
+    <!-- 公共尾部 -->
+<!--    <div class="page-footer">
+    <div class="container-lg">
+        <ul>
+            <li>
+                <h4>易赞助</h4>
+                <ul>
+                    <li><a href="https://www.yizanzhu.com/web/index/about.html" target="_blank">关于我们</a></li>
+                    <li><a href="http://lixinghudong.mikecrm.com/UpWrJiI" target="_blank">城市合伙人</a></li>
+                    <li><a href="https://www.yizanzhu.com/web/payment/gold_recharge.html#two" target="_blank">金豆充值</a></li>
+                    <li><a href="https://www.yizanzhu.com/web/payment/open_vip.html" target="_blank">VIP会员</a></li>
+                    
+                </ul>
+            </li>
+            
+            <li>
+                <h4>经纪人服务</h4>
+                <ul>
+                    <li><a href="https://www.yizanzhu.com/web/broker/index.html" target="_blank">经纪人介绍</a></li>
+                    <li><a href="https://www.yizanzhu.com/web/broker/profile.html" target="_blank">申请经纪人</a></li>
+                    <li><a href="https://www.yizanzhu.com/web/agent/demand_hall.html" target="_blank">代理需求大厅</a></li>
+                </ul>
+            </li>
+            
+            <li>
+                <h4>
+                    更多…</h4>
+                <ul>
+                    <li><a href="https://www.yizanzhu.com/web/index/help.html" target="_blank">帮助中心</a></li>
+                    <li><a href="https://www.yizanzhu.com/web/index/help.html#intro-3" target="_blank">联系我们</a></li>
+                    <li><a href="https://buluo.qq.com/p/barindex.html?bid=44397&from=wsqjump" target="_blank">赞助社区</a></li>
+                    <li><a href="https://www.yizanzhu.com/web/index/friendlink.html" target="_blank">友情链接</a></li>
+                    <li><a href="https://www.yizanzhu.com/web/user/org.html" target="_blank">主办方</a></li>
+                </ul>
+            </li>
+            
+            
+            <li>
+                <h4>关注我们</h4>
+                <ul>
+                    <li><a href="https://www.yizanzhu.com/web/index/weixin_login.html" target="_blank">微信公众号</a></li>
+                    <li><a href="http://weibo.com/119039826" target="_blank">新浪微博</a></li>
+                    <li><a href="https://1204103366.qzone.qq.com" target="_blank">QQ空间</a></li>
+                    <li><a href="javascript:void(0);" onclick="javascript:alert('请支付宝搜索‘易赞助’查看~');">支付宝生活号</a></li>
+                </ul>
+            </li>
+            <li class="divider"></li>
+            <li style="margin-left: 30px;margin-right: 25px;">
+                <h4>微信扫一扫</h4>
+                <img src="https://www.yizanzhu.com/file/web/images/weixin_qrcode.jpg" alt="">
+                <div style="margin-left: -3px;">微信ID：ezanzhu</div></li>
+            <li style="width: auto;">
+                <h4>易赞助微博</h4>
+                <img src="https://www.yizanzhu.com/file/web/images/weibo_qrcode.png" alt="">
+                <div style="text-indent: 1em">新浪微博</div>
+            </li>
+        </ul>
+    </div>
+    <div class="ft">
+        <div class="container-lg">
+            <center>
+                    地址：北京市朝阳区建国路88号<i>|</i>
+                    客服：400-603-6308<i>|</i>
+                    版权所有：北京立行互动科技有限公司<i>|</i>
+                    京ICP备14005423号<i>|</i>
+                    官方QQ群：346037250
+                <div>易赞助 v2.0.1&nbsp;© www.yizanzhu.com 2013-2018 All Rights Reserved. </div>
+            </center>
+        </div>
+    </div>
+</div>
+-->
+<div class="modal fade modal-confirm" id="promo-modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">操作提示</h4>
+                </div>
+                <div class="modal-body">
+                    <div style="margin-bottom: 10px;">关注 易赞助 微信服务号</div>
+                    <img src="https://www.yizanzhu.com/file/web/images/qr_normal.png" alt="">
+                    <div style="margin: 10px 0;">点击菜单 - 高级 - 推广合作</div>
+                    <img src="https://www.yizanzhu.com/file/web/images/wechat_promo.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="feedback-layer modal fade" id="home_feedback_layer">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title">让批评和口水来的更猛烈些吧！</h4>
+                    </div>
+                    <div class="modal-body">
+                        
+                        <div class="feedback-face"></div>
+                        <form action="">
+                            <input class="form-control" placeholder="请输入您的邮箱/手机号" id="home_suggest_contact" max-length="64" value="" type="text">
+                            <textarea placeholder="在这里写下您想说的话。" id="home_suggest_content" max-length="512"></textarea>
+                            <div class="text-right">
+                                <button type="button" class="btn btn-link" data-dismiss="modal">取消</button><button type="button" class="btn btn-primary btn-lg" onclick="javascript:submitMySuggestion();">发送</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_tools" style="display: block; bottom: 20px;">
+                            <a id="requirement" href="https://www.yizanzhu.com/web/event/create.html" target="_blank" title="">发布活动</a>
+                        
+            <div class="qr_tool">
+                二维码
+            </div>
+            <a id="feedback" href="#home_feedback_layer" data-toggle="modal" title="意见反馈">意见反馈</a>
+            <a id="scrollUp" href="#" title="飞回顶部" style="transition-property: all; transition-duration: 0s; transition-timing-function: ease; display: none;"></a>
+            <img class="qr_img fade hide" src="https://www.yizanzhu.com/file/web/images/kf_qr_img.png">
+        </div>
+        <div class="modal fade in" id="pop_message_dlg" style="margin-top:250px;overflow-y:auto;z-index:10000">
+            <div class="modal-dialog" style="width:550px;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title" id="pop_msg_head"><span class="icon-danger" id="pop_message_icon"></span><span id="pop_message_content"></span></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="jquery_ajax_loading" class="layer-warning modal" style="margin-top:250px;overflow-y:auto;">
+            <div class="modal-dialog" style="width:450px;">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <p><span class="icon-warning"></span> 页面正在加载中，请耐心等待...</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="libs.js"></script>
+        <script type="text/javascript" src="event.js"></script>
+        <script type="text/javascript">
+            function submitMySuggestion(){
+                var sContactVal = $.trim($("#home_suggest_contact").val());
+                var sContentVal = $.trim($("#home_suggest_content").val());
+                if(sContactVal == '' || sContentVal == ''){
+                    alert('联系方式和内容不能为空！');
+                    return;
+                }
+                $.ajax({
+                    url: '/web/index/feedback',
+                    type: "POST",
+                    data: { "contact": sContactVal, "content": sContentVal},
+                    dataType:"json",
+                    success: function (data) {
+                        if (data.state == 200 || data.state == 205) {
+                            window.alert("我们已收到您反馈的意见，感谢对我们的支持。");
+                            $("#home_feedback_layer").modal("hide");
+                        }else if(data.state == 204){
+                            window.alert("联系方式和内容不能为空！");
+                        }else{
+                            window.alert("操作失败，请稍后重试。");
+                        }
+                    }
+                });
+            }
+
+
+            +function ($) {
+                var $window = $(window);
+                var $body = $(document.body);
+                var $navBar = $('.hdx-header');
+                var headerHeight = $navBar.outerHeight(true);
+                var $subNavBar = $('.sub_nav');
+                $body.scrollspy({
+                    target: '.intro-nav',
+                    offset: headerHeight + 40
+                });
+                $window.on('load', function () { $body.scrollspy('refresh'); });
+
+                var $introNav = $('.intro-nav');
+                var $bottomTools = $('.bottom_tools');
+                var $qrTools = $('.qr_tool');
+                var qrImg = $('.qr_img');
+                $introNav
+                    .affix({
+                          offset:{
+                            bottom:$('.page-footer').outerHeight()
+                          }
+                        })
+                    .find('.nav > a').click(function (e) { e.preventDefault(); });
+
+                setTimeout(function () {
+                    $window.scroll(function () {
+                        var scrollHeight = $(document).height();
+                        var scrollTop = $window.scrollTop();
+                        var $footerHeight = $('.page-footer').outerHeight(true);
+                        var $windowHeight = $window.innerHeight();
+                        $window.scrollTop() > 50 ? $("#scrollUp").fadeIn(200) : $("#scrollUp").fadeOut(200);
+                        $bottomTools.css("bottom", scrollHeight - scrollTop - $footerHeight > $windowHeight ? 20 : $windowHeight + scrollTop + $footerHeight + 20 - scrollHeight);
+                    });
+                    $('#scrollUp').click(function (e) {
+                        e.preventDefault();
+                        $('html,body').animate({ scrollTop: 0 });
+                    });
+                    $qrTools.hover(function(){
+                      qrImg.removeClass('hide')
+                      $.support.transition ?
+                        qrImg
+                          .one($.support.transition.end, function(){
+                            qrImg.addClass('in')
+                          })
+                          .emulateTransitionEnd(150) :
+                        qrImg.addClass('in')
+                    },function(){
+                      qrImg.removeClass('in')
+                      $.support.transition ?
+                        qrImg
+                          .one($.support.transition.end, function(){
+                            qrImg.addClass('hide')
+                          }) :
+                        qrImg.addClass('hide')
+                    })
+                }, 500);
+//                 $('.hdx-header .search').on('click','li a',function(e){
+//                     e.preventDefault();
+//                     //var parent= $(this).parent().parent('.dropdown').find('span')[0].innerHTML;
+//                     //var parent= $(this).parent().parent('.dropdown').find('span')[0].attr("str");
+//                     var affiliation = $(this).attr("title");
+//                     var current = $(this).attr("str");
+//                     if(affiliation != current){
+//                         $("#searchEventArea").toggle();
+//                         $("#searchSponsorArea").toggle();
+//                         $("#searchOrgArea").toggle();
+//                     }
+//                 });
+//                 $("#searchOrgArea button").bind("click", function () {
+//                     var qs = $("#searchOrgArea input[type='text']").val();
+//                     if (qs != null && qs != '') {
+//                         window.location = '/zhubanfang/a?p=1' + encodeURI("&qs=" + qs);
+//                     }
+//                 });
+                $('.aside h2 .more').click(function(e){
+                    //e.preventDefault();
+                    if ($(this).hasClass('active')) return
+                    $(this).addClass('active');
+                    setTimeout($.proxy(function(){
+                      $(this).removeClass('active')
+                    },this),200)
+                });
+                var $loginToggle = $('.icon-login-toggle');
+                  var $iconLogins = $loginToggle.parent();
+                  $loginToggle.on('mouseenter',function(){
+                    $iconLogins.toggleClass('fold')
+                  })
+                  $iconLogins.on('mouseleave',function(){
+                      $iconLogins.addClass('fold')
+                  })
+            } (window.jQuery)
+
+            function addFavorite() {
+                if (document.all) {
+                    try {
+                        window.external.addFavorite(window.location.href, document.title);
+                    } catch (e) {
+                        window.alert("对不起，您的浏览器不支持此操作！\n\r请您使用使用Ctrl+D收藏本站");
+                    }
+                } else if (window.sidebar) {
+                    window.sidebar.addPanel(document.title, window.location.href, "");
+                } else {
+                    window.alert("对不起，您的浏览器不支持此操作！\n\r请您使用使用Ctrl+D收藏本站");
+                }
+            }
+            function forwardEmailLink(email) {
+                if (email == null || email == "") return "";
+                var emlower = email.toLowerCase();
+                var link = "<a target='_blank' href='http://";
+                if (emlower.indexOf("@qq.com") > 0 || emlower.indexOf("@163.com") > 0 || emlower.indexOf("@126.com") > 0 || emlower.indexOf("@tom.com") > 0 || emlower.indexOf("@sina.com") > 0 || emlower.indexOf("@yahoo.com") > 0) {
+                    link += "mail." + emlower.substring(emlower.indexOf("@") + 1);
+                }
+                else {
+                    link += "www." + emlower.substring(emlower.indexOf("@") + 1);
+                }
+                link += "'>前往查收</a>";
+                return link;
+            }
+            function PopupMessage(type, msg, hideTime,backdrop){
+                if(msg == null || msg == "" || type < 0) return;
+                if(type == 0){
+                    type = 'icon-success'
+                }else if(type == 'warning'){
+                    type = 'icon-warning'
+                }else{
+                    type = 'icon-danger'
+                }
+                $("#pop_message_icon").removeClass("icon-danger icon-success icon-warning").addClass(type);
+                $("#pop_message_content").html(msg);
+                if(msg != null && msg.length <= 25){ $("#pop_msg_head").css("text-align","center"); }
+                else{ $("#pop_msg_head").css("text-align","center"); }
+                //$('#pop_message_dlg').modal({show:true, backdrop:backdrop ? backdrop : false });
+                //$('#pop_message_dlg').modal({show:true, backdrop:'static'});
+                //if(hideTime != null && hideTime > 0) window.setTimeout(function () { $('#pop_message_dlg').modal('hide'); }, hideTime);
+                $('#pop_message_dlg').show();
+                if(hideTime != null && hideTime > 0) window.setTimeout(function () { $('#pop_message_dlg').hide(); }, hideTime);
+            }
+            function setupScriptDelay(scriptPath, sync, onHead){
+                var setupScript = document.createElement("script"); setupScript.type = 'text/javascript';
+                if(!sync) setupScript.async = true;
+                if(scriptPath.indexOf("http") == 0) setupScript.src = scriptPath;
+                else setupScript.src = (("https:" == document.location.protocol) ? "https://" : "http://") + scriptPath;
+                if(onHead) document.getElementsByTagName("head")[0].appendChild(setupScript);
+                else document.body.appendChild(setupScript);
+            }
+
+            $(function () {
+                $.ajaxSetup({ timeout: 45000 });
+                $(document).ajaxStart(function () {
+                    var bgfi = $("div.modal-backdrop.in");
+                    if (bgfi != null && bgfi.length > 0) $('#jquery_ajax_loading').modal({ show: true, backdrop: false, keyboard: false });
+                    else $('#jquery_ajax_loading').modal({ show: true, backdrop: 'static', keyboard: false });
+                }).ajaxSend(function(evt, request, settings) {
+                    console.log(settings.url);
+                }).ajaxStop(function () {
+                    $('#jquery_ajax_loading').modal('hide');
+                    var bgfi = $("div.modal-backdrop.in");
+                    if (bgfi == null || bgfi.length == 0){ $("body").removeClass("modal-open"); }
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,1195 @@
+
+<!-- 首页公共头部 -->
+<!DOCTYPE html>
+<html class="sss" lang="en">
+<head>
+    <title>SSS-赞助服务平台</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=0.4,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" cintent="black"/>
+    <meta name="format-detection" content="telephone=no,eamil=no"/>
+    <link rel="SHORTCUT ICON" href="images/sss.ico">
+    <link href="home.css" rel="stylesheet" type="text/css">
+
+   <style type="text/css">
+        #requirement{
+            box-sizing: border-box;
+            content: "";
+            display: block;
+            width: 45px;
+            height: 130px;
+            background-color: #6fcc5c;
+            font-size: 18px;
+            line-height: 1.1;
+            color: #fff;
+            position: relative;
+            text-align: center;
+            writing-mode: horizontal-tb;
+            padding: 0 10px;
+            text-decoration: none;
+        }
+
+        #requirement::before
+        {
+            content:"";
+            display:inline-block;
+            background:url(logo2.png);
+            width:22px;
+            height:22px;
+            margin: 10px 0;
+        }
+        #requirement:focus{outline:none;}
+    </style>
+
+
+
+
+    <style rel="stylesheet" type="text/css">
+        .slides-thumbnail .bx-next{width:72px;height:72px;background-image:url(image-sss-background.jpg);background-position:-152px 0}.slides-thumbnail .bx-next:hover{background-image:url(image-sss-background.jpg);background-position:-225px 0}.slides-thumbnail .bx-prev{width:72px;height:72px;background-image:url(image-sss-background.jpg);background-position:-298px 0}.slides-thumbnail .bx-prev:hover{background-image:url(image-sss-background.jpg);background-position:-371px 0}.slides-multiple-list .bx-next{width:37px;height:73px;background-image:url(image-sss-background.jpg);background-position:0 0}.slides-multiple-list .bx-next:hover{background-image:url(image-sss-background.jpg);background-position:-38px 0}.slides-multiple-list .bx-prev{width:37px;height:73px;background-image:url(image-sss-background.jpg);background-position:-76px 0}.slides-multiple-list .bx-prev:hover{background-image:url(image-sss-background.jpg);background-position:-114px 0}
+
+        @media (max-width: 1024px) {
+            .banner-padding-top .container-lg{
+                width: auto;
+            }
+        }
+
+        .banner-padding-top{
+            overflow: hidden;
+        }
+
+        @media \0screen\,screen\9 {
+            .slides-thumbnail-backdrop-left,.slides-thumbnail-backdrop-right{
+                filter: alpha(opacity=90)
+            }
+        }
+    </style>
+    <link href="home01.css" rel="stylesheet" type="text/css">
+
+
+    <script type="text/javascript">
+        document.documentElement.style.overflowX='hidden';
+        var uvOptions = {};
+        var _atrk_opts = { atrk_acct: "GgKTe1aoiI00WL", domain: "sss.com", dynamic: true };
+
+        function validateEmail(email) {
+            if (email == null || $.trim(email) == "") return false;
+            var pattern = /^([A-Za-z0-9]+)(([A-Za-z0-9]+)|(_+)|(\-+)|(\.+)|(\++))*@((\w+\-+)|(\w+\.))*\w{1,63}\.[a-zA-Z]{2,6}$/i;
+            return pattern.test(email);
+        }
+        function validatePhone(phone) {
+            if (phone == null || $.trim(phone) == "") return false;
+            var pattern = /(^((0[1,2]{1}\d{1}-?\d{8})|(0[3-9]{1}\d{2}-?\d{7,8}))$)|(^(0|86|17951)?(13[0-9]|15[0-35-9]|17[0678]|18[0-9]|14[57])[0-9]{8}$)/;
+            return pattern.test(phone);
+        }
+
+        function setCookie(name, value, minutes) {
+            var exp = new Date();
+            exp.setTime(exp.getTime() + minutes * 60 * 1000);
+            document.cookie = name + "=" + escape(value) + ";expires=" + exp.toGMTString();
+        }
+
+        function getCookie(c_name) {
+            if (document.cookie.length > 0) {
+                c_start = document.cookie.indexOf(c_name + "=")
+                if (c_start != -1) {
+                    c_start = c_start + c_name.length + 1
+                    c_end = document.cookie.indexOf(";", c_start)
+                    if (c_end == -1) c_end = document.cookie.length
+                    return unescape(document.cookie.substring(c_start, c_end))
+                }
+            }
+            return "";
+        }
+
+        Date.prototype.format = function (format) { //author: meizz
+            var o = {
+                "M+": this.getMonth() + 1, //month
+                "d+": this.getDate(),    //day
+                "h+": this.getHours(),   //hour
+                "m+": this.getMinutes(), //minute
+                "s+": this.getSeconds(), //second
+                "q+": Math.floor((this.getMonth() + 3) / 3),  //quarter
+                "S": this.getMilliseconds() //millisecond
+            }
+            if (/(y+)/.test(format)) format = format.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+            for (var k in o) if (new RegExp("(" + k + ")").test(format))
+                format = format.replace(RegExp.$1, RegExp.$1.length == 1 ? o[k] : ("00" + o[k]).substr(("" + o[k]).length));
+            return format;
+        }
+    </script>
+
+    <script src="jquery.js"></script>
+    <script src="jquery.bxslider.min.js"></script>
+
+</head>
+<body class="SSS">
+
+<div class="hdx-header">
+    <div class="container-lg">
+        <a href="/test/UML-project/UML-project/index.html"><img src="logo3.png" alt="" class="logo"></a>
+        <ul class="items">
+            <li class="dropdown2 dropdown2-white">
+            <a style="border-top-left-radius: 0;border-top-right-radius: 0;" data-toggle="dropdown2" class="current" target="_blank" href="event-list.html" aria-expanded="false">寻找活动<b class="caret hide"></b></a>
+            </li>
+        </ul>
+        <div id="searchEventArea" style="display:block;">
+          <form class="search">
+                <div class="dropdown">
+                    <a data-toggle="dropdown2" aria-expanded="false">
+                        <span>活动</span><div class="search-tab-icon"><i><em></em><span></span></i></div>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(1)" title="活动" str="活动">活动</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(2)" title="赞助" str="赞助">赞助</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(3)" title="主办方" str="主办方">主办方</a></li>
+                    </ul>
+                </div>
+                <input name="d" type="hidden" value="web">
+                <input name="c" type="hidden" value="search">
+                <input name="m" type="hidden" value="search_info">
+                <input name="type" type="hidden" value="2">
+                <input name="q" id="mainSearchTextbox1" placeholder="搜索活动" value="" type="text">
+                <button id="mainSearchButton"><span class="sr-only">搜索</span><span class="icon-search"></span></button>
+          </form>
+      </div>
+        <div id="searchSponsorArea" style="display:none;">
+            <form class="search">
+                <div class="dropdown">
+                    <a data-toggle="dropdown2" aria-expanded="false">
+                        <span>赞助</span><div class="search-tab-icon"><i><em></em><span></span></i></div>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(1)" title="活动" str="活动">活动</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(2)" title="赞助" str="赞助">赞助</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(3)" title="主办方" str="主办方">主办方</a></li>
+                    </ul>
+                </div>
+                <input name="d" type="hidden" value="web">
+                <input name="c" type="hidden" value="search">
+                <input name="m" type="hidden" value="search_info">
+                <input name="type" type="hidden" value="1">
+                <input name="q" id="mainSearchTextbox2" placeholder="搜索赞助" value="" type="text">
+                <button id="mainSearchButton"><span class="sr-only">搜索</span><span class="icon-search"></span></button>
+            </form>
+        </div>
+        <div id="searchOrgArea" style="display:none;">
+            <form class="search">
+                <div class="dropdown">
+                    <a data-toggle="dropdown2" aria-expanded="false">
+                        <span>主办方</span><div class="search-tab-icon"><i><em></em><span></span></i></div>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(1)" title="活动" str="活动">活动</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(2)" title="赞助" str="赞助">赞助</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(3)" title="主办方" str="主办方">主办方</a></li>
+                    </ul>
+                </div>
+                <input name="d" type="hidden" value="web">
+                <input name="c" type="hidden" value="search">
+                <input name="m" type="hidden" value="search_info">
+                <input name="type" type="hidden" value="3">
+                <input name="q" id="mainSearchTextbox3" placeholder="搜索主办方" onkeypress='if(event.keyCode==13){ $("#searchOrgArea button").click();}' value="" type="text">
+                <button><span class="sr-only">搜索</span><span class="icon-search"></span></button>
+            </form>
+        </div>
+        <script type="text/javascript">
+            function searchSelect(item){
+                if(item == 1){
+                    $("#searchEventArea").show();
+                    $("#searchSponsorArea").hide();
+                    $("#searchOrgArea").hide();
+                }else if(item == 2){
+                    $("#searchEventArea").hide();
+                    $("#searchSponsorArea").show();
+                    $("#searchOrgArea").hide();
+                }else{
+                    $("#searchEventArea").hide();
+                    $("#searchSponsorArea").hide();
+                    $("#searchOrgArea").show();
+                }
+            }
+        </script>
+        <div class="sign" id="hello">
+            <a href="login.html">登录</a><b> | </b><a href="register.html">注册</a>
+            
+        </div>
+        <a href="publish.html" target="_blank" class="hdx-header-create"><span></span>发布活动</a>
+    </div>
+</div>
+
+<style rel="stylesheet" type="text/css">
+    .slides-thumbnail .bx-next{width:72px;height:72px;background-image:url(image-sss-background.jpg);background-position:-152px 0}
+    .slides-thumbnail .bx-next:hover{background-image:url(image-sss-background.jpg);background-position:-225px 0}
+    .slides-thumbnail .bx-prev{width:72px;height:72px;background-image:url(image-sss-background.jpg);background-position:-298px 0}
+    .slides-thumbnail .bx-prev:hover{background-image:url(himage-sss-background.jpg);background-position:-371px 0}
+    .slides-multiple-list .bx-next{width:37px;height:73px;background-image:url(image-sss-background.jpg);background-position:0 0}
+    .slides-multiple-list .bx-next:hover{background-image:url(image-sss-background.jpg);background-position:-38px 0}
+    .slides-multiple-list .bx-prev{width:37px;height:73px;background-image:url(image-sss-background.jpg);background-position:-76px 0}
+    .slides-multiple-list .bx-prev:hover{background-image:url(image-sss-background.jpg);background-position:-114px 0}
+
+    body{
+          background: url(image-sss-background.jpg);
+          background-size: 100% 100%;
+          background-repeat: repeat-y;
+          background-attachment:fixed;
+      font-family: "Microsoft YaHei";
+    }
+
+    @media (max-width: 1024px) {
+        .banner-padding-top .container-lg{
+            width: auto;
+        }
+    }
+
+    .banner-padding-top{
+        overflow: hidden;
+    }
+
+    @media \0screen\,screen\9 {
+        .slides-thumbnail-backdrop-left,.slides-thumbnail-backdrop-right{
+            filter: alpha(opacity=90)
+        }
+    }
+    a{
+        cursor: pointer;
+    }
+</style>
+
+<div class="banner-padding-top">
+    <!--START_PAGE_SLIDES_AREA-->
+    <div class="container-lg">
+        <div class="bx-wrapper slides-thumbnail" style="max-width: 100%;">
+            <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 350px;"> 
+              <a id="cover1_a" style="cursor: pointer;"><img id="cover1_logo" src="images/default_logo.png" alt="————待定————" title="————待定————" style="width: 100%;height: 100%;"></a>
+
+              <div style="float: left; list-style: outside none none; position: relative; width: 100%; height:350px;" class="bx-clone">
+                    <a id="cover2_a" style="cursor: pointer;"><img id="cover2_logo" src="images/default_logo.png" alt="————待定————" title="————待定————" style="width: 100%;height: 100%;"></a>
+                </div>
+          </div><div class="bx-controls bx-has-pager bx-has-controls-direction">
+                <div class="bx-pager bx-default-pager">
+                    <div class="bx-pager-item"><a href="" data-slide-index="0" class="">1</a></div>
+                    <div class="bx-pager-item"><a href="" data-slide-index="1" class="">2</a></div>
+                    <div class="bx-pager-item"><a href="" data-slide-index="2" class="">3</a></div>
+                </div>
+                <div class="bx-controls-direction hide">
+                    <a class="bx-prev" href="">Prev</a>
+                    <a class="bx-next" href="">Next</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END_PAGE_SLIDES_AREA-->
+    <div class="slides-thumbnail-backdrop-left" style="width: 134.5px;"></div>
+    <div class="slides-thumbnail-backdrop-right" style="width: 134.5px;"></div>
+</div>
+
+
+<div class="container-lg">
+    <h2>推荐赞助商</h2>
+    <div class="bx-wrapper slides-multiple-list" style="max-width: 100%;">
+        <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 310px;">
+            <div id="slides-multiple-list" style="width: 515%; position: relative; transition-duration: 0s; transform: translate3d(-1080px, 0px, 0px);">
+
+                <div style="float: left; list-style: outside none none; position: relative; width: 1080px;" class="bx-clone">
+                    <ul class="event-vertical-list-new">
+
+                        <li>
+                            <a href="index.html"><img src="images/logo1.png" alt="华工校园活动赞助" title="华工校园活动赞助"></a>
+                            <h3><a href="index.html" title="华工校园活动赞助">华工校园活动赞助</a></h3>
+                            <div class="time">
+                                <span class="pull-right"><span class="icon-favorites" title="收藏人数"></span>5<b>|</b><span class="icon-user" title="浏览人数"></span>1061</span><span class="icon-time"></span>2018-06-02								</div>
+                            <div class="apply">
+                                <a href="index.html">
+                                    <img class="face" src="images/default_face.png" alt="" title="张">
+                                    <span class="name" title="张">张</span>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="https://www.yizanzhu.com/web/sponsor/details/562.html" target="_blank"><img src="https://www.yizanzhu.com//upload/sponsor_logo/2018-05-17/1526539644_v3.png" alt="萃工厂 百所高校校园营销大赛赞助" title="萃工厂 百所高校校园营销大赛赞助"></a>
+                            <h3><a href="https://www.yizanzhu.com/web/sponsor/details/562.html" title="萃工厂 百所高校校园营销大赛赞助" target="_blank">萃工厂 百所高校校园营销大赛赞助</a></h3>
+                            <div class="time">
+                                <span class="pull-right"><span class="icon-favorites" title="收藏人数"></span>0<b>|</b><span class="icon-user" title="浏览人数"></span>578</span><span class="icon-time"></span>2018-05-17								</div>
+                            <div class="apply">
+                                <a href="https://www.yizanzhu.com/web/user/people/36823.html" target="_blank">
+                                    <img class="face" src="https://www.yizanzhu.com//upload/user_photo/2018-05-17/1526526051.png" alt="" title="萃工厂校园">
+                                    <span class="name" title="萃工厂校园">萃工厂校园</span>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="https://www.yizanzhu.com/web/sponsor/details/561.html" target="_blank"><img src="https://www.yizanzhu.com//upload/sponsor_logo/2018-05-16/1526451126_v3.jpg" alt="阿祖苗药电子商务有限公司社区赞助" title="阿祖苗药电子商务有限公司社区赞助"></a>
+                            <h3><a href="https://www.yizanzhu.com/web/sponsor/details/561.html" title="阿祖苗药电子商务有限公司社区赞助" target="_blank">阿祖苗药电子商务有限公司社区赞助</a></h3>
+                            <div class="time">
+                                <span class="pull-right"><span class="icon-favorites" title="收藏人数"></span>0<b>|</b><span class="icon-user" title="浏览人数"></span>392</span><span class="icon-time"></span>2018-05-23								</div>
+                            <div class="apply">
+                                <a href="https://www.yizanzhu.com/web/user/org_home/83.html" target="_blank">
+                                    <img class="face" src="https://www.yizanzhu.com/upload/org_img/2018-05-16/15264413638977.png" alt="" title="贵州阿祖苗药电子商务有限公司">
+                                    <span class="name" title="贵州阿祖苗药电子商务有限公司">贵州阿祖苗药电子商务有限</span>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="https://www.yizanzhu.com/web/sponsor/details/545.html" target="_blank"><img src="https://www.yizanzhu.com//upload/sponsor_logo/2018-04-27/1524821108_v3.jpg" alt="四洲广东校园活动赞助" title="四洲广东校园活动赞助"></a>
+                            <h3><a href="https://www.yizanzhu.com/web/sponsor/details/545.html" title="四洲广东校园活动赞助" target="_blank">四洲广东校园活动赞助</a></h3>
+                            <div class="time">
+                                <span class="pull-right"><span class="icon-favorites" title="收藏人数"></span>0<b>|</b><span class="icon-user" title="浏览人数"></span>372</span><span class="icon-time"></span>2018-05-04								</div>
+                            <div class="apply">
+                                <a href="https://www.yizanzhu.com/web/user/people/36136.html" target="_blank">
+                                    <img class="face" src="http://thirdqq.qlogo.cn/qqapp/101366274/506E8158D2D3AF02B3BCD985AEE52AFF/100" alt="" title="debby">
+                                    <span class="name" title="debby">debby</span>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="https://www.yizanzhu.com/web/sponsor/details/530.html" target="_blank"><img src="https://www.yizanzhu.com//upload/sponsor_logo/2018-04-08/1523158960_v3.jpg" alt="房天下扬州二手房广告位及物料、礼品赞助" title="房天下扬州二手房广告位及物料、礼品赞助"></a>
+                            <h3><a href="https://www.yizanzhu.com/web/sponsor/details/530.html" title="房天下扬州二手房广告位及物料、礼品赞助" target="_blank">房天下扬州二手房广告位及物料、礼品赞助</a></h3>
+                            <div class="time">
+                                <span class="pull-right"><span class="icon-favorites" title="收藏人数"></span>0<b>|</b><span class="icon-user" title="浏览人数"></span>278</span><span class="icon-time"></span>2018-04-15								</div>
+                            <div class="apply">
+                                <a href="https://www.yizanzhu.com/web/user/people/35268.html" target="_blank">
+                                    <img class="face" src="https://www.yizanzhu.com//upload/user_photo/2018-04-08/1523154753.jpg" alt="" title="房天下扬州买房卖房">
+                                    <span class="name" title="房天下扬州买房卖房">房天下扬州买房卖房</span>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="https://www.yizanzhu.com/web/sponsor/details/521.html" target="_blank"><img src="https://www.yizanzhu.com//upload/sponsor_logo/2018-04-14/1523711357_v3.jpg" alt="2018年全国高校社团提供赞助金" title="2018年全国高校社团提供赞助金"></a>
+                            <h3><a href="https://www.yizanzhu.com/web/sponsor/details/521.html" title="2018年全国高校社团提供赞助金" target="_blank">2018年全国高校社团提供赞助金</a></h3>
+                            <div class="time">
+                                <span class="pull-right"><span class="icon-favorites" title="收藏人数"></span>0<b>|</b><span class="icon-user" title="浏览人数"></span>2566</span><span class="icon-time"></span>2018-03-30								</div>
+                            <div class="apply">
+                                <a href="https://www.yizanzhu.com/web/user/people/34552.html" target="_blank">
+                                    <img class="face" src="https://www.yizanzhu.com//upload/user_photo/2018-03-23/1521774004.jpg" alt="" title="熊猫文化衫定制">
+                                    <span class="name" title="熊猫文化衫定制">熊猫文化衫定制</span>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="https://www.yizanzhu.com/web/sponsor/details/520.html" target="_blank"><img src="https://www.yizanzhu.com//upload/sponsor_logo/2018-04-14/1523702948_v3.jpg" alt="寄锦教育现金赞助本科高校活动" title="寄锦教育现金赞助本科高校活动"></a>
+                            <h3><a href="https://www.yizanzhu.com/web/sponsor/details/520.html" title="寄锦教育现金赞助本科高校活动" target="_blank">寄锦教育现金赞助本科高校活动</a></h3>
+                            <div class="time">
+                                <span class="pull-right"><span class="icon-favorites" title="收藏人数"></span>0<b>|</b><span class="icon-user" title="浏览人数"></span>1272</span><span class="icon-time"></span>2018-03-29								</div>
+                            <div class="apply">
+                                <a href="https://www.yizanzhu.com/web/user/people/34515.html" target="_blank">
+                                    <img class="face" src="https://www.yizanzhu.com/file/web/images/default_org_logo.png" alt="" title="Jeagine寄锦教育">
+                                    <span class="name" title="Jeagine寄锦教育">Jeagine寄锦教育</span>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="https://www.yizanzhu.com/web/sponsor/details/517.html" target="_blank"><img src="https://www.yizanzhu.com//upload/sponsor_logo/2018-03-20/1521535727_v3.jpg" alt="简单易做【提供社团各类活动资金赞助】" title="简单易做【提供社团各类活动资金赞助】"></a>
+                            <h3><a href="https://www.yizanzhu.com/web/sponsor/details/517.html" title="简单易做【提供社团各类活动资金赞助】" target="_blank">简单易做【提供社团各类活动资金赞助】</a></h3>
+                            <div class="time">
+                                <span class="pull-right"><span class="icon-favorites" title="收藏人数"></span>0<b>|</b><span class="icon-user" title="浏览人数"></span>1323</span><span class="icon-time"></span>2018-03-27								</div>
+                            <div class="apply">
+                                <a href="https://www.yizanzhu.com/web/user/people/34386.html" target="_blank">
+                                    <img class="face" src="https://www.yizanzhu.com//upload/user_photo/2018-03-20/1521535459.jpg" alt="" title="周翼辛">
+                                    <span class="name" title="周翼辛">周翼辛</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div style="float: left; list-style: outside none none; position: relative; width: 1080px;" class="bx-clone">
+                    <ul class="event-vertical-list-new">
+
+                        <li>
+                            <a href="https://www.yizanzhu.com/web/sponsor/details/530.html" target="_blank"><img src="https://www.yizanzhu.com//upload/sponsor_logo/2018-04-08/1523158960_v3.jpg" alt="房天下扬州二手房广告位及物料、礼品赞助" title="房天下扬州二手房广告位及物料、礼品赞助"></a>
+                            <h3><a href="https://www.yizanzhu.com/web/sponsor/details/530.html" title="房天下扬州二手房广告位及物料、礼品赞助" target="_blank">房天下扬州二手房广告位及物料、礼品赞助</a></h3>
+                            <div class="time">
+                                <span class="pull-right"><span class="icon-favorites" title="收藏人数"></span>0<b>|</b><span class="icon-user" title="浏览人数"></span>278</span><span class="icon-time"></span>2018-04-15								</div>
+                            <div class="apply">
+                                <a href="https://www.yizanzhu.com/web/user/people/35268.html" target="_blank">
+                                    <img class="face" src="https://www.yizanzhu.com//upload/user_photo/2018-04-08/1523154753.jpg" alt="" title="房天下扬州买房卖房">
+                                    <span class="name" title="房天下扬州买房卖房">房天下扬州买房卖房</span>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="https://www.yizanzhu.com/web/sponsor/details/521.html" target="_blank"><img src="https://www.yizanzhu.com//upload/sponsor_logo/2018-04-14/1523711357_v3.jpg" alt="2018年全国高校社团提供赞助金" title="2018年全国高校社团提供赞助金"></a>
+                            <h3><a href="https://www.yizanzhu.com/web/sponsor/details/521.html" title="2018年全国高校社团提供赞助金" target="_blank">2018年全国高校社团提供赞助金</a></h3>
+                            <div class="time">
+                                <span class="pull-right"><span class="icon-favorites" title="收藏人数"></span>0<b>|</b><span class="icon-user" title="浏览人数"></span>2566</span><span class="icon-time"></span>2018-03-30								</div>
+                            <div class="apply">
+                                <a href="https://www.yizanzhu.com/web/user/people/34552.html" target="_blank">
+                                    <img class="face" src="https://www.yizanzhu.com//upload/user_photo/2018-03-23/1521774004.jpg" alt="" title="熊猫文化衫定制">
+                                    <span class="name" title="熊猫文化衫定制">熊猫文化衫定制</span>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="https://www.yizanzhu.com/web/sponsor/details/520.html" target="_blank"><img src="https://www.yizanzhu.com//upload/sponsor_logo/2018-04-14/1523702948_v3.jpg" alt="寄锦教育现金赞助本科高校活动" title="寄锦教育现金赞助本科高校活动"></a>
+                            <h3><a href="https://www.yizanzhu.com/web/sponsor/details/520.html" title="寄锦教育现金赞助本科高校活动" target="_blank">寄锦教育现金赞助本科高校活动</a></h3>
+                            <div class="time">
+                                <span class="pull-right"><span class="icon-favorites" title="收藏人数"></span>0<b>|</b><span class="icon-user" title="浏览人数"></span>1272</span><span class="icon-time"></span>2018-03-29								</div>
+                            <div class="apply">
+                                <a href="https://www.yizanzhu.com/web/user/people/34515.html" target="_blank">
+                                    <img class="face" src="https://www.yizanzhu.com/file/web/images/default_org_logo.png" alt="" title="Jeagine寄锦教育">
+                                    <span class="name" title="Jeagine寄锦教育">Jeagine寄锦教育</span>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="https://www.yizanzhu.com/web/sponsor/details/517.html" target="_blank"><img src="https://www.yizanzhu.com//upload/sponsor_logo/2018-03-20/1521535727_v3.jpg" alt="简单易做【提供社团各类活动资金赞助】" title="简单易做【提供社团各类活动资金赞助】"></a>
+                            <h3><a href="https://www.yizanzhu.com/web/sponsor/details/517.html" title="简单易做【提供社团各类活动资金赞助】" target="_blank">简单易做【提供社团各类活动资金赞助】</a></h3>
+                            <div class="time">
+                                <span class="pull-right"><span class="icon-favorites" title="收藏人数"></span>0<b>|</b><span class="icon-user" title="浏览人数"></span>1323</span><span class="icon-time"></span>2018-03-27								</div>
+                            <div class="apply">
+                                <a href="https://www.yizanzhu.com/web/user/people/34386.html" target="_blank">
+                                    <img class="face" src="https://www.yizanzhu.com//upload/user_photo/2018-03-20/1521535459.jpg" alt="" title="周翼辛">
+                                    <span class="name" title="周翼辛">周翼辛</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="bx-controls bx-has-pager bx-has-controls-direction">
+            <div class="bx-pager bx-default-pager">
+                <div style="font-size:12px;font-weight: 400;padding-top: 12px;">
+                    <a style="text-decoration: none;color:#a0a0a0;" target="_blank" href="event-list.html">更多 ></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bx-controls bx-has-pager bx-has-controls-direction hide">
+            <div class="bx-pager bx-default-pager">
+                <div class="bx-pager-item"><a href="" data-slide-index="0" class="bx-pager-link active">1</a></div>
+                <div class="bx-pager-item"><a href="" data-slide-index="1" class="bx-pager-link">2</a></div>
+            </div>
+            <div class="bx-controls-direction">
+                <a class="bx-prev" href="">Prev</a>
+                <a class="bx-next" href="">Next</a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $('#slides-multiple-list').bxSlider({
+            auto: true,
+            pause: 10000,
+            preloadImages: false,
+            wrapSelector: '.slides-multiple-list'
+        })
+    </script>
+</div>
+
+
+<div class="container-lg" id="container-lg">
+
+    <div class="article">
+        <h2>精选<a href="#" class="more hide">更多</a></h2>
+        <ul class="topic-feed-list" style="margin-bottom:30px;">
+            <li>
+                <a href="https://mp.weixin.qq.com/s?__biz=MjM5MDQ2Nzk1NQ==&mid=2650391919&idx=1&sn=fa158e47036bdb33c51c572b21d40094&chksm=be493773893ebe65788d888e723706d92f407df3242a5f9e9d1bd10bf70f673fb6b9237d8c95#rd" target="_blank" title="精选">
+                    <h3>世界杯，离不开“中国队”！  </h3>
+                    <img src="https://www.yizanzhu.com/file/web/images/ztbg2.jpg" alt="、">
+                    <p>此次俄罗斯世界杯为国际足联带来61亿美元收益，创历史新高，其中中国赞助商占三成以上，国足虽然没去，但是中国赞助商们却给我们挣足了面子。</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://mp.weixin.qq.com/s?__biz=MzA5NzIxNzcwNg==&mid=2650990597&idx=1&sn=4dea80ab08b735c397c87255f4f42c99&chksm=8b5275c0bc25fcd619a537a6a266fcbc285eb7308b2444d2fb013b26310110f00ead7a377b70#rd" target="_blank" title="专题精选">
+                    <h3>图解票房第一国产电影赞助商，你发现了几个？ </h3>
+                    <img src="https://www.yizanzhu.com/file/web/images/ztbg1.jpg" alt="、">
+                    <p>《战狼2》一上映就引爆票房，上映4个小时过亿，25小时过3亿，46小时过5亿，上映5天突破12亿人民币，2017年10月26日，《战狼2》以56.8亿人民币收官。</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://mp.weixin.qq.com/s?__biz=MzA5NzIxNzcwNg==&mid=403506932&idx=1&sn=655053adfcfe1b9877e01b697eeeb42c#rd" target="_blank" title="专题精选">
+                    <h3>赞助营销中如何做到价值创造？</h3>
+                    <img src="https://www.yizanzhu.com/file/web/images/ztbg3.jpg" alt="、">
+                    <p>企业赞助是当今全球发展最快的营销形式之一，赞助营销也是当今商业营销探讨的重点。赞助营销给品牌带来的价值得到了越来越多企业的认可。</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="aside topic-feed-tabs">
+        <ul class="btn-group clearfix" role="group" aria-label="...">
+            <li role="presentation" class="active"><a href="#topic-newest" class="btn btn-default" role="tab" aria-controls="topic-newest" data-toggle="tab">最新发布</a></li><li role="presentation"><a href="#topic-hot" class="btn btn-default" role="tab" aria-controls="topic-hot" data-toggle="tab">热门点击</a></li><li role="presentation"><a href="#topic-more" aria-controls="topic-more" class="btn btn-default" role="tab" data-toggle="tab">最多收藏</a></li>
+        </ul>
+        <div class="tab-content topic-feed-tab-content">
+            <ul role="tabpanel" class="tab-pane fade" id="topic-hot">
+                <li>
+                    <a id="hot1_a" class="media">
+                        <img id="hot1_logo" src="images/default_logo.png" alt="——待定——" class="pull-left">
+                        <div class="media-body">
+                            <h4 id="hot1_title">——待定——</h4>
+                            <span class="icon-favorites" title="收藏人数"></span><span id="hot1_favorite_quantity">4</span><b>|</b><span class="icon-user" title="浏览人数"></span><span id="hot1_click_quantity">1578</span>	                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a id="hot2_a" class="media">
+                        <img id="hot2_logo" src="images/default_logo.png" alt="——待定——" class="pull-left">
+                        <div class="media-body">
+                            <h4 id="hot2_title">——待定——</h4>
+                            <span class="icon-favorites" title="收藏人数"></span><span id="hot2_favorite_quantity">0</span><b>|</b><span class="icon-user" title="浏览人数"></span><span id="hot2_click_quantity">361</span>                         </div>
+                    </a>
+                </li>
+                <li>
+                    <a id="hot3_a" class="media">
+                        <img id="hot3_logo" src="images/default_logo.png" alt="——待定——" class="pull-left">
+                        <div class="media-body">
+                            <h4 id="hot3_title">——待定——</h4>
+                            <span class="icon-favorites" title="收藏人数"></span><span id="hot3_favorite_quantity">0</span><b>|</b><span class="icon-user" title="浏览人数"></span><span id="hot3_click_quantity">216</span>	                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a id="hot4_a" class="media">
+                        <img id="hot4_logo" src="images/default_logo.png" alt="——待定——" class="pull-left">
+                        <div class="media-body">
+                            <h4 id="hot4_title">——待定——</h4>
+                            <span class="icon-favorites" title="收藏人数"></span><span id="hot4_favorite_quantity">0</span><b>|</b><span class="icon-user" title="浏览人数"></span><span id="hot4_click_quantity">187</span>                         </div>
+                    </a>
+                </li>
+                <li>
+                    <a id="hot5_a" class="media">
+                        <img id="hot5_logo" src="images/default_logo.png" alt="——待定——" class="pull-left">
+                        <div class="media-body">
+                            <h4 id="hot5_title">——待定——</h4>
+                            <span class="icon-favorites" title="收藏人数"></span><span id="hot5_favorite_quantity">0</span><b>|</b><span class="icon-user" title="浏览人数"></span><span id="hot5_click_quantity">147</span>                         </div>
+                    </a>
+                </li>
+                <li>
+                    <a id="hot6_a" class="media">
+                        <img id="hot6_logo" src="images/default_logo.png" alt="——待定——" class="pull-left">
+                        <div class="media-body">
+                            <h4 id="hot6_title">——待定——</h4>
+                            <span class="icon-favorites" title="收藏人数"></span><span id="hot6_favorite_quantity">0</span><b>|</b><span class="icon-user" title="浏览人数"></span><span id="hot6_click_quantity">135</span>	                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a id="hot7_a" class="media">
+                        <img id="hot7_logo" src="images/default_logo.png" alt="——待定——" class="pull-left">
+                        <div class="media-body">
+                            <h4 id="hot7_title">——待定——</h4>
+                            <span class="icon-favorites" title="收藏人数"></span><span id="hot7_favorite_quantity">0</span><b>|</b><span class="icon-user" title="浏览人数"></span><span id="hot7_click_quantity">121</span>	                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul role="tabpanel" class="tab-pane in active" id="topic-newest">
+                <li>
+                    <a id="new1_a" class="media">
+                        <img id="new1_logo" src="images/default_logo.png" alt="——待定——" class="pull-left">
+                        <div class="media-body">
+                            <h4 id="new1_title">——待定——</h4>
+                            <span class="icon-time" title="发布时间"></span><span id="new1_date">2018-07-15</span>	                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a id="new2_a" class="media">
+                        <img id="new2_logo" src="images/default_logo.png" alt="——待定——" class="pull-left">
+                        <div class="media-body">
+                            <h4 id="new2_title">——待定——</h4>
+                            <span class="icon-time" title="发布时间"></span><span id="new2_date">2018-07-15</span>	                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a id="new3_a" class="media">
+                        <img id="new3_logo" src="images/default_logo.png" alt="——待定——" class="pull-left">
+                        <div class="media-body">
+                            <h4 id="new3_title">——待定——</h4>
+                            <span class="icon-time" title="发布时间"></span><span id="new3_date">2018-07-15</span>	                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a id="new4_a" class="media">
+                        <img id="new4_logo" src="images/default_logo.png" alt="——待定——" class="pull-left">
+                        <div class="media-body">
+                            <h4 id="new4_title">——待定——</h4>
+                            <span class="icon-time" title="发布时间"></span><span id="new4_date">2018-07-13</span>                         </div>
+                    </a>
+                </li>
+                <li>
+                    <a id="new5_a" class="media">
+                        <img id="new5_logo" src="images/default_logo.png" alt="——待定——" class="pull-left">
+                        <div class="media-body">
+                            <h4 id="new5_title">——待定——</h4>
+                            <span class="icon-time" title="发布时间"></span><span id="new5_date">2018-07-13</span>	                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a id="new6_a" class="media">
+                        <img id="new6_logo" src="images/default_logo.png" alt="——待定——" class="pull-left">
+                        <div class="media-body">
+                            <h4 id="new6_title">——待定——</h4>
+                            <span class="icon-time" title="发布时间"></span><span id="new6_date">2018-07-13</span>	                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a id="new7_a" class="media">
+                        <img id="new7_logo" src="images/default_logo.png" alt="——待定——" class="pull-left">
+                        <div class="media-body">
+                            <h4 id="new7_title">——待定——</h4>
+                            <span class="icon-time" title="发布时间"></span><span id="new7_date">2018-07-12</span>	                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul role="tabpanel" class="tab-pane fade" id="topic-more">
+                <li>
+                    <a id="fav1_a" class="media">
+                        <img id="fav1_logo" src="images/default_logo.png" alt="——待定——" class="pull-left">
+                        <div class="media-body">
+                            <h4 id="fav1_title">——待定——</h4>
+                            <span class="icon-favorites" title="收藏人数"></span><span id="fav1_favorite_quantity">0</span><b>|</b><span class="icon-user" title="浏览人数"></span><span id="fav1_click_quantity">0</span>	                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a id="fav2_a" class="media">
+                        <img id="fav2_logo" src="images/default_logo.png" alt="——待定——" class="pull-left">
+                        <div class="media-body">
+                            <h4 id="fav2_title">——待定——</h4>
+                            <span class="icon-favorites" title="收藏人数"></span><span id="fav2_favorite_quantity">0</span><b>|</b><span class="icon-user" title="浏览人数"></span><span id="fav2_click_quantity">0</span>	                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a id="fav3_a" class="media">
+                        <img id="fav3_logo" src="images/default_logo.png" alt="——待定——" class="pull-left">
+                        <div class="media-body">
+                            <h4 id="fav3_title">——待定——</h4>
+                            <span class="icon-favorites" title="收藏人数"></span><span id="fav3_favorite_quantity">0</span><b>|</b><span class="icon-user" title="浏览人数"></span><span id="fav3_click_quantity">0</span>	                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a id="fav4_a" class="media">
+                        <img id="fav4_logo" src="images/default_logo.png" alt="——待定——" class="pull-left">
+                        <div class="media-body">
+                            <h4 id="fav4_title">——待定——</h4>
+                            <span class="icon-favorites" title="收藏人数"></span><span id="fav4_favorite_quantity">0</span><b>|</b><span class="icon-user" title="浏览人数"></span><span id="fav4_click_quantity">0</span>	                       </div>
+                    </a>
+                </li>
+                <li>
+                    <a id="fav5_a" class="media">
+                        <img id="fav5_logo" src="images/default_logo.png" alt="——待定——" class="pull-left">
+                        <div class="media-body">
+                            <h4 id="fav5_title">——待定——</h4>
+                            <span class="icon-favorites" title="收藏人数"></span><span id="fav5_favorite_quantity">0</span><b>|</b><span class="icon-user" title="浏览人数"></span><span id="fav5_click_quantity">0</span>	                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a id="fav6_a" class="media">
+                        <img id="fav6_logo" src="images/default_logo.png" alt="——待定——" class="pull-left">
+                        <div class="media-body">
+                            <h4 id="fav6_title">——待定——</h4>
+                            <span class="icon-favorites" title="收藏人数"></span><span id="fav6_favorite_quantity">0</span><b>|</b><span class="icon-user" title="浏览人数"></span><span id="fav6_click_quantity">0</span>	                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a id="fav7_a" class="media">
+                        <img id="fav7_logo" src="images/default_logo.png" alt="——待定——" class="pull-left">
+                        <div class="media-body">
+                            <h4 id="fav7_title">——待定——</h4>
+                            <span class="icon-favorites" title="收藏人数"></span><span id="fav7_favorite_quantity">0</span><b>|</b><span class="icon-user" title="浏览人数"></span><span id="fav7_click_quantity">0</span>	                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+    <div class="event-org-list" id="event-org-lively">
+        <h2>主办方
+            <a href="" class="more">更多</a>
+        </h2>
+        <a id="ass1_a" class="event-org-pannel media" title="————待定————">
+            <img id="ass1_img" class="pull-left" src="images/default_logo.png" alt="————待定————">
+            <div class="media-body">
+                <h3 id="ass1_title" style="margin:8px 0;">————待定————</h3>
+                <p id="ass1_intro" style="-webkit-line-clamp: 5;max-height:102px;height:102px;margin-bottom:12px;">————待定————</p>
+                <span id="ass1_span" class="count">1&nbsp;个活动</span>
+            </div>
+        </a>
+        <ul>
+
+            <li>
+                <a id="ass2_a" class="media" title="————待定————">
+                    <img id="ass2_img" class="pull-left" src="images/default_logo.png" alt="————待定————">
+                    <div class="media-body">
+                        <h3 id="ass2_title" style="margin:8px 0 5px;">————待定————</h3>
+                        <p id="ass2_intro" style="white-space: initial;text-overflow: initial;height:32px;margin-bottom:8px;">————待定————</p>
+                        <span id="ass2_span" class="count">1&nbsp;个活动</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a id="ass3_a" class="media" title="————待定————">
+                    <img id="ass3_img" class="pull-left" src="images/default_logo.png" alt="————待定————">
+                    <div class="media-body">
+                        <h3 id="ass3_title" style="margin:8px 0 5px;">————待定————</h3>
+                        <p id="ass3_intro" style="white-space: initial;text-overflow: initial;height:32px;margin-bottom:8px;">————待定————</p>
+                        <span id="ass3_span" class="count">1&nbsp;个活动</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a id="ass4_a" class="media" title="————待定————">
+                    <img id="ass4_img" class="pull-left" src="images/default_logo.png" alt="————待定————">
+                    <div class="media-body">
+                        <h3 id="ass4_title" style="margin:8px 0 5px;">————待定————</h3>
+                        <p id="ass4_intro" style="white-space: initial;text-overflow: initial;height:32px;margin-bottom:8px;">————待定————</p>
+                        <span id="ass4_span" class="count">1&nbsp;个活动</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a id="ass5_a" class="media" title="————待定————">
+                    <img id="ass5_img" class="pull-left" src="images/default_logo.png" alt="————待定————">
+                    <div class="media-body">
+                        <h3 id="ass5_title" style="margin:8px 0 5px;">————待定————</h3>
+                        <p id="ass5_intro" style="white-space: initial;text-overflow: initial;height:32px;margin-bottom:8px;">————待定————</p>
+                        <span id="ass5_span" class="count">1&nbsp;个活动</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+<div style="margin-left:auto;margin-right:auto;width: 1046px;">
+    <h2 style="font-size: 16px;margin-bottom:12px;margin-top:0px;">往期精彩活动</h2>
+    <ul class="topic-feed-list topic-feed-img-list">
+        <li>
+            <a id="out1_a" title="————待定————">
+                <img id="out1_logo" src="images/default_logo.png" alt="————待定————">
+            </a>
+        </li>
+        <li>
+            <a id="out2_a" title="————待定————">
+                <img id="out2_logo" src="images/default_logo.png" alt="————待定————">
+            </a>
+        </li>
+        <li>
+            <a id="out3_a" title="————待定————">
+                <img id="out3_logo" src="images/default_logo.png" alt="————待定————">
+            </a>
+        </li>
+        <li>
+            <a id="out4_a" title="————待定————">
+                <img id="out4_logo" src="images/default_logo.png" alt="————待定————">
+            </a>
+        </li>
+    </ul>
+    <ul class="topic-feed-text-list media-body">
+        <li>
+            <a id="out5_a" title="————待定————">
+                <h4 id="out5_title">————待定————</h4>
+                <p  id="out5_intro" style="text-overflow: ellipsis;white-space: nowrap;">————待定————</p>
+            </a>
+        </li>
+        <li>
+            <a id="out6_a" title="————待定————">
+                <h4 id="out6_title">————待定————</h4>
+                <p id="out6_intro" style="text-overflow: ellipsis;white-space: nowrap;">————待定————</p>
+            </a>
+        </li>
+        <li>
+            <a id="out7_a" title="————待定————">
+                <h4 id="out7_title">————待定————</h4>
+                <p id="out7_intro" style="text-overflow: ellipsis;white-space: nowrap;">————待定————</p>
+            </a>
+        </li>
+    </ul>
+
+</div>
+
+
+<script type="text/javascript">
+    +function($){
+        var $body = $('body');
+        var slidesWrap = $('.banner-padding-top');
+        var $backDropLeft,$backDropRight,backDropWidth,calcSlidesBackdrop;
+        $('#slides-thumbnail').bxSlider({
+            auto:true,
+            pause:3000,
+            autoHover:true,
+            wrapSelector:'.slides-thumbnail',
+            onSliderLoad:function(){
+                if ($(window).outerWidth() < 1080) return;
+                $backDropLeft = $('<div class="slides-thumbnail-backdrop-left"></div>')
+                $backDropRight = $('<div class="slides-thumbnail-backdrop-right"></div>')
+                calcSlidesBackdrop = function(){
+                    windowWidth = $(window).outerWidth();
+                    backDropWidth = (windowWidth - 1080)/2;
+                    $backDropLeft.css('width',backDropWidth)
+                    $backDropRight.css('width',backDropWidth)
+                }
+                calcSlidesBackdrop()
+                slidesWrap.append($backDropLeft).append($backDropRight);
+            }
+        })
+        $(window).on('resize',calcSlidesBackdrop)
+    }(jQuery)
+</script>
+
+<script type="text/javascript">
+    //手机端访问pc自动跳转wap
+    function browserRedirect() {
+
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+
+        if (bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+            /*var str = window.location.href;
+            str=str.replace('yizanzhu.com/','yizanzhu.com/wap/index/index.html');
+            window.location.href = str;*/
+
+        }
+    }
+
+    browserRedirect();
+</script>
+
+<!-- 公共尾部 -->
+<div class="page-footer">
+    <div class="container-lg">
+        <ul>
+            <li>
+                <h4>SSS</h4>
+                <ul>
+                    <li><a href="https://www.sss.com/web/index/about.html" target="_blank">关于我们</a></li>
+                  
+                    <li><a href="https://www.sss.com/web/payment/open_vip.html" target="_blank">VIP会员</a></li>
+
+                </ul>
+            </li>
+
+          
+            <li>
+                <h4>
+                    更多…</h4>
+                <ul>
+                    <li><a href="https://www.sss.com/web/index/help.html" target="_blank">帮助中心</a></li>
+                    <li><a href="https://www.sss.com/web/index/help.html#intro-3" target="_blank">联系我们</a></li>
+                    <li><a href="https://buluo.qq.com/p/barindex.html?bid=44397&from=wsqjump" target="_blank">赞助社区</a></li>
+                    
+                </ul>
+            </li>
+
+            <!-- <li>
+                    <h4>推广合作</h4>
+                    <ul>
+                        <li><a href="#promo-modal" target="_blank" data-toggle="modal">新媒体推广</a></li>
+                        <li><a href="#" target="_blank">易赞助百宝箱</a></li>
+                        <li><a href="#promo-modal" target="_blank" data-toggle="modal">线下活动执行</a></li>
+                        <li><a href="https://www.yizanzhu.com/webapi" target="_blank">API产品合作串接</a></li>
+                    </ul>
+			</li> -->
+
+       
+</div>
+
+<div class="modal fade modal-confirm" id="promo-modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">操作提示</h4>
+            </div>
+            <div class="modal-body">
+                <div style="margin-bottom: 10px;">关注 SSS 微信服务号</div>
+                <img src="https://www.yizanzhu.com/file/web/images/qr_normal.png" alt="">
+                <img src="https://www.yizanzhu.com/file/web/images/wechat_promo.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="feedback-layer modal fade" id="home_feedback_layer">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">批评反馈！</h4>
+            </div>
+            <div class="modal-body">
+
+                <div class="feedback-face"></div>
+                <form action="">
+                    <input class="form-control" placeholder="请输入您的邮箱/手机号" id="home_suggest_contact" max-length="64" value="" type="text">
+                    <textarea placeholder="在这里写下您想说的话。" id="home_suggest_content" max-length="512"></textarea>
+                    <div class="text-right">
+                        <button type="button" class="btn btn-link" data-dismiss="modal">取消</button><button type="button" class="btn btn-primary btn-lg" onClick="javascript:submitMySuggestion();">发送</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bottom_tools" style="display: block; bottom: 20px;">
+    <a id="requirement" href="https://www.yizanzhu.com/web/event/create.html" target="_blank" title="">发布活动</a>
+
+    <div class="qr_tool">
+        二维码
+    </div>
+    <a id="feedback" href="#home_feedback_layer" data-toggle="modal" title="意见反馈">意见反馈</a>
+    <a id="scrollUp" href="#" title="飞回顶部" style="transition-property: all; transition-duration: 0s; transition-timing-function: ease; display: none;"></a>
+    <img class="qr_img fade hide" src="../images/kf_qr_img.png">
+</div>
+<div class="modal fade in" id="pop_message_dlg" style="margin-top:250px;overflow-y:auto;z-index:10000">
+    <div class="modal-dialog" style="width:550px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="pop_msg_head"><span class="icon-danger" id="pop_message_icon"></span><span id="pop_message_content"></span></h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="jquery_ajax_loading" class="layer-warning modal" style="margin-top:250px;overflow-y:auto;">
+    <div class="modal-dialog" style="width:450px;">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p><span class="icon-warning"></span> 页面正在加载中，请耐心等待...</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="https://www.yizanzhu.com/file/web/js/libs.js"></script>
+
+<script type="text/javascript">
+    function submitMySuggestion(){
+        var sContactVal = $.trim($("#home_suggest_contact").val());
+        var sContentVal = $.trim($("#home_suggest_content").val());
+        if(sContactVal == '' || sContentVal == ''){
+            alert('联系方式和内容不能为空！');
+            return;
+        }
+        $.ajax({
+            url: '/web/index/feedback',
+            type: "POST",
+            data: { "contact": sContactVal, "content": sContentVal},
+            dataType:"json",
+            success: function (data) {
+                if (data.state == 200 || data.state == 205) {
+                    window.alert("我们已收到您反馈的意见，感谢对我们的支持。");
+                    $("#home_feedback_layer").modal("hide");
+                }else if(data.state == 204){
+                    window.alert("联系方式和内容不能为空！");
+                }else{
+                    window.alert("操作失败，请稍后重试。");
+                }
+            }
+        });
+    }
+
+
+    +function ($) {
+        var $window = $(window);
+        var $body = $(document.body);
+        var $navBar = $('.hdx-header');
+        var headerHeight = $navBar.outerHeight(true);
+        var $subNavBar = $('.sub_nav');
+        $body.scrollspy({
+            target: '.intro-nav',
+            offset: headerHeight + 40
+        });
+        $window.on('load', function () { $body.scrollspy('refresh'); });
+
+        var $introNav = $('.intro-nav');
+        var $bottomTools = $('.bottom_tools');
+        var $qrTools = $('.qr_tool');
+        var qrImg = $('.qr_img');
+        $introNav
+            .affix({
+                offset:{
+                    bottom:$('.page-footer').outerHeight()
+                }
+            })
+            .find('.nav > a').click(function (e) { e.preventDefault(); });
+
+        setTimeout(function () {
+            $window.scroll(function () {
+                var scrollHeight = $(document).height();
+                var scrollTop = $window.scrollTop();
+                var $footerHeight = $('.page-footer').outerHeight(true);
+                var $windowHeight = $window.innerHeight();
+                $window.scrollTop() > 50 ? $("#scrollUp").fadeIn(200) : $("#scrollUp").fadeOut(200);
+                $bottomTools.css("bottom", scrollHeight - scrollTop - $footerHeight > $windowHeight ? 20 : $windowHeight + scrollTop + $footerHeight + 20 - scrollHeight);
+            });
+            $('#scrollUp').click(function (e) {
+                e.preventDefault();
+                $('html,body').animate({ scrollTop: 0 });
+            });
+            $qrTools.hover(function(){
+                qrImg.removeClass('hide')
+                $.support.transition ?
+                    qrImg
+                        .one($.support.transition.end, function(){
+                            qrImg.addClass('in')
+                        })
+                        .emulateTransitionEnd(150) :
+                    qrImg.addClass('in')
+            },function(){
+                qrImg.removeClass('in')
+                $.support.transition ?
+                    qrImg
+                        .one($.support.transition.end, function(){
+                            qrImg.addClass('hide')
+                        }) :
+                    qrImg.addClass('hide')
+            })
+        }, 500);
+//                 $('.hdx-header .search').on('click','li a',function(e){
+//                     e.preventDefault();
+//                     //var parent= $(this).parent().parent('.dropdown').find('span')[0].innerHTML;
+//                     //var parent= $(this).parent().parent('.dropdown').find('span')[0].attr("str");
+//                     var affiliation = $(this).attr("title");
+//                     var current = $(this).attr("str");
+//                     if(affiliation != current){
+//                         $("#searchEventArea").toggle();
+//                         $("#searchSponsorArea").toggle();
+//                         $("#searchOrgArea").toggle();
+//                     }
+//                 });
+//                 $("#searchOrgArea button").bind("click", function () {
+//                     var qs = $("#searchOrgArea input[type='text']").val();
+//                     if (qs != null && qs != '') {
+//                         window.location = '/zhubanfang/a?p=1' + encodeURI("&qs=" + qs);
+//                     }
+//                 });
+        $('.aside h2 .more').click(function(e){
+            //e.preventDefault();
+            if ($(this).hasClass('active')) return
+            $(this).addClass('active');
+            setTimeout($.proxy(function(){
+                $(this).removeClass('active')
+            },this),200)
+        });
+        var $loginToggle = $('.icon-login-toggle');
+        var $iconLogins = $loginToggle.parent();
+        $loginToggle.on('mouseenter',function(){
+            $iconLogins.toggleClass('fold')
+        })
+        $iconLogins.on('mouseleave',function(){
+            $iconLogins.addClass('fold')
+        })
+    } (window.jQuery)
+
+    function addFavorite() {
+        if (document.all) {
+            try {
+                window.external.addFavorite(window.location.href, document.title);
+            } catch (e) {
+                window.alert("对不起，您的浏览器不支持此操作！\n\r请您使用使用Ctrl+D收藏本站");
+            }
+        } else if (window.sidebar) {
+            window.sidebar.addPanel(document.title, window.location.href, "");
+        } else {
+            window.alert("对不起，您的浏览器不支持此操作！\n\r请您使用使用Ctrl+D收藏本站");
+        }
+    }
+    function forwardEmailLink(email) {
+        if (email == null || email == "") return "";
+        var emlower = email.toLowerCase();
+        var link = "<a target='_blank' href='http://";
+        if (emlower.indexOf("@qq.com") > 0 || emlower.indexOf("@163.com") > 0 || emlower.indexOf("@126.com") > 0 || emlower.indexOf("@tom.com") > 0 || emlower.indexOf("@sina.com") > 0 || emlower.indexOf("@yahoo.com") > 0) {
+            link += "mail." + emlower.substring(emlower.indexOf("@") + 1);
+        }
+        else {
+            link += "www." + emlower.substring(emlower.indexOf("@") + 1);
+        }
+        link += "'>前往查收</a>";
+        return link;
+    }
+    function PopupMessage(type, msg, hideTime,backdrop){
+        if(msg == null || msg == "" || type < 0) return;
+        if(type == 0){
+            type = 'icon-success'
+        }else if(type == 'warning'){
+            type = 'icon-warning'
+        }else{
+            type = 'icon-danger'
+        }
+        $("#pop_message_icon").removeClass("icon-danger icon-success icon-warning").addClass(type);
+        $("#pop_message_content").html(msg);
+        if(msg != null && msg.length <= 25){ $("#pop_msg_head").css("text-align","center"); }
+        else{ $("#pop_msg_head").css("text-align","center"); }
+        //$('#pop_message_dlg').modal({show:true, backdrop:backdrop ? backdrop : false });
+        //$('#pop_message_dlg').modal({show:true, backdrop:'static'});
+        //if(hideTime != null && hideTime > 0) window.setTimeout(function () { $('#pop_message_dlg').modal('hide'); }, hideTime);
+        $('#pop_message_dlg').show();
+        if(hideTime != null && hideTime > 0) window.setTimeout(function () { $('#pop_message_dlg').hide(); }, hideTime);
+    }
+    function setupScriptDelay(scriptPath, sync, onHead){
+        var setupScript = document.createElement("script"); setupScript.type = 'text/javascript';
+        if(!sync) setupScript.async = true;
+        if(scriptPath.indexOf("http") == 0) setupScript.src = scriptPath;
+        else setupScript.src = (("https:" == document.location.protocol) ? "https://" : "http://") + scriptPath;
+        if(onHead) document.getElementsByTagName("head")[0].appendChild(setupScript);
+        else document.body.appendChild(setupScript);
+    }
+
+    $(function () {
+        $.ajaxSetup({ timeout: 45000 });
+        $(document).ajaxStart(function () {
+            var bgfi = $("div.modal-backdrop.in");
+            if (bgfi != null && bgfi.length > 0) $('#jquery_ajax_loading').modal({ show: true, backdrop: false, keyboard: false });
+            else $('#jquery_ajax_loading').modal({ show: true, backdrop: 'static', keyboard: false });
+        }).ajaxSend(function(evt, request, settings) {
+            console.log(settings.url);
+        }).ajaxStop(function () {
+            $('#jquery_ajax_loading').modal('hide');
+            var bgfi = $("div.modal-backdrop.in");
+            if (bgfi == null || bgfi.length == 0){ $("body").removeClass("modal-open"); }
+        });
+    });
+</script>
+
+<script type="text/javascript" src="iplookup.js"></script>
+<script type="text/javascript">
+    if(remote_ip_info != null){
+        $("input[type=hidden][name='ex_country']").val(remote_ip_info.country);
+        $("input[type=hidden][name='ex_province']").val(remote_ip_info.province);
+        $("input[type=hidden][name='ex_city']").val(remote_ip_info.city);
+
+        $("input[type=hidden][name='City']").val(remote_ip_info.city);
+        $("input[type=hidden][name='Province']").val(remote_ip_info.province);
+        $("input[type=hidden][name='Address']").val(remote_ip_info.province + "--" + remote_ip_info.city);
+
+        $("input[type=hidden][name='country']").val(remote_ip_info.country);
+        $("input[type=hidden][name='province']").val(remote_ip_info.province);
+        $("input[type=hidden][name='city']").val(remote_ip_info.city);
+        $("input[type=hidden][name='district']").val(remote_ip_info.district);
+
+        var currentRegion = null;
+        if (document.cookie.length > 0) {
+            var regionstart = document.cookie.indexOf("HDX_REGION=");
+            if (regionstart != -1){
+                regionstart = regionstart + "HDX_REGION".length + 1;
+                var regionend = document.cookie.indexOf(";", regionstart);
+                if (regionend == -1) regionend = document.cookie.length;
+                currentRegion = document.cookie.substring(regionstart, regionend);
+            }
+        }
+        if((currentRegion == null || $.trim(currentRegion) == "") && remote_ip_info.city != null && $.trim(remote_ip_info.city) != ""){
+            var regionExDate=new Date();
+            regionExDate.setDate(regionExDate.getDate() + 365);
+            document.cookie = "HDX_REGION=" + escape(remote_ip_info.province + "," + remote_ip_info.city) + ";domain=yizanzhu.com;path=/;expires=" + regionExDate.toGMTString();
+        }
+    }
+</script>
+<script src="index.js"></script>
+<script src="index_eventdata.js"></script>
+</body></html>

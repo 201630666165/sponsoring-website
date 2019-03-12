@@ -1,0 +1,23 @@
+.ticket-tips{width:145px;height:27px;background-image:url(../images/details_bg.png);background-position:0 -169px}
+.ticket-over-tips{width:217px;height:27px;background-image:url(../images/details_bg.png);background-position:-449px -169px}
+.login-list .douban{width:88px;height:30px;background-image:url(../images/details_bg.png);background-position:-181px -131px}
+.login-list .douban:hover{background-image:url(../images/details_bg.png);background-position:-181px -162px}
+.login-list .qq{width:88px;height:30px;background-image:url(../images/details_bg.png);background-position:-270px -131px}
+.login-list .qq:hover{background-image:url(../images/details_bg.png);background-position:-270px -162px}
+.login-list .weibo{width:89px;height:30px;background-image:url(../images/details_bg.png);background-position:-359px -120px}
+.login-list .weibo:hover{background-image:url(../images/details_bg.png);background-position:-359px -151px}
+.login-list .renren{width:100px;height:30px;background-image:url(../images/details_bg.png);background-position:-449px -107px}
+.login-list .renren:hover{background-image:url(../images/details_bg.png);background-position:-449px -138px}
+.login-list .baidu{width:113px;height:30px;background-image:url(../images/details_bg.png);background-position:-550px -107px}
+.login-list .baidu:hover{background-image:url(../images/details_bg.png);background-position:-550px -138px}
+.login-list .alipay{width:98px;height:30px;background-image:url(../images/details_bg.png);background-position:-588px 0}
+.login-list .alipay:hover{background-image:url(../images/details_bg.png);background-position:-588px -31px}
+.login-list .weixin{width:88px;height:30px;background-image:url(../images/hover_wechat_nor.png);}
+.login-list .weixin:hover{width:88px;height:30px;background-image:url(../images/hover_wechat_pre.png);}
+.login-list .linkedin{width:88px;height:30px;background-image:url(../images/hover_linked_nor.png);}
+.login-list .linkedin:hover{width:88px;height:30px;background-image:url(../images/hover_linked_pre.png);}
+.wx_qr .tips{width:126px;height:130px;background-image:url(../images/details_bg.png);background-position:-181px 0}
+.layer-success .wx_qr_body div{width:158px;height:106px;background-image:url(../images/details_bg.png);background-position:-429px 0}
+.layer-success .wx_qr .pull-left{width:120px;height:119px;background-image:url(../images/details_bg.png);background-position:-308px 0}
+.layer-success .app_promo{width:180px;height:168px;background-image:url(../images/details_bg.png);background-position:0 0}
+#CssGaga{content:"150722162415,ma,333"}

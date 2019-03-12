@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html class="sss" lang="en">
+<head>
+	<!DOCTYPE html>
+<html class="sss" lang="en">
+<head>
+<title>寻找活动</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="viewport" content="width=device-width,initial-scale=0.4,user-scalable=yes"/>
+		<meta name="distribution" content="global">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Set render engine for 360 browser -->
+  		<meta name="renderer" content="webkit">
+	    <link rel="SHORTCUT ICON" href="images/sss.ico">
+		<link href="fabuhuodong.css" rel="stylesheet" type="text/css">
+		
+</head>
+<body class="sss">
+<div class="hdx-header">
+    <div class="container-lg">
+        <a href="index.html"><img src="logo3.png" alt="" class="logo"></a>
+        <ul class="items">
+            <li class="dropdown2 dropdown2-white" style="width: auto;">
+            <a style="border-top-left-radius: 0;border-top-right-radius: 0;line-height: 60px;width: 56px;" data-toggle="dropdown2" class="current" target="_blank" href="event-list.html" aria-expanded="false">寻找活动<b class="caret hide"></b></a>
+            </li>
+        </ul>
+        <div id="searchEventArea" style="display:block;">
+          <form class="search">
+                <div class="dropdown">
+                    <a data-toggle="dropdown2" aria-expanded="false">
+                        <span>活动</span><div class="search-tab-icon"><i><em></em><span></span></i></div>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(1)" title="活动" str="活动">活动</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(2)" title="赞助" str="赞助">赞助</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(3)" title="主办方" str="主办方">主办方</a></li>
+                    </ul>
+                </div>
+                <input name="d" type="hidden" value="web">
+                <input name="c" type="hidden" value="search">
+                <input name="m" type="hidden" value="search_info">
+                <input name="type" type="hidden" value="2">
+                <input name="q" id="mainSearchTextbox1" placeholder="搜索活动" value="" type="text">
+                <button id="mainSearchButton"><span class="sr-only">搜索</span><span class="icon-search"></span></button>
+          </form>
+      </div>
+        <div id="searchSponsorArea" style="display:none;">
+            <form class="search">
+                <div class="dropdown">
+                    <a data-toggle="dropdown2" aria-expanded="false">
+                        <span>赞助</span><div class="search-tab-icon"><i><em></em><span></span></i></div>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(1)" title="活动" str="活动">活动</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(2)" title="赞助" str="赞助">赞助</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(3)" title="主办方" str="主办方">主办方</a></li>
+                    </ul>
+                </div>
+                <input name="d" type="hidden" value="web">
+                <input name="c" type="hidden" value="search">
+                <input name="m" type="hidden" value="search_info">
+                <input name="type" type="hidden" value="1">
+                <input name="q" id="mainSearchTextbox2" placeholder="搜索赞助" value="" type="text">
+                <button id="mainSearchButton"><span class="sr-only">搜索</span><span class="icon-search"></span></button>
+            </form>
+        </div>
+        <div id="searchOrgArea" style="display:none;">
+            <form class="search">
+                <div class="dropdown">
+                    <a data-toggle="dropdown2" aria-expanded="false">
+                        <span>主办方</span><div class="search-tab-icon"><i><em></em><span></span></i></div>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(1)" title="活动" str="活动">活动</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(2)" title="赞助" str="赞助">赞助</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(3)" title="主办方" str="主办方">主办方</a></li>
+                    </ul>
+                </div>
+                <input name="d" type="hidden" value="web">
+                <input name="c" type="hidden" value="search">
+                <input name="m" type="hidden" value="search_info">
+                <input name="type" type="hidden" value="3">
+                <input name="q" id="mainSearchTextbox3" placeholder="搜索主办方" onkeypress='if(event.keyCode==13){ $("#searchOrgArea button").click();}' value="" type="text">
+                <button><span class="sr-only">搜索</span><span class="icon-search"></span></button>
+            </form>
+        </div>
+        <script type="text/javascript">
+            function searchSelect(item){
+                if(item == 1){
+                    $("#searchEventArea").show();
+                    $("#searchSponsorArea").hide();
+                    $("#searchOrgArea").hide();
+                }else if(item == 2){
+                    $("#searchEventArea").hide();
+                    $("#searchSponsorArea").show();
+                    $("#searchOrgArea").hide();
+                }else{
+                    $("#searchEventArea").hide();
+                    $("#searchSponsorArea").hide();
+                    $("#searchOrgArea").show();
+                }
+            }
+        </script>
+        <div class="sign" id="hello">
+            <a href="login.html">登录</a><b> | </b><a href="register.html">注册</a>
+        </div>
+        <input type="hidden" id="sessionid" name="sessionid">
+        <a href="publish.html" target="_blank" class="hdx-header-create"><span></span>发布活动</a>
+    </div>
+</div>
+<img style="position: absolute; right: 0px; margin-right: 15px; top: 12px;" src="new.gif" alt=""></a>	  
+    <link href="FBHD.css" rel="stylesheet" type="text/css">
+	<link href="event-list.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="jquery_003.js"></script>
+	<script type="text/javascript" src="libs.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+
+<script type="text/javascript">
+	    //关闭广告
+	    $(function () {
+		    $("#bbx-close-btn").click(function () { $("#bbx-entry").hide(); return false; });
+		})
+	</script>
+		
+    <div class="sr_c">SSS为您找到相关结果 <span id="count">0</span> 个</div>
+    <div class="event_list">
+    	<ul class="event_ul"></ul>
+    	<div class="page_footer">
+    		<input type="hidden" id="footer">
+    		<ul class="footer">
+    		</ul>
+    	</div>
+    </div>
+    <div id="jquery_ajax_loading" class="layer-warning modal" style="margin-top:250px;overflow-y:auto;">
+	    <div class="modal-dialog" style="width:450px;">
+		    <div class="modal-content">
+			    <div class="modal-body">
+				    <p><span class="icon-warning"></span> 页面正在加载中，请耐心等待...</p>
+			    </div>	
+		    </div>
+	    </div>
+    </div>
+
+    <script type="text/javascript" src="sro.js"></script>
+</body>
+</html>

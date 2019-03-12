@@ -1,0 +1,1354 @@
+
+	<!-- 首页公共头部 -->
+	<!DOCTYPE html>
+<html class="sss" lang="en">
+<head>
+<title>发布活动</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="viewport" content="width=960, initial-scale=1.0">
+		<meta name="distribution" content="global">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Set render engine for 360 browser -->
+  		<meta name="renderer" content="webkit">
+	    <link rel="SHORTCUT ICON" href="images/sss.ico">
+		<link href="fabuhuodong.css" rel="stylesheet" type="text/css">
+
+		 <style type="text/css">
+            #requirement{
+                box-sizing: border-box;
+                content: "";
+                display: block;
+                width: 45px;
+                height: 130px;
+                background-color: #6fcc5c;
+                font-size: 18px;
+                line-height: 1.1;
+                color: #fff;
+                position: relative;
+                text-align: center;
+                writing-mode: horizontal-tb;
+                padding: 0 10px;
+                text-decoration: none;
+            }
+
+            #requirement::before
+            {
+                content:"";
+                display:inline-block;
+                background:url(image-sss-background);
+                width:22px;
+                height:22px;
+                margin: 10px 0;
+             }
+            #requirement:focus{outline:none;}
+        </style>
+		
+     	
+		
+	<style rel="stylesheet" type="text/css">
+        .slides-thumbnail .bx-next{width:72px;height:72px;background-image:url(image-sss-background.jpg);background-position:-152px 0}.slides-thumbnail .bx-next:hover{background-image:url(image-sss-background.jpg);background-position:-225px 0}.slides-thumbnail .bx-prev{width:72px;height:72px;background-image:url(image-sss-background.jpg);background-position:-298px 0}.slides-thumbnail .bx-prev:hover{background-image:url(himage-sss-background.jpg);background-position:-371px 0}.slides-multiple-list .bx-next{width:37px;height:73px;background-image:url(image-sss-background.jpg);background-position:0 0}.slides-multiple-list .bx-next:hover{background-image:url(image-sss-background.jpg);background-position:-38px 0}.slides-multiple-list .bx-prev{width:37px;height:73px;background-image:url(image-sss-background.jpg);background-position:-76px 0}.slides-multiple-list .bx-prev:hover{background-image:url(image-sss-background.jpg);background-position:-114px 0}
+
+        @media (max-width: 1024px) {
+            .banner-padding-top .container-lg{
+                width: auto;
+            }
+        }
+
+        .banner-padding-top{
+            overflow: hidden;
+        }
+        
+        @media \0screen\,screen\9 {
+            .slides-thumbnail-backdrop-left,.slides-thumbnail-backdrop-right{
+                filter: alpha(opacity=90)
+            }
+        }
+	</style>
+    <link href="FBHD01.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="FBHD.js"></script>
+
+		<script type="text/javascript">
+			var uvOptions = {};
+			var _atrk_opts = { atrk_acct: "GgKTe1aoiI00WL", domain: "yizanzhu.com", dynamic: true };
+
+			function validateEmail(email) {
+				if (email == null || $.trim(email) == "") return false;
+				var pattern = /^([A-Za-z0-9]+)(([A-Za-z0-9]+)|(_+)|(\-+)|(\.+)|(\++))*@((\w+\-+)|(\w+\.))*\w{1,63}\.[a-zA-Z]{2,6}$/i;
+				return pattern.test(email);
+			}
+			function validatePhone(phone) {
+				if (phone == null || $.trim(phone) == "") return false;
+				var pattern = /(^((0[1,2]{1}\d{1}-?\d{8})|(0[3-9]{1}\d{2}-?\d{7,8}))$)|(^(0|86|17951)?(13[0-9]|15[0-35-9]|17[0678]|18[0-9]|14[57])[0-9]{8}$)/;
+				return pattern.test(phone);
+			}
+
+			function setCookie(name, value, minutes) {
+		        var exp = new Date();
+		        exp.setTime(exp.getTime() + minutes * 60 * 1000);
+		        document.cookie = name + "=" + escape(value) + ";expires=" + exp.toGMTString();
+		    }
+
+		    function getCookie(c_name) {
+		        if (document.cookie.length > 0) {
+		            c_start = document.cookie.indexOf(c_name + "=")
+		            if (c_start != -1) {
+		                c_start = c_start + c_name.length + 1
+		                c_end = document.cookie.indexOf(";", c_start)
+		                if (c_end == -1) c_end = document.cookie.length
+		                return unescape(document.cookie.substring(c_start, c_end))
+		            }
+		        }
+		        return "";
+		    }
+			
+			Date.prototype.format = function (format) { //author: meizz
+				var o = {
+					"M+": this.getMonth() + 1, //month
+					"d+": this.getDate(),    //day
+					"h+": this.getHours(),   //hour
+					"m+": this.getMinutes(), //minute
+					"s+": this.getSeconds(), //second
+					"q+": Math.floor((this.getMonth() + 3) / 3),  //quarter
+					"S": this.getMilliseconds() //millisecond
+				}
+				if (/(y+)/.test(format)) format = format.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+				for (var k in o) if (new RegExp("(" + k + ")").test(format))
+					format = format.replace(RegExp.$1, RegExp.$1.length == 1 ? o[k] : ("00" + o[k]).substr(("" + o[k]).length));
+				return format;
+			}
+		</script>
+		
+				<script type="text/javascript">	
+		    //判断是否有新消息
+			/*function is_have_news() {
+				var uid = 38471;
+				$.ajax({		
+					type:"post",
+					url:"https://www.yizanzhu.com/web/user/is_have_news.html",
+						data:{uid:uid},
+						dataType:"json",
+						beforeSend: function () {
+							//alert("beforeSend");
+						},
+						success: function (data) {
+							if(data.state == 200){
+								$(".news_tips").show();
+							}else{
+								$(".news_tips").hide();
+							}
+						},
+						complete: function(){
+							//alert("complete");
+						},
+						error: function(){
+							//alert('请求出错，请联系管理员！');
+						}
+					})
+			};*/
+	
+			//加载时执行一次
+			/*is_have_news();*/
+			// 每5分钟执行一次
+			//setInterval(is_have_news, 1000*300);
+		</script>
+</head>
+<body class="sss">
+<div class="hdx-header">
+    <div class="container-lg">
+        <a href="index.html"><img src="logo3.png" alt="" class="logo"></a>
+        <ul class="items">
+            <li class="dropdown2 dropdown2-white">
+            <a style="border-top-left-radius: 0;border-top-right-radius: 0;" data-toggle="dropdown2" class="current" target="_blank" href="event-list.html" aria-expanded="false">寻找活动<b class="caret hide"></b></a>
+            </li>
+        </ul>
+        <div id="searchEventArea" style="display:block;">
+          <form class="search">
+                <div class="dropdown">
+                    <a data-toggle="dropdown2" aria-expanded="false">
+                        <span>活动</span><div class="search-tab-icon"><i><em></em><span></span></i></div>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(1)" title="活动" str="活动">活动</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(2)" title="赞助" str="赞助">赞助</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(3)" title="主办方" str="主办方">主办方</a></li>
+                    </ul>
+                </div>
+                <input name="d" type="hidden" value="web">
+                <input name="c" type="hidden" value="search">
+                <input name="m" type="hidden" value="search_info">
+                <input name="type" type="hidden" value="2">
+                <input name="q" id="mainSearchTextbox1" placeholder="搜索活动" value="" type="text">
+                <button id="mainSearchButton"><span class="sr-only">搜索</span><span class="icon-search"></span></button>
+          </form>
+      </div>
+        <div id="searchSponsorArea" style="display:none;">
+            <form class="search">
+                <div class="dropdown">
+                    <a data-toggle="dropdown2" aria-expanded="false">
+                        <span>赞助</span><div class="search-tab-icon"><i><em></em><span></span></i></div>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(1)" title="活动" str="活动">活动</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(2)" title="赞助" str="赞助">赞助</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(3)" title="主办方" str="主办方">主办方</a></li>
+                    </ul>
+                </div>
+                <input name="d" type="hidden" value="web">
+                <input name="c" type="hidden" value="search">
+                <input name="m" type="hidden" value="search_info">
+                <input name="type" type="hidden" value="1">
+                <input name="q" id="mainSearchTextbox2" placeholder="搜索赞助" value="" type="text">
+                <button id="mainSearchButton"><span class="sr-only">搜索</span><span class="icon-search"></span></button>
+            </form>
+        </div>
+        <div id="searchOrgArea" style="display:none;">
+            <form class="search">
+                <div class="dropdown">
+                    <a data-toggle="dropdown2" aria-expanded="false">
+                        <span>主办方</span><div class="search-tab-icon"><i><em></em><span></span></i></div>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(1)" title="活动" str="活动">活动</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(2)" title="赞助" str="赞助">赞助</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(3)" title="主办方" str="主办方">主办方</a></li>
+                    </ul>
+                </div>
+                <input name="d" type="hidden" value="web">
+                <input name="c" type="hidden" value="search">
+                <input name="m" type="hidden" value="search_info">
+                <input name="type" type="hidden" value="3">
+                <input name="q" id="mainSearchTextbox3" placeholder="搜索主办方" onkeypress='if(event.keyCode==13){ $("#searchOrgArea button").click();}' value="" type="text">
+                <button><span class="sr-only">搜索</span><span class="icon-search"></span></button>
+            </form>
+        </div>
+        <script type="text/javascript">
+            function searchSelect(item){
+                if(item == 1){
+                    $("#searchEventArea").show();
+                    $("#searchSponsorArea").hide();
+                    $("#searchOrgArea").hide();
+                }else if(item == 2){
+                    $("#searchEventArea").hide();
+                    $("#searchSponsorArea").show();
+                    $("#searchOrgArea").hide();
+                }else{
+                    $("#searchEventArea").hide();
+                    $("#searchSponsorArea").hide();
+                    $("#searchOrgArea").show();
+                }
+            }
+        </script>
+        <div class="sign" id="hello">
+            <a href="login.html">登录</a><b> | </b><a href="register.html">注册</a>
+        </div>
+        <input type="hidden" id="sessionid" name="sessionid">
+        <a href="publish.html" target="_blank" class="hdx-header-create"><span></span>发布活动</a>
+    </div>
+</div>
+
+   				  
+<a href="https://www.sss.com/web/user/news.html" class="news_tips" style="display:none">
+<img style="position: absolute; right: 0px; margin-right: 15px; top: 12px;" src="new.gif" alt=""></a>	  
+    <link href="FBHD.css" rel="stylesheet" type="text/css">
+	<link href="fbhd02.css" rel="stylesheet" type="text/css">
+	<link href="FBHD03.css" rel="stylesheet" type="text/css">
+	<link href="FBHD04.css" rel="stylesheet" type="text/css">
+	
+	<script src="validate.js" type="text/javascript"></script>
+	<script src="index.js" type="text/javascript"></script>
+	<script src="jquery_006.js" type="text/javascript"></script>
+		
+	<script type="text/javascript" src="jquery_008.js"></script>
+	<script type="text/javascript" src="jquery_004.js"></script>
+	<script type="text/javascript" src="jquery_009.js"></script>
+	<script type="text/javascript" src="jquery_005.js"></script>
+	<script type="text/javascript" src="bootstrap-datepicker.js"></script>
+	<script type="text/javascript" src="jquery_003.js"></script>
+	<script type="text/javascript" src="accupass.js"></script>
+	<script type="text/javascript" src="libs.js"></script>
+
+	<script type="text/javascript" src="art-template.js"></script>
+	<script type="text/javascript" src="ZeroClipboard.js"></script>
+	
+	
+	<script type="text/javascript" src="bootstrap-select.js"></script>
+	<script type="text/javascript" src="select-city.js"></script>
+	<script type="text/javascript" src="create-event.js"></script>
+	
+	<script src="codemirror.js" type="text/javascript" defer="defer"></script>
+	<script type="text/javascript" src="FileAPI.js"></script>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="posterUpload.js"></script>
+	
+	<!-- 省市联动 -->
+	<script type="text/javascript" src="province-city.js"></script>
+	<!-- 百度地图 -->
+	<script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=2GsI5SpfPaxvDcbCwoWSzvrn"></script>
+	<!-- 日期选择 -->
+	<script type="text/javascript" src="WdatePicker.js"></script>
+	
+	
+	<!-- 剪切图片js -->
+	<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="ajaxfileupload.js"></script>
+	<script type="text/javascript" src="jquery.artDialog.js?skin=default"></script>
+	<script type="text/javascript" src="iframeTools.js"></script>
+	<script type="text/javascript" src="event_logo_action.js"></script>
+    <!-- 顶部广告 -->
+
+
+<script type="text/javascript">
+	    //关闭广告
+	    $(function () {
+		    $("#bbx-close-btn").click(function () { $("#bbx-entry").hide(); return false; });
+		})
+	</script>
+		
+    <style type="text/css">
+    body{
+          background: url(image-sss-background.jpg);
+          background-size: 100% 100%;
+          background-repeat: repeat-y;
+          background-attachment:fixed;
+      font-family: "Microsoft YaHei";
+    }
+		    .tag-title{float:left;margin:6px 20px 0px 0px;padding-left:4px;font-weight:bold;}
+		    .create-event-category {background: #f6f6f6 none repeat scroll 0 0;border-color: #e5e5e5;padding: 5px;}
+		    .event-create-add-category-modal {max-width: 899px;padding: 10px 10px 0 0px;}
+		    .event-create-add-label-modal {margin-top: 5px;}
+		    .event-create-add-category-modal li {cursor: pointer;}
+		    .event-create-add-category li {border: 1px dashed #a0a0a0;color: #a0a0a0;padding: 4px 20px;}
+		    .event-create-add-category .create-event-category, .event-create-add-category li {float: left;margin-right: 9px;}
+		    .event-create-add-category-list li {background: #eee none repeat scroll 0 0;position: relative;}
+		    .event-create-add-category-modal li.active {background: #e5e5e5 none repeat scroll 0 0;cursor: default;}
+		    .event-create-add-label-modal {max-width:885px;}
+		    .event-create-add-category-modal label a:hover li{background: #e5e5e5 none repeat scroll 0 0;cursor: default;}
+		    
+		    /** 百度地图提示 **/
+			.map_prompt_wraper {
+			    background: rgba(197, 196, 194, 0.6) none repeat scroll 0 0;
+			    border-radius: 0 0 5px 5px;
+			    color: #666666;
+			    line-height: normal;
+			    overflow: hidden;
+			    padding-bottom: 4px;
+			    padding-left: 8px;
+			    padding-top: 2px;
+			    position: absolute;
+			    right: 0;
+			    text-align: right;
+			    z-index: 1000;
+			}
+		</style>
+
+	<div class="event-create create-event-container" id="event_main_edit_area" style="">
+	  <div class="event-create-body" style="">
+		    <div class="event-create-label event-create-label-long">
+		        填写基本信息
+		    </div>
+			<form action="javascript:void(0);" class="event-create-form" id="event_base_form" method="post" novalidate="novalidate" style="">
+				<input id="Category" name="Category" value="0" type="hidden">	    
+			    <div class="form-group">
+		            <label for="event-create-name" class="control-label">填写名称<em>*</em></label>
+		            <input class="form-control event-create-form-control-block" id="title" maxlength="100" minlength="5" name="title" placeholder="活动名称(不少于5个字)" type="text">
+		        </div>
+		        <div class="form-group event-create-place" data-toggle="distpicker" id="distpicker">
+		            <label class="control-label">选择地点<em>*</em></label>
+					<select id="province" name="province" onChange="select()" onBlur="local_search()" style="width: 195px; height: 48px; vertical-align: middle; margin-right: 5px;"></select>
+					<select id="city" name="city" onBlur="local_search()" style="width: 195px; height: 48px; vertical-align: middle; margin-right: 7px;"></select>
+	            	<input class="form-control event-create-place-input" style="width:459px;margin-left:-4px;" data-placement="top" id="address" maxlength="250" name="address" placeholder="详细地址，例如：建国路88号" title="" data-original-title="地图可精确您的活动位置！" type="text" onpropertychange="address_local_search()" oninput="address_local_search()">
+		            <span class="icon-event-create-place" id="show_map_btn"></span>
+		            
+		            <div id="baidumapContainer" class="BaiDuMap" style="overflow: hidden;">
+		            
+			            <input type="hidden" name="lng" id="lng">
+						<input type="hidden" name="lat" id="lat">
+						<div class="map_wrapper" id="map_wrapper">
+							<div class="map_prompt_wraper" id="map_prompt_wraper">
+								操作提示：您可以单击地图或拖动红色坐标改变位置。
+							</div>
+							<div id="container" style="width:518px;height:230px;border: 1px solid #a0a0a0;overflow: hidden; position: relative; z-index: 0; background-color: rgb(243, 241, 236); color: rgb(0, 0, 0); text-align: left; margin-top: -332px;"></div>
+						</div>
+						<div class="clear_both"></div>
+		            
+		            </div>
+		        </div>
+		        <div class="form-group event-create-place" style="width: 410px">
+		            <label class="control-label">活动时间<em>*</em></label>
+		            <div class="form-group-date">
+		                <span class="icon-event-ticket-calendar"></span>
+		                <input id="startDate" name="start_time" style="padding-left:10px;width:150px" class="Wdate form-control" type="text" onFocus="var endDate=$dp.$('endDate');WdatePicker({dateFmt:'yyyy-MM-dd',onpicked:function(){endDate.focus();},maxDate:'#F{$dp.$D(\'endDate\')}'})" value="2018-09-05">
+						<span class="icon-event-ticket-arrow"></span><span class="icon-event-ticket-calendar"></span>
+						<input id="endDate" name="end_time" style="padding-left:10px;width:150px" class="Wdate form-control" type="text" onFocus="WdatePicker({dateFmt:'yyyy-MM-dd',minDate:'#F{$dp.$D(\'startDate\')}'})" value="2018-09-09">
+		            </div>
+		        </div>
+		        <div class="form-group">
+		            <label class="control-label">上传海报</label>
+		            <div class="media event-create-poster" id="event-create-poster">
+		                <img class="drop-zone" src="event-create-drop-zone.png">
+		                <div class="pull-left" id="poster-preview">
+		                    <img id="event_logo_image" class="pull-left" src="event-create-poster-holder.png" alt="海报 尺寸：1080*640 px" style="width:472px;height:280px;">
+		                </div>
+		                <div class="media-body">
+		                    <div class="btn btn-primary btn-lg ">
+		                        <span class="icon-btn-upload"></span><span>上传</span>
+		                        <input accept=".jpg,.jpeg,.gif,.png,.bmp" id="event_logo_upload_file" name="event_logo_upload_file" type="file">
+		                        <input type="hidden" name="event_logo_url" id="event_logo_url">
+		                    </div>
+		                    <div>
+				                            温馨提示：
+				                            <br>
+				                            点击上传选择图片(.jpg.gif.png)，图片小于4M，尺寸不可小于1080*640px。
+				            </div>
+				                        <p>上传海报</p>
+		                </div>
+		            </div>
+		            <div class="modal" id="event-poster-modal">
+		                    <div class="modal-dialog">
+		                        <div class="modal-body">
+		
+		                        </div>
+		                        <div class="modal-footer">
+		                            <div class="pull-right"><span class="icon-refresh-md"></span>重新上传</div>
+		                            <button class="btn btn-primary btn-lg">确定</button><button class="btn btn-lg btn-create-default" data-dismiss="modal">取消</button>
+		                        </div>
+		                    </div>
+		            </div>
+		        </div>
+		        <div class="form-group">
+		            <label class="control-label">活动类别<em>*</em></label>
+		            <div class="event-create-add-category">
+		                <div class="event-create-add-category-modal" id="evt_category_content">
+		                    <ul>
+		                        <div id="evt_category">
+		                        	<label for="item1"><a><li><input style="top:0px;margin-right:5px;" id="item1" name="category" type="radio" checked="checked" value="1">校园赞助</li></a></label>
+		                        	<label for="item2"><a><li><input style="top:0px;margin-right:5px;" id="item2" name="category" type="radio" value="2">慈善赞助</li></a></label>
+		                        	<label for="item3"><a><li><input style="top:0px;margin-right:5px;" id="item3" name="category" type="radio" value="3">体育竞技</li></a></label>
+		                        	<label for="item4"><a><li><input style="top:0px;margin-right:5px;" id="item4" name="category" type="radio" value="4">文化演出</li></a></label>
+		                        	<label for="item5"><a><li><input style="top:0px;margin-right:5px;" id="item5" name="category" type="radio" value="5">会展论坛</li></a></label>
+		                        	<label for="item6"><a><li><input style="top:0px;margin-right:5px;" id="item6" name="category" type="radio" value="6">影视赞助</li></a></label>
+		                        	<label for="item7"><a><li><input style="top:0px;margin-right:5px;" id="item7" name="category" type="radio" value="7">节庆活动</li></a></label>
+		                        	<label for="item8"><a><li><input style="top:0px;margin-right:5px;" id="item8" name="category" type="radio" value="8">商业活动</li></a></label>
+		                        	<label for="item9"><a><li><input style="top:0px;margin-right:5px;" id="item9" name="category" type="radio" value="9">其他</li></a></label>
+		                        </div>
+		                    </ul>
+		                </div>
+		            </div>
+		        </div>
+		        <div style="clear:both;"></div>
+		        <div class="form-group">
+		            <label class="control-label">活动预算<em>*</em></label>
+		            <div class="event-create-add-category">
+		                <div class="event-create-add-category-modal" id="evt_category_content">
+		                    <ul>
+		                        <div id="evt_category">
+		                        	<label for="item01"><a><li><input style="top:0px;margin-right:5px;" id="item01" name="money" type="radio" checked="checked" value="1">0-5000</li></a></label>
+		                        	<label for="item02"><a><li><input style="top:0px;margin-right:5px;" id="item02" name="money" type="radio" value="2">5000-10000</li></a></label>
+		                        	<label for="item03"><a><li><input style="top:0px;margin-right:5px;" id="item03" name="money" type="radio" value="3">10000-20000</li></a></label>
+		                        	<label for="item04"><a><li><input style="top:0px;margin-right:5px;" id="item04" name="money" type="radio" value="4">20000-50000</li></a></label>
+		                        	<label for="item05"><a><li><input style="top:0px;margin-right:5px;" id="item05" name="money" type="radio" value="5">50000-10万</li></a></label>
+		                        	<label for="item06"><a><li><input style="top:0px;margin-right:5px;" id="item06" name="money" type="radio" value="6">10万-20万</li></a></label>
+		                        	<label for="item07"><a><li><input style="top:0px;margin-right:5px;" id="item07" name="money" type="radio" value="7">20万-200万</li></a></label>
+		                        	<label for="item08"><a><li><input style="top:0px;margin-right:5px;" id="item08" name="money" type="radio" value="8">200万以上</li></a></label>
+		                        </div>
+		                    </ul>
+		                </div>
+		            </div>
+		        </div>
+		        <div style="clear:both;"></div>
+		        <div class="form-group">
+		            <label for="event-create-peopple-number" class="control-label">活动标签</label>
+		            <input class="form-control event-create-form-control-block digits" id="tag" name="tag" placeholder="多个标签用空格分隔，例：标签1 标签2" value="" type="text">
+		        </div>
+		        <div class="form-group hide">
+		            <label for="event-privacy" class="control-label">活动推广</label>
+		            <div class="event-create-radio">
+		                <label style="margin-top: 15px;"><input style="top:0px;" id="event-privacy" name="event-privacy" checked="checked" type="checkbox">请SSS协助推广<span style="color:#a0a0a0;cursor: default;">（在【SSS】网站公开展示，例如主页、发现页、专题、微信等。<a target="_blank" href="http://lixinghudong.mikecrm.com/8Wzrd2w">查看获得SSS推广的条件</a>）</span></label>
+		            	<input id="is_privacy" name="is_privacy" value="" type="hidden">
+		            </div>
+		        </div>
+		        <div class="form-group" style="">
+		            <label class="control-label">活动方案<em>*</em></label>
+		            <script type="text/plain" class="demo_info_textarea" name="content" id="content">
+						<p style="font-size: 16px;"><font color="#C0504D"><b>注：</b></font>活动方案包括但不限于：项目简介、受众人群、项目规模、赞助回报等（请勿在此填写任何联系方式）</p>
+					</script>
+			       
+			        <!-- umeditor编辑框 -->
+					<script type="text/javascript" src="umeditor.config.js"></script>
+					<script type="text/javascript" src="umeditor.min.js"></script>
+					<link href="umeditor.css" rel="stylesheet" type="text/css">
+					<script type="text/javascript">
+						//实例化编辑器
+					    var um = UM.getEditor('content');
+					</script>
+		        </div>
+		        
+		        <div class="form-group">
+		            <label class="control-label">活动附件</label>
+		            <div class="media event-create-poster" id="event-create-poster">
+		                <div class="media-body">
+		                    <div id="additive_upload_btn" class="btn btn-primary btn-lg " style="float: left; margin-bottom: 0px;">
+		                        <span class="icon-btn-upload"></span><span>上传</span>
+		                        <input accept=".doc,.docx,.pdf,.txt,.ppt,.pps,.pptx" id="additive_upload_file" name="additive_upload_file" type="file" onChange="document.getElementById('uploading_name').innerHTML=this.value;document.getElementById('file_name').value=this.value;ajaxAdditiveFileUpload();">
+		                        
+		                        <input type='hidden' name='file_name' id='file_name' />
+		                        <input type="hidden" name="file_url" id="file_url">
+		                    </div>
+		                    <div id="additive_upload_txt" class="btn btn-primary btn-lg hide" style="float: left; margin-bottom: 0px;">
+		                        <span>上传成功</span>
+		                    </div>
+		                    <div id="uploading_name" style="float: left; margin-top:10px; margin-left:10px;">
+				                            允许类型：doc, docx, pdf, txt, ppt, pps, pptx
+				            </div>
+		                </div>
+		            </div>
+		        </div>
+		        
+		        <div class="form-group">
+		            <label for="event-privacy" class="control-label">活动代理</label>
+		            <div class="event-create-radio">
+		                <label style="margin-top: 15px;"><input style="top:0px;" id="is_agent" name="is_agent" value='1' type="checkbox">委托经纪人代理<span style="color:#a0a0a0;cursor: default;">（委托代理后，经纪人将帮您对接适合的赞助商，对接成功会收取10%的服务费，对接失败不收取任何费用。）</span></label>
+		            </div>
+		        </div>
+		        
+		        <div class="form-group">
+		            <label for="event-create-peopple-number" class="control-label">联系人<em>*</em></label>
+		            <input class="form-control event-create-form-control-block digits" id="linkman" name="linkman" placeholder="赞助对接负责人姓名" type="text">
+		        </div>
+		        <div class="form-group">
+		            <label for="event-create-peopple-number" class="control-label">联系电话<em>*</em></label>
+		            <input class="form-control event-create-form-control-block digits" id="tel" name="tel" placeholder="联系人电话" type="text">
+		        </div>
+		        <div class="form-group">
+		            <label for="event-create-peopple-number" class="control-label">QQ号码</label>
+		            <input class="form-control event-create-form-control-block digits" id="qq" name="qq" placeholder="联系人QQ号码" type="text">
+		        </div>
+		        <div class="form-group">
+		            <label for="event-create-peopple-number" class="control-label">微信号</label>
+		            <input class="form-control event-create-form-control-block digits" id="weixin" name="weixin" placeholder="联系人微信号" type="text">
+		        </div>
+		        
+		        <div class="form-group">
+		            <label for="event-privacy" class="control-label">分享文案</label>
+		            <div class="event-create-radio">
+		                <label style="margin-top: 15px;"><input style="top:0px;" id="is_share" name="is_share" value='1' type="checkbox" oninput='shareShowHide(this.value);' onpropertychange='shareShowHide(this.value);'>设置分享文案<span style="color:#a0a0a0;cursor: default;">（设置分享文案使活动在分享微信、微博、QQ等社交媒体时更有吸引力。）</span></label>
+		            </div>
+		        </div>
+			</form>    
+		
+			<div id="autoSaveTip" style="color:gray;padding-right:20px;"></div>
+			<button class="btn btn-create-event-state hide" onClick="javascript:saveEventForDraft();return false;">保存信息</button>
+			<input name="edit_exist_event_flag" value="true" type="hidden">
+	  </div>
+		
+		<div class="event-create-body" id="share_show_hide" style="display:none">
+		    <div class="event-create-label event-create-label-long pull-left">
+		        设置分享文案
+		    </div>
+		    <span class="icon-event-create-alert" title="" data-original-title="" onMouseOver="mouseOver()" onMouseOut="mouseOut()"></span>
+		    <div class="tooltip fade right in" role="tooltip" style="left:171px;display:block;background-color:rgba(0,0,0,0.8);padding: 5px 5px 10px 10px;color: white;display:none;" id="tooltip">
+<!-- 		    <div class="sr-only"> -->
+		        <h4>什么是分享文案？</h4>
+		        <ul>
+					<li>1. 如果没有设置分享文案，分享时将使用上方基本信息中的标题和图片。</li>
+					<li>2. 您可以将分享文案设置的更有吸引力和传播力，以达到吸引用户点开参与的目的。</li>
+		        </ul>
+		    </div>
+		    <span class="pull-right" style="padding: 15px 10px 0px; color: gray;" id="event_ticket_alert_msg">设置分享文案使活动在分享微信、微博、QQ等社交媒体时更有吸引力。</span>
+			
+			<div class="event-create-form clear">
+				<div class="form-group">
+		            <label for="event-create-name" class="control-label">分享标题</label>
+		            <input class="form-control event-create-form-control-block" id="share_title" maxlength="100" minlength="5" name="share_title" placeholder="分享标题(不少于5个字)" type="text">
+		        </div>
+		        <div class="form-group" id="anchor-event-description">
+					<label class="control-label" for="Setting_Summary">分享摘要</label>
+					<input id="Setting_Layout" name="Setting.Layout" value="" type="hidden">
+					<textarea class="form-control event-create-form-control-block required" cols="20" id="share_summary" maxlength="150" name="share_summary" placeholder="请填写分享摘要" rows="4" style="width:908px;"></textarea>
+				</div>
+		        <div class="form-group">
+					<label class="control-label">分享图片</label>
+		            <button class="btn btn-create-add btn-create-add-primary hide" id="add-free-ticket">
+		                <span class="icon-ticket-add-primary"></span>分享图片
+		            </button>
+		            <div class="media event-create-poster" id="event-create-poster">
+		            	<div class="pull-left">
+		                    <img id="share_logo_image" class="pull-left" src="https://www.yizanzhu.com/file/web/images/event-create-share-holder.png" alt="分享图片 尺寸：200*200 px" style="height:200px;">
+		                </div>
+		                <div class="media-body">
+				            <div class="btn btn-primary btn-lg ">
+		                        <span class="icon-btn-upload"></span><span>上传</span>
+				            	<input accept=".jpg,.jpeg,.gif,.png,.bmp" id="share_logo_upload_file" name="share_logo_upload_file" type="file" onChange="javascript:ajaxShareLogoUpload();">
+				            	<input type="hidden" name="share_logo_url" id="share_logo_url">
+		                    </div>
+		                    <div>
+				                            温馨提示：
+				              <br>
+				                            此处留空默认使用活动海报作为分享图片，建议尺寸200*200px。
+		                    </div>
+	                    </div>
+                    </div>
+		        </div>
+		    </div>
+		</div>
+		
+		<div class="text-center">
+	        <button class="btn btn-lg btn-primary btn-pub" onClick="javascript:ajaxCreateEvent();return false;"><span class="icon-btn-success"></span>发布</button>
+            <div style="margin-top:10px;font-size:15px;"><a target="_blank" href="http://lixinghudong.mikecrm.com/8Wzrd2w"></a></div>
+	    </div>
+		
+</div>
+	
+				
+	
+	<script type="text/javascript">
+
+		//设置分享文案
+		function shareShowHide(value){
+			var	is_agent = $('input[name="is_share"]:checked').val();
+	
+			if(!is_agent){
+				$("#share_show_hide").hide();
+			}else{
+				$("#share_show_hide").show();
+			}
+		}
+		
+		//分享文案介绍
+		function mouseOver()
+		{
+		    $('#tooltip').show();
+		}
+		function mouseOut()
+		{
+			$('#tooltip').hide();
+		}
+		
+
+		//异步创建新项目
+		function ajaxCreateEvent(){
+			
+			//取值
+			var sessionid = $('#sessionid').val();
+			var title = $('#title').val();
+			var	province = $('#province').val();
+			var	city = $('#city').val();
+			var	address = $('#address').val();
+			var	start_time = $('#startDate').val();
+			var	end_time = $('#endDate').val();
+			var	event_logo_url = $('#event_logo_url').val();
+			var	file_url = $('#file_url').val();
+			var	file_name = $('#file_name').val();
+			var	category = $('input[name="category"]:checked').val();
+			var	money = $('input[name="money"]:checked').val();
+			var	tag = $('#tag').val();
+			var	content = $('#content').html();
+			var	linkman = $('#linkman').val();
+			var	tel = $('#tel').val();
+			var	qq = $('#qq').val();
+			var	weixin = $('#weixin').val();
+			var	is_agent = $('input[name="is_agent"]:checked').val();
+			var	share_title = $('#share_title').val();
+			var	share_summary = $('#share_summary').val();
+			var	share_logo_url = $('#share_logo_url').val();
+			var	lng = $('#lng').val();
+			var	lat = $('#lat').val();
+
+            if (!sessionid) {
+            	alert("请先登录再发布活动！");
+            	return;
+            }
+
+			if(!is_agent){
+				is_agent = 0;
+			}
+	
+			if(title.length < 5){
+				PopupMessage(1, "活动名称未填写或少于5个字，请调整。", 2000);
+				return;
+			}
+			
+			if(province == '' || province == '请选择省份名'){
+				PopupMessage(1, "请选择活动省份。", 2000);
+				return;
+			}
+			
+			if(city == '' || city == '请选择城市名'){
+				PopupMessage(1, "请选择活动城市。", 2000);
+				return;
+			}
+			
+			if(address == ''){
+				PopupMessage(1, "请输入活动详细地点。", 2000);
+				return;
+			}
+			
+			if(start_time == ''){
+				PopupMessage(1, "请选择活动开始时间。", 2000);
+				return;
+			}
+			
+			if(end_time == ''){
+				PopupMessage(1, "请选择活动结束时间。", 2000);
+				return;
+			}
+			
+			if(category == ''){
+				PopupMessage(1, "请选择活动类别。",2000);
+				return;
+			}
+
+			if(money == ''){
+				PopupMessage(1, "请选择活动预算。",2000);
+				return;
+			}
+			
+			if(content.length < 180){
+				PopupMessage(1, "活动方案不能低于180个字，请填写。", 2000);
+				return;
+			}
+
+			if(linkman == ''){
+				PopupMessage(1, "联系人不能为空，请填写。",2000);
+				return;
+			}
+
+			if(tel == ''){
+				PopupMessage(1, "联系电话不能为空，请填写。",2000);
+				return;
+			}
+			if(!validateRules.isMobile(tel) && !validateRules.isTel(tel)){
+				PopupMessage(1, "联系电话格式不正确，请修改。",2000);
+				return;
+			}
+			
+			$.ajax({
+				type:"POST",
+				url:"publishmain.php",
+				data:{sessionid:sessionid,title:title,province:province,city:city,address:address,lng:lng,lat:lat,start_time:start_time,end_time:end_time,event_logo_url:event_logo_url,file_url:file_url,file_name:file_name,category:category,money:money,tag:tag,content:content,linkman:linkman,tel:tel,qq:qq,weixin:weixin,is_agent:is_agent,share_title:share_title,share_summary:share_summary,share_logo_url:share_logo_url},
+				dataType:"json",
+				beforeSend: function() {
+                    $(".btn-pub").attr('disabled',true).text('发布中...');
+				},					
+				success:function(data){
+					$(".btn-pub").attr('disabled',false).text('发布');
+					//创建成功
+					if (data.state == 200)
+					{
+						/*if(is_agent == 1){
+							var promote_url = "https://www.sss.com/web/agent/create/"+data.result;
+						}else{
+							var promote_url = "https://www.sss.com/web/event/promote/"+data.result;
+						}*/
+						alert("发布成功");
+						$.ajax({
+                            url:"event_session.php",
+                            type:"GET",
+                            data:{activity_id:data.activity_id},
+                            async:false,
+                            success:function(objsnd) {
+                                if (objsnd.result==0) {
+                                    window.location.href="event.html";
+                                }
+                                else if (objsnd.result==2) {
+            	                    alert(objsnd.errormsg);
+                                }
+                                else{
+            	                    alert(objsnd);
+                                }
+                            },
+                            error: function(xml,msg){
+                                //请求出错处理
+                                alert(msg);
+                                return false;
+                            }
+                        });
+					}else if(data.state == 204){
+						alert('参数错误！');
+						alert(data.errormsg);
+						alert(data.errorquery);
+					}else if(data.state == 205){
+						alert('不能重复发布相同内容！');
+					}else if(data.state == 206){
+						alert('超过发布条数，普通用户只能发布30条活动，请升级VIP！');
+					}else if(data.state == 207){
+						alert('超过发布条数，VIP用户最多可以同时发布300条活动！');
+					}else{
+						alert('发布失败！');
+					}
+						
+				},
+				complete: function(){
+					//
+				},
+				error: function(xml,msg){
+					$(".btn-pub").attr('disabled',false).text('发布');
+					alert(msg);
+				}
+			});	
+		}
+
+		//异步上传活动附件
+		function ajaxAdditiveFileUpload(){
+			var additive_upload_file = $("#additive_upload_file").val();
+			if(additive_upload_file == ''){
+				alert('请选择文件后上传！');
+				return false;
+			}
+			
+			$.ajaxFileUpload
+	        (
+	            {
+	                url: "publish3.php",
+	                secureuri: false, //一般设置为false
+	                fileElementId: 'additive_upload_file', //文件上传空间的id属性  <input type="file" id="file" name="file" />
+	                beforeSend: function() {
+// 	                	$("#pic_wait_upload_img").show();
+					},
+	                success: function (data, status)  //服务器成功响应处理函数
+	                {
+	                	var str = $(data).find("body").text();//获取返回的字符串
+                        data = $.parseJSON(str);//把字符串转化为json对象
+	                	//上传成功
+						if (data.state == 200){
+							$("#file_url").val(data.file_url);
+							
+							$("#additive_upload_btn").addClass("hide");
+							$("#additive_upload_txt").removeClass("hide");
+							//alert('上传成功！');
+	        			}else if(data.state == 204){
+							alert('参数错误，请确认您是否已选择文件！');
+                            
+						}else if(data.state == 205){
+							alert('格式错误！');
+						}else if(data.state == 206){
+							alert('文件太大了！');
+						}else if(data.state == 207){
+							alert('文件已经存在！');
+						}else if(data.state == 500){
+							alert('文件上传失败，请重试！');
+						}
+						else{
+							alert(data);
+						}
+	                },
+	                error: function (data, status, e)//服务器响应失败处理函数
+	                {
+// 	                    alert(e);
+                        alert(e);
+                        alert(data);
+	                }
+	            }
+	        )
+	        return false;
+		}
+
+		//异步上传活动分享图片
+		function ajaxShareLogoUpload(){
+			var share_logo_upload_file = $("#share_logo_upload_file").val();
+			if(share_logo_upload_file == ''){
+				alert('请选择图片后上传！');
+				return false;
+			}
+			
+			$.ajaxFileUpload
+	        (
+	            {
+	                url: "publish4.php",
+	                secureuri: false, //一般设置为false
+	                fileElementId: 'share_logo_upload_file', //文件上传空间的id属性  <input type="file" id="file" name="file" />
+	                beforeSend: function() {
+// 	                	$("#pic_wait_upload_img").show();
+					},
+	                success: function (data, status)  //服务器成功响应处理函数
+	                {
+	                	var str = $(data).find("body").text();//获取返回的字符串
+                        data = $.parseJSON(str);//把字符串转化为json对象
+						if (data.state == 200){
+							$("#share_logo_url").val(data.pic_url);
+							$("#share_logo_image").attr("src", data.pic_url); 
+	        			}else if(data.state == 204){
+							alert('参数错误，请确认您是否已选择文件！');
+						}else if(data.state == 205){
+							alert('格式错误！');
+						}else if(data.state == 206){
+							alert('文件太大了！');
+						}else if(data.state == 207){
+							alert('文件已经存在！');
+						}else if(data.state == 500){
+							alert('文件上传失败，请重试或换一张图片！');
+						}
+	                },
+	                error: function (data, status, e)//服务器响应失败处理函数
+	                {
+// 	                    alert(e);
+	                }
+	            }
+	        )
+	        return false;
+		}
+		
+	</script>
+	
+	
+	<style type="text/css">
+	    /*客服部分*/
+	    .qqserver p img{display:inline;margin:-5px 5px 0 0;vertical-align:middle;}
+	    .scrollsidebar{position:absolute;z-index:999;top:220px;}
+	    .side_content{width:167px;height:auto;overflow:hidden;float:left;}
+	    .side_content .side_list{width:167px;overflow:hidden;}
+	    .show_btn{width:0;height:144px;overflow:hidden;margin-top:50px;float:left;cursor:pointer;}
+	    .show_btn span{display:none;}
+	    .close_btn{width:24px;height:24px;cursor:pointer;}
+	    .side_title,.side_bottom,.close_btn,.show_btn{background:url(https://www.sss.com/file/web/images/qqcontact_sidebar_bg.png) no-repeat;}
+	    .side_title{height:46px;}
+	    .side_title{height:46px;}
+	    .side_bottom{height:8px;}
+	    .side_center{font-family:Verdana, Geneva, sans-serif;padding:10px 12px 5px 12px;font-size:12px;}
+	    .close_btn{float:right;display:block;width:19px;height:19px;margin:16px 7px 0 0;_margin:16px 3px 0 0;}
+	    .close_btn span{display:none;}
+	    .side_center .qqserver p{text-align:left;padding:6px 0;margin:0;vertical-align:middle;}
+	    .phoneserver {font-size:14px;text-align:center;}
+	    .phoneserver p{padding:2px 0;_height:16px;margin:0;color:#666666;}
+	    .msgserver{border-top:1px dotted #ccc;text-align:center;margin-top:6px;padding:10px 0 3px 0;}
+	    .msgserver a{background:url(https://www.sss.com/file/web/images/qqcontact_sidebar_bg.png) no-repeat -119px -154px;padding:3px 0 3px 23px;}
+	    .side_content hr{border-bottom:1px solid #E6E6E6;height:1px;margin:10px 0;clear:both;}
+	
+	    /* green skin  */
+	    .side_green .side_title{background-position:-505px 0;}
+	    .side_green .side_center{background:url(https://www.sss.com/file/web/images/background_green_line.gif) repeat-y center;}
+	    .side_green .side_bottom{background-position:-505px -60px;}
+	    .side_green .close_btn{background-position:-44px -45px;}
+	    .side_green .close_btn:hover{background-position:-65px -45px;}
+	    .side_green .show_btn{background-position:-187px 0;}
+	    .side_green .msgserver a{color:#68c40b;}
+	    .side_green hr{border-bottom:1px solid #edf2e5;}
+	
+	</style>
+	
+	<div class="qqserver">
+      <div class="qqserver-body">
+        <div class="qqserver-footer">
+        <div class="text-primary">
+	                	客服电话 1234567
+	                <br>
+	                工作时间 09:00—18:00
+          </div>
+	        </div>
+      </div></div>
+	
+	<script type="text/javascript">
+	    +function($){
+	        var $qqServer = $('.qqserver');
+	        var $qqserverFold = $('.qqserver_fold');
+	        var $qqserverUnfold = $('.qqserver_arrow');
+	        var transition;
+	        function resizeQQserver(){
+	            $qqServer[document.documentElement.clientWidth < 1240 ? 'hide':'show']();
+	        }
+	
+	        $qqserverFold.click(function(){
+	            $qqserverFold.hide();
+	            $qqServer.addClass('unfold');
+	        });
+	        $qqserverUnfold.click(function(){
+	            $qqServer.removeClass('unfold');
+	            transition = $.support.transition
+	            $qqserverFold.show();
+	
+	        });
+	
+	        resizeQQserver();
+	        $(function(){
+	            $(window).on('resize',throttle(resizeQQserver))
+	        })
+	    }(jQuery)
+	</script>
+	
+	<script type="text/javascript">
+		// 百度地图API功能
+		var map = new BMap.Map("container");
+		var point = new BMap.Point(116.331398,39.897445);
+		map.centerAndZoom(point,12);
+	
+		// 当前定位城市
+		function myFun(result){
+			var cityName = result.name;
+			map.centerAndZoom(cityName,12);
+			map.setCenter(cityName);
+			//$("#city").val(cityName);
+			//alert("当前定位城市:"+cityName);
+		}
+		var myCity = new BMap.LocalCity();
+		myCity.get(myFun);
+		
+		setTimeout(function(){  
+			var jw=map.getCenter();  
+			//alert('经度:'+jw.lng+"\n纬度:"+jw.lat); 
+			$("#lng").val(jw.lng); 
+			$("#lat").val(jw.lat); 
+			var point = new BMap.Point(jw.lng,jw.lat);
+			map.centerAndZoom(point);
+			//创建标注
+			var marker = new BMap.Marker(point);// 创建标注
+			map.addOverlay(marker);             // 将标注添加到地图中
+			//map.addOverlay(new BMap.Marker(map.getCenter())); 这句话等于上边几行代码
+			marker.enableDragging();           // 可拖拽
+		},1000)
+	         
+		//单击获取点击的经纬度
+		map.addEventListener("click",function(e){
+			var point = new BMap.Point(e.point.lng,e.point.lat);
+			map.centerAndZoom(point);
+			//alert(e.point.lng + "," + e.point.lat);
+			$("#lng").val(e.point.lng); 
+			$("#lat").val(e.point.lat); 
+	
+			//删除之前所有标注
+			var allOverlay = map.getOverlays();
+			for (var i = 0; i < allOverlay.length; i++){
+					map.removeOverlay(allOverlay[i]);
+			}
+			//创建标注
+			var marker = new BMap.Marker(point);// 创建标注
+			map.addOverlay(marker);             // 将标注添加到地图中
+			marker.enableDragging();           // 可拖拽
+	
+			//拖拽取点击的经纬度
+			marker.addEventListener("dragend",function(e){
+				var point = new BMap.Point(e.point.lng,e.point.lat);
+				//map.centerAndZoom(point);
+				//alert(e.point.lng + "," + e.point.lat);
+				$("#lng").val(e.point.lng); 
+				$("#lat").val(e.point.lat);
+			});
+	
+		});
+	
+		//允许缩放地图
+		map.enableScrollWheelZoom(true);
+
+		//根据城市选择确定地图位置
+		function local_search()
+		{
+			var	province = $('#province').val();
+			var	city = $('#city').val();
+			var address = province+city;
+			
+			// 创建地址解析器实例
+			var myGeo = new BMap.Geocoder();
+			// 将地址解析结果显示在地图上,并调整地图视野
+			myGeo.getPoint(address, function(point){
+				if (point) {
+					//删除之前所有标注
+					var allOverlay = map.getOverlays();
+					for (var i = 0; i < allOverlay.length; i++){
+						map.removeOverlay(allOverlay[i]);
+					}
+
+					// 创建标注
+					map.centerAndZoom(point, 14);
+					var marker = new BMap.Marker(point);
+					map.addOverlay(marker);
+					marker.enableDragging();           // 可拖拽
+					// 保存经纬度
+					$("#lng").val(point.lng); 
+					$("#lat").val(point.lat);
+
+					//拖拽取点击的经纬度
+					marker.addEventListener("dragend",function(e){
+						var point = new BMap.Point(e.point.lng,e.point.lat);
+						//map.centerAndZoom(point);
+						//alert(e.point.lng + "," + e.point.lat);
+						$("#lng").val(e.point.lng); 
+						$("#lat").val(e.point.lat);
+					});
+				}else{
+					//alert("您选择地址没有解析到结果!");
+				}
+			}, city);
+
+		}
+		
+		//根据详细地址输入确定地图位置
+		function address_local_search()
+		{
+			var	province = $('#province').val();
+			var	city = $('#city').val();
+			var address = province+city+$('#address').val();
+			//alert(address);
+			
+			// 创建地址解析器实例
+			var myGeo = new BMap.Geocoder();
+			// 将地址解析结果显示在地图上,并调整地图视野
+			myGeo.getPoint(address, function(point){
+				if (point) {
+					//删除之前所有标注
+					var allOverlay = map.getOverlays();
+					for (var i = 0; i < allOverlay.length; i++){
+						map.removeOverlay(allOverlay[i]);
+					}
+
+					// 创建标注
+					map.centerAndZoom(point, 14);
+					var marker = new BMap.Marker(point);
+					map.addOverlay(marker);
+					marker.enableDragging();           // 可拖拽
+					// 保存经纬度
+					$("#lng").val(point.lng); 
+					$("#lat").val(point.lat);
+
+					//拖拽取点击的经纬度
+					marker.addEventListener("dragend",function(e){
+						var point = new BMap.Point(e.point.lng,e.point.lat);
+						//map.centerAndZoom(point);
+						//alert(e.point.lng + "," + e.point.lat);
+						$("#lng").val(e.point.lng); 
+						$("#lat").val(e.point.lat);
+					});
+				}else{
+					//alert("您选择地址没有解析到结果!");
+				}
+			}, city);
+		}
+
+		$(function(){
+			//显示关闭地图
+			$("#address").bind({
+				blur:function () {
+					$("#container").animate({marginTop:'-332px'},200,function () {
+						$('#map_prompt_wraper').hide();
+					});
+				},click:function () {
+					$("#container").animate({marginTop:'0'},200,function () {
+						$('#map_prompt_wraper').show();
+					});
+				}
+			});
+			//地图样式按钮
+			$("#show_map_btn").click( function () {
+				if(parseInt($("#container").css('margin-top')) > -332 ){
+					$("#container").animate({marginTop:'-332px'},200,function () {
+						$('#map_prompt_wraper').hide();
+					});
+				}else{
+					$("#container").animate({marginTop:'0'},200,function () {
+						$('#map_prompt_wraper').show();
+						$("#address").focus();
+					});
+				}
+			})
+		})
+	</script>
+	<script type="text/javascript">
+		//初始化省市信息
+		$(document).ready(init());
+	</script>
+    <!-- 公共尾部 -->
+
+    <h4 class="modal-title" id="pop_msg_head"><span class="icon-danger" id="pop_message_icon"></span><span id="pop_message_content"></span></h4>
+	              <div id="jquery_ajax_loading" class="layer-warning modal" style="margin-top:250px;overflow-y:auto;">
+			<div class="modal-dialog" style="width:450px;">
+				<div class="modal-content">
+					<div class="modal-body">
+						<p><span class="icon-warning"></span> 页面正在加载中，请耐心等待...</p>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+        <script type="text/javascript" src="libs.js"></script>
+		
+		<script type="text/javascript">
+			function submitMySuggestion(){
+				var sContactVal = $.trim($("#home_suggest_contact").val());
+				var sContentVal = $.trim($("#home_suggest_content").val());
+				if(sContactVal == '' || sContentVal == ''){
+					alert('联系方式和内容不能为空！');
+					return;
+				}
+				$.ajax({
+					url: '/web/index/feedback',
+					type: "POST",
+					data: { "contact": sContactVal, "content": sContentVal},
+					dataType:"json",
+					success: function (data) {
+						if (data.state == 200 || data.state == 205) {
+							window.alert("我们已收到您反馈的意见，感谢对我们的支持。");
+							$("#home_feedback_layer").modal("hide");
+						}else if(data.state == 204){
+							window.alert("联系方式和内容不能为空！");
+						}else{
+							window.alert("操作失败，请稍后重试。");
+						}
+					}
+				});
+            }
+
+
+			+function ($) {
+				var $window = $(window);
+				var $body = $(document.body);
+				var $navBar = $('.hdx-header');
+  				var headerHeight = $navBar.outerHeight(true);
+				var $subNavBar = $('.sub_nav');
+				$body.scrollspy({
+					target: '.intro-nav',
+					offset: headerHeight + 40
+				});
+				$window.on('load', function () { $body.scrollspy('refresh'); });
+
+				var $introNav = $('.intro-nav');
+				var $bottomTools = $('.bottom_tools');
+				var $qrTools = $('.qr_tool');
+				var qrImg = $('.qr_img');
+				$introNav
+					.affix({
+					      offset:{
+					        bottom:$('.page-footer').outerHeight()
+					      }
+					    })
+					.find('.nav > a').click(function (e) { e.preventDefault(); });
+
+				setTimeout(function () {
+					$window.scroll(function () {
+						var scrollHeight = $(document).height();
+						var scrollTop = $window.scrollTop();
+						var $footerHeight = $('.page-footer').outerHeight(true);
+						var $windowHeight = $window.innerHeight();
+						$window.scrollTop() > 50 ? $("#scrollUp").fadeIn(200) : $("#scrollUp").fadeOut(200);
+						$bottomTools.css("bottom", scrollHeight - scrollTop - $footerHeight > $windowHeight ? 20 : $windowHeight + scrollTop + $footerHeight + 20 - scrollHeight);
+					});
+					$('#scrollUp').click(function (e) {
+						e.preventDefault();
+						$('html,body').animate({ scrollTop: 0 });
+					});
+					$qrTools.hover(function(){
+				      qrImg.removeClass('hide')
+				      $.support.transition ?
+				        qrImg
+				          .one($.support.transition.end, function(){
+				            qrImg.addClass('in')
+				          })
+				          .emulateTransitionEnd(150) :
+				        qrImg.addClass('in')
+				    },function(){
+				      qrImg.removeClass('in')
+				      $.support.transition ?
+				        qrImg
+				          .one($.support.transition.end, function(){
+				            qrImg.addClass('hide')
+				          }) :
+				        qrImg.addClass('hide')
+				    })
+				}, 500);
+//                 $('.hdx-header .search').on('click','li a',function(e){
+//                     e.preventDefault();
+//                     //var parent= $(this).parent().parent('.dropdown').find('span')[0].innerHTML;
+//                     //var parent= $(this).parent().parent('.dropdown').find('span')[0].attr("str");
+//                     var affiliation = $(this).attr("title");
+//                     var current = $(this).attr("str");
+//                     if(affiliation != current){
+//                         $("#searchEventArea").toggle();
+//                         $("#searchSponsorArea").toggle();
+//                         $("#searchOrgArea").toggle();
+//                     }
+//                 });
+//                 $("#searchOrgArea button").bind("click", function () {
+//                     var qs = $("#searchOrgArea input[type='text']").val();
+//                     if (qs != null && qs != '') {
+//                         window.location = '/zhubanfang/a?p=1' + encodeURI("&qs=" + qs);
+//                     }
+//                 });
+				$('.aside h2 .more').click(function(e){
+				    //e.preventDefault();
+				    if ($(this).hasClass('active')) return
+				    $(this).addClass('active');
+				    setTimeout($.proxy(function(){
+				      $(this).removeClass('active')
+				    },this),200)
+				});
+				var $loginToggle = $('.icon-login-toggle');
+				  var $iconLogins = $loginToggle.parent();
+				  $loginToggle.on('mouseenter',function(){
+				    $iconLogins.toggleClass('fold')
+				  })
+				  $iconLogins.on('mouseleave',function(){
+				      $iconLogins.addClass('fold')
+				  })
+			} (window.jQuery)
+
+			function addFavorite() {
+				if (document.all) {
+					try {
+						window.external.addFavorite(window.location.href, document.title);
+					} catch (e) {
+						window.alert("对不起，您的浏览器不支持此操作！\n\r请您使用使用Ctrl+D收藏本站");
+					}
+				} else if (window.sidebar) {
+					window.sidebar.addPanel(document.title, window.location.href, "");
+				} else {
+					window.alert("对不起，您的浏览器不支持此操作！\n\r请您使用使用Ctrl+D收藏本站");
+				}
+			}
+			function forwardEmailLink(email) {
+				if (email == null || email == "") return "";
+				var emlower = email.toLowerCase();
+				var link = "<a target='_blank' href='http://";
+				if (emlower.indexOf("@qq.com") > 0 || emlower.indexOf("@163.com") > 0 || emlower.indexOf("@126.com") > 0 || emlower.indexOf("@tom.com") > 0 || emlower.indexOf("@sina.com") > 0 || emlower.indexOf("@yahoo.com") > 0) {
+					link += "mail." + emlower.substring(emlower.indexOf("@") + 1);
+				}
+				else {
+					link += "www." + emlower.substring(emlower.indexOf("@") + 1);
+				}
+				link += "'>前往查收</a>";
+				return link;
+			}
+			function PopupMessage(type, msg, hideTime,backdrop){
+				if(msg == null || msg == "" || type < 0) return;
+				if(type == 0){
+					type = 'icon-success'
+				}else if(type == 'warning'){
+					type = 'icon-warning'
+				}else{
+					type = 'icon-danger'
+				}
+				$("#pop_message_icon").removeClass("icon-danger icon-success icon-warning").addClass(type);
+				$("#pop_message_content").html(msg);
+                if(msg != null && msg.length <= 25){ $("#pop_msg_head").css("text-align","center"); }
+                else{ $("#pop_msg_head").css("text-align","center"); }
+				//$('#pop_message_dlg').modal({show:true, backdrop:backdrop ? backdrop : false });
+				//$('#pop_message_dlg').modal({show:true, backdrop:'static'});
+				//if(hideTime != null && hideTime > 0) window.setTimeout(function () { $('#pop_message_dlg').modal('hide'); }, hideTime);
+				$('#pop_message_dlg').show();
+				if(hideTime != null && hideTime > 0) window.setTimeout(function () { $('#pop_message_dlg').hide(); }, hideTime);
+			}
+			function setupScriptDelay(scriptPath, sync, onHead){
+				var setupScript = document.createElement("script"); setupScript.type = 'text/javascript';
+				if(!sync) setupScript.async = true;
+				if(scriptPath.indexOf("http") == 0) setupScript.src = scriptPath;
+
+				else setupScript.src = (("https:" == document.location.protocol) ? "https://" : "http://") + scriptPath;
+				if(onHead) document.getElementsByTagName("head")[0].appendChild(setupScript);
+				else document.body.appendChild(setupScript);
+			}
+
+			$(function () {
+			    $.ajaxSetup({ timeout: 45000 });
+				$(document).ajaxStart(function () {
+					var bgfi = $("div.modal-backdrop.in");
+					if (bgfi != null && bgfi.length > 0) $('#jquery_ajax_loading').modal({ show: true, backdrop: false, keyboard: false });
+					else $('#jquery_ajax_loading').modal({ show: true, backdrop: 'static', keyboard: false });
+				}).ajaxSend(function(evt, request, settings) {
+				    console.log(settings.url);
+				}).ajaxStop(function () {
+					$('#jquery_ajax_loading').modal('hide');
+					var bgfi = $("div.modal-backdrop.in");
+					if (bgfi == null || bgfi.length == 0){ $("body").removeClass("modal-open"); }
+				});
+			});
+		</script>
+
+	
+</body></html>	

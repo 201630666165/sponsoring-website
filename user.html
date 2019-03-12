@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html class="sss" lang="en">
+<head>
+	<!DOCTYPE html>
+<html class="sss" lang="en">
+<head>
+<title>个人中心</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="viewport" content="width=device-width,initial-scale=0.4,user-scalable=yes"/>
+		<meta name="distribution" content="global">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Set render engine for 360 browser -->
+  		<meta name="renderer" content="webkit">
+	    <link rel="SHORTCUT ICON" href="images/sss.ico">
+		<link href="fabuhuodong.css" rel="stylesheet" type="text/css">
+		
+</head>
+<body class="sss">
+<div class="hdx-header">
+    <div class="container-lg">
+        <a href="index.html"><img src="logo3.png" alt="" class="logo"></a>
+        <ul class="items">
+            <li class="dropdown2 dropdown2-white" style="width: auto;">
+            <a style="border-top-left-radius: 0;border-top-right-radius: 0;line-height: 60px;width: 56px;" data-toggle="dropdown2" class="current" target="_blank" href="event-list.html" aria-expanded="false">寻找活动<b class="caret hide"></b></a>
+            </li>
+        </ul>
+        <div id="searchEventArea" style="display:block;">
+          <form class="search">
+                <div class="dropdown">
+                    <a data-toggle="dropdown2" aria-expanded="false">
+                        <span>活动</span><div class="search-tab-icon"><i><em></em><span></span></i></div>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(1)" title="活动" str="活动">活动</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(2)" title="赞助" str="赞助">赞助</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(3)" title="主办方" str="主办方">主办方</a></li>
+                    </ul>
+                </div>
+                <input name="d" type="hidden" value="web">
+                <input name="c" type="hidden" value="search">
+                <input name="m" type="hidden" value="search_info">
+                <input name="type" type="hidden" value="2">
+                <input name="q" id="mainSearchTextbox1" placeholder="搜索活动" value="" type="text">
+                <button id="mainSearchButton"><span class="sr-only">搜索</span><span class="icon-search"></span></button>
+          </form>
+      </div>
+        <div id="searchSponsorArea" style="display:none;">
+            <form class="search">
+                <div class="dropdown">
+                    <a data-toggle="dropdown2" aria-expanded="false">
+                        <span>赞助</span><div class="search-tab-icon"><i><em></em><span></span></i></div>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(1)" title="活动" str="活动">活动</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(2)" title="赞助" str="赞助">赞助</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(3)" title="主办方" str="主办方">主办方</a></li>
+                    </ul>
+                </div>
+                <input name="d" type="hidden" value="web">
+                <input name="c" type="hidden" value="search">
+                <input name="m" type="hidden" value="search_info">
+                <input name="type" type="hidden" value="1">
+                <input name="q" id="mainSearchTextbox2" placeholder="搜索赞助" value="" type="text">
+                <button id="mainSearchButton"><span class="sr-only">搜索</span><span class="icon-search"></span></button>
+            </form>
+        </div>
+        <div id="searchOrgArea" style="display:none;">
+            <form class="search">
+                <div class="dropdown">
+                    <a data-toggle="dropdown2" aria-expanded="false">
+                        <span>主办方</span><div class="search-tab-icon"><i><em></em><span></span></i></div>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(1)" title="活动" str="活动">活动</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(2)" title="赞助" str="赞助">赞助</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" onClick="searchSelect(3)" title="主办方" str="主办方">主办方</a></li>
+                    </ul>
+                </div>
+                <input name="d" type="hidden" value="web">
+                <input name="c" type="hidden" value="search">
+                <input name="m" type="hidden" value="search_info">
+                <input name="type" type="hidden" value="3">
+                <input name="q" id="mainSearchTextbox3" placeholder="搜索主办方" onkeypress='if(event.keyCode==13){ $("#searchOrgArea button").click();}' value="" type="text">
+                <button><span class="sr-only">搜索</span><span class="icon-search"></span></button>
+            </form>
+        </div>
+        <script type="text/javascript">
+            function searchSelect(item){
+                if(item == 1){
+                    $("#searchEventArea").show();
+                    $("#searchSponsorArea").hide();
+                    $("#searchOrgArea").hide();
+                }else if(item == 2){
+                    $("#searchEventArea").hide();
+                    $("#searchSponsorArea").show();
+                    $("#searchOrgArea").hide();
+                }else{
+                    $("#searchEventArea").hide();
+                    $("#searchSponsorArea").hide();
+                    $("#searchOrgArea").show();
+                }
+            }
+        </script>
+        <div class="sign" id="hello">
+            <a href="login.html">登录</a><b> | </b><a href="register.html">注册</a>
+        </div>
+        <input type="hidden" id="sessionid" name="sessionid" value="">
+        <a href="publish.html" target="_blank" class="hdx-header-create"><span></span>发布活动</a>
+    </div>
+</div>
+<link href="FBHD.css" rel="stylesheet" type="text/css">
+<link href="user.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="jquery_003.js"></script>
+<script type="text/javascript" src="libs.js"></script>
+<script type="text/javascript" src="index.js"></script>
+<script type="text/javascript" src="register.js"></script>
+<!-- 剪切图片js -->
+<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="ajaxfileupload.js"></script>
+<script type="text/javascript" src="jquery.artDialog.js?skin=default"></script>
+<script type="text/javascript" src="iframeTools.js"></script>
+<script type="text/javascript" src="avatar_action.js"></script>
+<div class="user_page">
+    <div class="header">
+        <div class="avatar">
+            <img id="avatar" src="images/default_face.png">
+        </div>
+        <div class="name">
+            百步梯
+        </div>
+        <div class="category_num" style="color: white;">
+            <span>收藏的活动<strong id="fav">0</strong></span><span>发布的活动<strong id="pub">0</strong></span>
+        </div>
+    </div>
+    <div class="user_main">
+        <div class="left_aside">
+            <div class="ava_balance">
+                <div style="float: left;">
+                    <img id="little_avatar" src="images/default_face.png">
+                </div>
+                <div style="float: left;">
+                    <span class="little_name">百步梯</span>
+                    <br><br>
+                    <span class="balance">金豆：3</span>
+                </div>
+                
+            </div>
+            <ul class="options">
+                <li><a id="option1" style="background:transparent;" onclick="change(1)">
+                <span>编辑资料</span>
+                </a></li>
+                <li><a id="option2" onclick="change(2)">
+                <span>我发布的</span>
+                </a></li>
+                <li><a id="option3" onclick="change(3)">
+                <span>我收藏的</span>
+                </a></li>
+            </ul>
+            <input type="hidden" name="option" id="option" value="1">
+        </div>
+        <div class="right_aside" id="option1">
+            <label class="form_label">头像</label>
+            <div class="form_group" id="avaup_div">
+                <div class="pull-left" id="poster-preview">
+                    <img id="event_logo_image" class="pull-left" src="images/default_face.png" alt="大头像" style="width:180px;height:180px;">
+                </div>
+                <div class="media-body">
+                    <div>
+                        上传的头像会自动生成头像缩略图，您也可 
+                        <br>
+                        以拖动大图的裁减区域，调整缩图内容。 
+                        <br>
+                        支持JPG、GIF、PNG等图片格式 推荐尺寸：
+                        <br>
+                        180*180像素
+                    </div>
+                    <p>上传头像</p>
+                    <div class="btn btn-primary btn-lg ">
+                        <span class="icon-btn-upload"></span><span>上传</span>
+                        <input accept=".jpg,.jpeg,.gif,.png,.bmp" id="event_logo_upload_file" name="event_logo_upload_file" type="file">
+                        <input type="hidden" name="event_logo_url" id="event_logo_url">
+                    </div>
+                </div>
+            </div>
+            <label class="form_label">组织名称</label>
+            <div class="form_group">
+                <input type="text" id="association_name" class="form-control">
+            </div>
+            <label class="form_label">联系人姓名</label>
+            <div class="form_group">
+                <input type="text" id="contact_name" class="form-control">
+            </div>
+            <label class="form_label">简介</label>
+            <div class="form_group">
+                <input type="text" id="introduction" class="form-control">
+            </div>
+            <label class="form_label">联系号码</label>
+            <div class="form_group">
+                <input type="text" id="tel" class="form-control">
+            </div>
+            <label class="form_label">电子邮箱</label>
+            <div class="form_group">
+                <input type="text" id="e_mail" class="form-control">
+            </div>
+            <div class="form_group" style="height: 43px; width: 100%;text-align: center;margin-top: 70px;">
+                <button style="height: 43px;margin: 0;padding-left: 60px;padding-right: 60px;" class="btn btn-lg btn-primary btn-pub" onclick="updateinfo()"><span class="icon-btn-success"></span>确认修改</button>
+            </div>
+        </div>
+        <div class="right_aside" id="option2" style="display: none;">
+            <ul class="event_ul"></ul>
+            <div class="page_footer">
+                <input type="hidden" id="footer">
+                <ul class="footer">
+                </ul>
+            </div>
+        </div>
+        <div class="right_aside" id="option3" style="display: none;">
+            <ul class="event_ulf"></ul>
+            <div class="page_footerf">
+                <input type="hidden" id="footerf">
+                <ul class="footerf">
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="jquery_ajax_loading" class="layer-warning modal" style="margin-top:250px;overflow-y:auto;">
+    <div class="modal-dialog" style="width:450px;">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p><span class="icon-warning"></span> 页面正在加载中，请耐心等待...</p>
+            </div>  
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="user.js"></script>
+</html>
